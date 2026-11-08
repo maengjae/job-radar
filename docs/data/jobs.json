@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:44+09:00",
+ "updatedAt": "2026-11-08T21:47+09:00",
  "jobs": [
   {
    "id": "greenhouse:okx:8197696003",
@@ -154,34 +154,6 @@
    "firstSeen": "2026-11-08",
    "source": "Remote OK",
    "foreign": false
-  },
-  {
-   "id": "workable:mercari:0DFADA958F",
-   "company": "Mercari",
-   "title": "Product Engineer (AI/ML), CS & TnS ML - Mercari",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/0DFADA958F",
-   "posted": "2026-10-29",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:smartnews:B7576C4848",
-   "company": "SmartNews",
-   "title": "Senior Software Engineer, Mobile Foundation",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Shibuya, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/B7576C4848",
-   "posted": "2026-10-29",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
   },
   {
    "id": "greenhouse:mongodb:8331146",
@@ -1164,20 +1136,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:F099D9E249",
-   "company": "Mercari",
-   "title": "Software Engineer, AI Agents (Internal) / AI - Mercari",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/F099D9E249",
-   "posted": "2026-10-02",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:agoda:8248586",
    "company": "Agoda",
    "title": "[Infra] Staff/Lead Software Engineer – Compute Platform (Bangkok Based, relocation provided)",
@@ -1710,20 +1668,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:05994213A3",
-   "company": "Mercari",
-   "title": "Senior Software Engineer, Agentic AI Platform - Mercari",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/05994213A3",
-   "posted": "2026-09-09",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:databricks:8789428002",
    "company": "Databricks",
    "title": "Sr. Solutions Architect",
@@ -1876,34 +1820,6 @@
    "firstSeen": "2026-11-08",
    "source": "toss",
    "foreign": false
-  },
-  {
-   "id": "workable:mercari:704F38DA2A",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend (New Business) - Mercari Marketplace",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/704F38DA2A",
-   "posted": "2026-09-03",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:smartnews:6CC6595778",
-   "company": "SmartNews",
-   "title": "Engineering Manager - Infrastructure",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Shibuya, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/6CC6595778",
-   "posted": "2026-09-03",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
   },
   {
    "id": "lever:woven-by-toyota:a6b6d2a6-ba5c-439f-af19-2f44d6b521a3",
@@ -2186,20 +2102,6 @@
    "foreign": true
   },
   {
-   "id": "greenhouse:mongodb:8152623",
-   "company": "MongoDB",
-   "title": "Senior Solutions Architect",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Singapore",
-   "region": "싱가포르",
-   "url": "https://www.mongodb.com/careers/job/?gh_jid=8152623",
-   "posted": "2026-08-25",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:mongodb:8120181",
    "company": "MongoDB",
    "title": "Senior Solutions Architect",
@@ -2208,6 +2110,20 @@
    "location": "Tokyo",
    "region": "일본",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8120181",
+   "posted": "2026-08-25",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "greenhouse:mongodb:8152623",
+   "company": "MongoDB",
+   "title": "Senior Solutions Architect",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Singapore",
+   "region": "싱가포르",
+   "url": "https://www.mongodb.com/careers/job/?gh_jid=8152623",
    "posted": "2026-08-25",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -2228,20 +2144,6 @@
    "foreign": false
   },
   {
-   "id": "greenhouse:coupang:8118859",
-   "company": "쿠팡",
-   "title": "Sr. Director, Back-End Engineering",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/coupang/jobs/8118859",
-   "posted": "2026-08-23",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": false
-  },
-  {
    "id": "greenhouse:coupang:8118861",
    "company": "쿠팡",
    "title": "Sr. Director, Back-End Engineering",
@@ -2250,6 +2152,20 @@
    "location": "Seoul, South Korea",
    "region": "한국",
    "url": "https://job-boards.greenhouse.io/coupang/jobs/8118861",
+   "posted": "2026-08-23",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": false
+  },
+  {
+   "id": "greenhouse:coupang:8118859",
+   "company": "쿠팡",
+   "title": "Sr. Director, Back-End Engineering",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Seoul, South Korea",
+   "region": "한국",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8118859",
    "posted": "2026-08-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -2354,20 +2270,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:235DCE3779",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend (Mercari Shops) - Mercari Marketplace",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/235DCE3779",
-   "posted": "2026-08-18",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:gitlab:8627768002",
    "company": "GitLab",
    "title": "Senior Solutions Architect (Singapore)",
@@ -2379,20 +2281,6 @@
    "posted": "2026-08-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:AA53237805",
-   "company": "2C2P",
-   "title": "Development (Back-end)",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/AA53237805",
-   "posted": "2026-08-17",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
    "foreign": true
   },
   {
@@ -2477,20 +2365,6 @@
    "posted": "2026-08-07",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:4FB5280CEE",
-   "company": "Mercari",
-   "title": "Software Engineer, QA - Merpay",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/4FB5280CEE",
-   "posted": "2026-08-06",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
    "foreign": true
   },
   {
@@ -2634,20 +2508,6 @@
    "foreign": false
   },
   {
-   "id": "workable:2c2p:BE085D97D3",
-   "company": "2C2P",
-   "title": "Senior Software Engineer",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/BE085D97D3",
-   "posted": "2026-07-22",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "ashby:clickhouse:b6e7fb97-e7e2-4e29-9476-b777d787a94c",
    "company": "ClickHouse",
    "title": "Senior Cloud Data Infrastructure Engineer (APJ Remote)",
@@ -2674,20 +2534,6 @@
    "firstSeen": "2026-11-08",
    "source": "toss",
    "foreign": false
-  },
-  {
-   "id": "workable:mercari:3D89AD56C4",
-   "company": "Mercari",
-   "title": "Senior Product Engineer, Backend - Merpay",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/3D89AD56C4",
-   "posted": "2026-07-21",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
   },
   {
    "id": "greenhouse:coupang:8078331",
@@ -2746,45 +2592,17 @@
    "foreign": false
   },
   {
-   "id": "workable:mercari:3AF55671B2",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend - Merpay",
+   "id": "greenhouse:okx:7749091003",
+   "company": "OKX",
+   "title": "Senior Java Backend Engineer — Asset & Earn",
    "category": "백엔드",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/3AF55671B2",
-   "posted": "2026-07-17",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:D938A9A8ED",
-   "company": "Mercari",
-   "title": "Senior Platform Infrastructure Engineer - Mercari",
-   "category": "클라우드/인프라",
    "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/D938A9A8ED",
+   "location": "Hong Kong, Hong Kong SAR; Singapore, Singapore",
+   "region": "싱가포르",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7749091003",
    "posted": "2026-07-17",
    "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:315EC3EA7F",
-   "company": "Mercari",
-   "title": "Senior Software Engineer, Autonomous Cloud Network - Mercari",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/315EC3EA7F",
-   "posted": "2026-07-17",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
+   "source": "greenhouse",
    "foreign": true
   },
   {
@@ -2796,20 +2614,6 @@
    "location": "Hong Kong, Hong Kong SAR",
    "region": "아시아 기타",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7749092003",
-   "posted": "2026-07-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "greenhouse:okx:7749091003",
-   "company": "OKX",
-   "title": "Senior Java Backend Engineer — Asset & Earn",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR; Singapore, Singapore",
-   "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7749091003",
    "posted": "2026-07-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -3012,34 +2816,6 @@
    "foreign": true
   },
   {
-   "id": "workable:2c2p:101B611A4B",
-   "company": "2C2P",
-   "title": "Senior Engineer, Software Development",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/101B611A4B",
-   "posted": "2026-07-03",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:7AE97F8A2C",
-   "company": "Mercari",
-   "title": "Software Engineer (Site Reliability) - Mercari Crossborder",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/7AE97F8A2C",
-   "posted": "2026-07-01",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:coupang:8040140",
    "company": "쿠팡",
    "title": "Director - Backend Engineering (Infrastructure)",
@@ -3052,20 +2828,6 @@
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
    "foreign": false
-  },
-  {
-   "id": "workable:mercari:560E7958C6",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend (Logistics) - Mercari Marketplace",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/560E7958C6",
-   "posted": "2026-06-30",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
   },
   {
    "id": "greenhouse:okx:7777037003",
@@ -3096,20 +2858,6 @@
    "foreign": true
   },
   {
-   "id": "greenhouse:okx:7777032003",
-   "company": "OKX",
-   "title": "Senior Staff Software Engineer, Mobile Infrastructure",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7777032003",
-   "posted": "2026-06-29",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:okx:7777031003",
    "company": "OKX",
    "title": "Senior Staff Software Engineer, Mobile Infrastructure",
@@ -3118,6 +2866,20 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7777031003",
+   "posted": "2026-06-29",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "greenhouse:okx:7777032003",
+   "company": "OKX",
+   "title": "Senior Staff Software Engineer, Mobile Infrastructure",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7777032003",
    "posted": "2026-06-29",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -3194,48 +2956,6 @@
    "foreign": false
   },
   {
-   "id": "workable:2c2p:85398AC94F",
-   "company": "2C2P",
-   "title": "Engineer, Software Development",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/85398AC94F",
-   "posted": "2026-06-25",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:A64B9C9F72",
-   "company": "2C2P",
-   "title": "Backend Developer",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/A64B9C9F72",
-   "posted": "2026-06-23",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:1928BA507A",
-   "company": "2C2P",
-   "title": "Senior Engineer, Software Development",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/1928BA507A",
-   "posted": "2026-06-23",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:bybit:4905676101",
    "company": "Bybit",
    "title": "Principal DevOps Engineer",
@@ -3306,20 +3026,6 @@
    "foreign": true
   },
   {
-   "id": "greenhouse:okx:7777044003",
-   "company": "OKX",
-   "title": "Software Engineer, Mobile, Web3",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7777044003",
-   "posted": "2026-06-22",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:okx:7777043003",
    "company": "OKX",
    "title": "Software Engineer, Mobile, Web3",
@@ -3328,6 +3034,20 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7777043003",
+   "posted": "2026-06-22",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "greenhouse:okx:7777044003",
+   "company": "OKX",
+   "title": "Software Engineer, Mobile, Web3",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7777044003",
    "posted": "2026-06-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -3404,20 +3124,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:E15A83320B",
-   "company": "Mercari",
-   "title": "Corporate IT Engineer（CMS Platform / IT Infrastructure）- Mercari",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/E15A83320B",
-   "posted": "2026-06-11",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:databricks:8567985002",
    "company": "Databricks",
    "title": "Solutions Architect (Lakebase)",
@@ -3443,20 +3149,6 @@
    "posted": "2026-06-11",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:C88BB7D2B0",
-   "company": "2C2P",
-   "title": "Team Lead, Software Development",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/C88BB7D2B0",
-   "posted": "2026-06-11",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
    "foreign": true
   },
   {
@@ -3544,20 +3236,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:94D956E7B1",
-   "company": "Mercari",
-   "title": "Senior Search Platform Infrastructure Engineer",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Minato, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/94D956E7B1",
-   "posted": "2026-06-05",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:coupang:7981493",
    "company": "쿠팡",
    "title": "Senior Staff / Staff Back-End Engineer",
@@ -3628,62 +3306,6 @@
    "foreign": false
   },
   {
-   "id": "workable:mercari:D16157A33A",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend (CS Engineering) - Mercari Marketplace",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/D16157A33A",
-   "posted": "2026-05-26",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:ABCCD64E66",
-   "company": "Mercari",
-   "title": "Senior Software Engineer, QA - Merpay",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/ABCCD64E66",
-   "posted": "2026-05-22",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:76C6D83800",
-   "company": "Mercari",
-   "title": "Software Engineer (Site Reliability) - Mercari",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/76C6D83800",
-   "posted": "2026-05-22",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:A98ACE952E",
-   "company": "Mercari",
-   "title": "Software Engineer, Backend (Monolith operation & Modernization) - Mercari",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/A98ACE952E",
-   "posted": "2026-05-22",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "ashby:airwallex:5fa97d90-9c8c-452a-9ec0-d0949ec10ae0",
    "company": "Airwallex",
    "title": "Staff Data Platform Engineer, Knowledge Platform",
@@ -3723,20 +3345,6 @@
    "posted": "2026-05-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "workable:mercari:83D211277B",
-   "company": "Mercari",
-   "title": "Product Engineer, Backend (Product Data) - Mercari Marketplace",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Minato, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/83D211277B",
-   "posted": "2026-05-15",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
    "foreign": true
   },
   {
@@ -3866,20 +3474,6 @@
    "foreign": true
   },
   {
-   "id": "workable:mercari:ADF7837E4D",
-   "company": "Mercari",
-   "title": "Software Engineer, Backend Architect - Mercari",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Minato City, Tokyo, Japan",
-   "region": "일본",
-   "url": "https://apply.workable.com/j/ADF7837E4D",
-   "posted": "2026-04-17",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "toss:all:7702581003",
    "company": "토스뱅크",
    "title": "AIOps 플랫폼 엔지니어 (AIOps Platform Engineer)",
@@ -3992,20 +3586,6 @@
    "foreign": true
   },
   {
-   "id": "workable:2c2p:63589F4223",
-   "company": "2C2P",
-   "title": "Team Lead, Software Development",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/63589F4223",
-   "posted": "2026-03-24",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
    "id": "greenhouse:okx:7671576003",
    "company": "OKX",
    "title": "Principal Engineer, Agent Infrastructure & Memory Architecture",
@@ -4017,34 +3597,6 @@
    "posted": "2026-03-19",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:F2054845E4",
-   "company": "2C2P",
-   "title": "Team Lead, Software Development",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Bangkok, Bangkok, Thailand",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/F2054845E4",
-   "posted": "2026-03-16",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
-   "foreign": true
-  },
-  {
-   "id": "workable:2c2p:46C59DE1FB",
-   "company": "2C2P",
-   "title": "Engineer, Software Development",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
-   "region": "아시아 기타",
-   "url": "https://apply.workable.com/j/46C59DE1FB",
-   "posted": "2026-03-12",
-   "firstSeen": "2026-11-08",
-   "source": "workable",
    "foreign": true
   },
   {

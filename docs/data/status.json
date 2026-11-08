@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:44+09:00",
+ "updatedAt": "2026-11-08T21:47+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -13,17 +13,19 @@
    "company": "Mercari",
    "ats": "workable",
    "board": "mercari",
-   "total": 141,
-   "kept": 20,
-   "ok": true
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "company": "SmartNews",
    "ats": "workable",
    "board": "smartnews",
-   "total": 25,
-   "kept": 2,
-   "ok": true
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "company": "Woven by Toyota",
@@ -197,9 +199,10 @@
    "company": "2C2P",
    "ats": "workable",
    "board": "2c2p",
-   "total": 32,
-   "kept": 10,
-   "ok": true
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "company": "Binance",
@@ -333,9 +336,10 @@
    "company": "Funding Societies",
    "ats": "workable",
    "board": "fundingsocieties",
-   "total": 84,
+   "total": 0,
    "kept": 0,
-   "ok": true
+   "ok": false,
+   "error": "HTTP 429"
   },
   {
    "company": "Ninja Van",
