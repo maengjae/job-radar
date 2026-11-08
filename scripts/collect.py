@@ -224,12 +224,12 @@ def classify(title):
 
 
 def is_permanent(etype):
-    """채용 시스템이 알려준 고용 형태가 있으면 정규직만 통과. 정보가 없으면 제목 필터에 맡긴다."""
+    """채용 시스템이 알려준 고용 형태가 계약직·인턴·파트타임이면 제외. 정보가 없으면 제목 필터에 맡긴다."""
     e = str(etype or "").lower().replace("-", "").replace("_", "").replace(" ", "")
-    if not e:
-        return True
-    return e in {"fulltime", "permanent", "regular", "정규직", "fulltimeemployee"} or (
-        "fulltime" in e and not any(w in e for w in ("contract", "temp", "fixed", "intern")))
+    bad = ("contract", "temp", "fixed", "intern", "parttime", "freelance", "seasonal",
+           "\u5951\u7d04", "\u6d3e\u9063", "\u30a4\u30f3\u30bf\u30fc\u30f3", "\u30a2\u30eb\u30d0\u30a4\u30c8",  # 契約, 派遣, インターン, アルバイト
+           "\uacc4\uc57d", "\uc778\ud134", "\ud30c\uacac")  # 계약, 인턴, 파견
+    return not any(b in e for b in bad)
 
 
 def clean_title(title):
