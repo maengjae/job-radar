@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T12:54+09:00",
+ "updatedAt": "2026-11-08T12:55+09:00",
  "jobs": [
   {
    "id": "greenhouse:coupang:8344977",
@@ -56,7 +56,7 @@
   {
    "id": "workable:smartnews:B7576C4848",
    "company": "SmartNews",
-   "title": "シニアモバイルエンジニア / Senior Software Engineer, Mobile Foundation",
+   "title": "Senior Software Engineer, Mobile Foundation",
    "category": "소프트웨어",
    "senior": true,
    "location": "Shibuya, Tokyo, Japan",
@@ -394,7 +394,7 @@
   {
    "id": "workable:mercari:F099D9E249",
    "company": "Mercari",
-   "title": "Software Engineer, AI Agents (Internal) / AI推進エンジニア - Mercari",
+   "title": "Software Engineer, AI Agents (Internal) / AI - Mercari",
    "category": "소프트웨어",
    "senior": false,
    "location": "Minato City, Tokyo, Japan",
@@ -680,7 +680,7 @@
   {
    "id": "workable:mercari:704F38DA2A",
    "company": "Mercari",
-   "title": "Product Engineer/プロダクトエンジニア, Backend (New Business) - Mercari Marketplace",
+   "title": "Product Engineer, Backend (New Business) - Mercari Marketplace",
    "category": "백엔드",
    "senior": false,
    "location": "Minato City, Tokyo, Japan",
@@ -717,19 +717,6 @@
    "source": "ashby"
   },
   {
-   "id": "greenhouse:coupang:8118861",
-   "company": "쿠팡",
-   "title": "Sr. Director, Back-End Engineering",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8118861",
-   "posted": "2026-08-23",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:coupang:8118859",
    "company": "쿠팡",
    "title": "Sr. Director, Back-End Engineering",
@@ -738,6 +725,19 @@
    "location": "Seoul, South Korea",
    "region": "한국",
    "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8118859",
+   "posted": "2026-08-23",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:coupang:8118861",
+   "company": "쿠팡",
+   "title": "Sr. Director, Back-End Engineering",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Seoul, South Korea",
+   "region": "한국",
+   "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8118861",
    "posted": "2026-08-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -771,7 +771,7 @@
   {
    "id": "workable:mercari:235DCE3779",
    "company": "Mercari",
-   "title": "Product Engineer/プロダクトエンジニア, Backend (Mercari Shops) - Mercari Marketplace",
+   "title": "Product Engineer, Backend (Mercari Shops) - Mercari Marketplace",
    "category": "백엔드",
    "senior": false,
    "location": "Minato City, Tokyo, Japan",
@@ -1083,7 +1083,7 @@
   {
    "id": "workable:mercari:560E7958C6",
    "company": "Mercari",
-   "title": "Product Engineer/プロダクトエンジニア, Backend (Logistics) - Mercari Marketplace",
+   "title": "Product Engineer, Backend (Logistics) - Mercari Marketplace",
    "category": "백엔드",
    "senior": false,
    "location": "Minato City, Tokyo, Japan",
@@ -1172,19 +1172,6 @@
    "source": "lever"
   },
   {
-   "id": "lever:woven-by-toyota:3b01d9e1-327d-4449-8349-40b7b77db732",
-   "company": "Woven by Toyota",
-   "title": "テクニカル プロジェクト マネージャー・City Infrastructure",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "東京都中央区",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/3b01d9e1-327d-4449-8349-40b7b77db732",
-   "posted": "2026-06-15",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
-  {
    "id": "workable:mercari:E15A83320B",
    "company": "Mercari",
    "title": "Corporate IT Engineer（CMS Platform / IT Infrastructure）- Mercari",
@@ -1239,7 +1226,7 @@
   {
    "id": "workable:mercari:D16157A33A",
    "company": "Mercari",
-   "title": "Product Engineer/プロダクトエンジニア, Backend (CS Engineering) - Mercari Marketplace",
+   "title": "Product Engineer, Backend (CS Engineering) - Mercari Marketplace",
    "category": "백엔드",
    "senior": false,
    "location": "Minato City, Tokyo, Japan",
@@ -1330,7 +1317,7 @@
   {
    "id": "workable:mercari:83D211277B",
    "company": "Mercari",
-   "title": "Product Engineer/プロダクトエンジニア, Backend (Product Data) - Mercari Marketplace",
+   "title": "Product Engineer, Backend (Product Data) - Mercari Marketplace",
    "category": "백엔드",
    "senior": false,
    "location": "Minato, Japan",
