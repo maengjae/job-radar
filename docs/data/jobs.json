@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T20:18+09:00",
+ "updatedAt": "2026-11-08T21:07+09:00",
  "jobs": [
   {
    "id": "greenhouse:okx:8197696003",
@@ -1549,19 +1549,6 @@
    "source": "Remote OK"
   },
   {
-   "id": "greenhouse:coupang:8118859",
-   "company": "쿠팡",
-   "title": "Sr. Director, Back-End Engineering",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8118859",
-   "posted": "2026-08-23",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:coupang:8118861",
    "company": "쿠팡",
    "title": "Sr. Director, Back-End Engineering",
@@ -1570,6 +1557,19 @@
    "location": "Seoul, South Korea",
    "region": "한국",
    "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8118861",
+   "posted": "2026-08-23",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:coupang:8118859",
+   "company": "쿠팡",
+   "title": "Sr. Director, Back-End Engineering",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Seoul, South Korea",
+   "region": "한국",
+   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8118859",
    "posted": "2026-08-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2160,19 +2160,6 @@
    "source": "workable"
   },
   {
-   "id": "greenhouse:okx:7749092003",
-   "company": "OKX",
-   "title": "Senior Java Backend Engineer — Asset & Earn",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7749092003",
-   "posted": "2026-07-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:okx:7749091003",
    "company": "OKX",
    "title": "Senior Java Backend Engineer — Asset & Earn",
@@ -2181,6 +2168,19 @@
    "location": "Hong Kong, Hong Kong SAR; Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7749091003",
+   "posted": "2026-07-17",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:okx:7749092003",
+   "company": "OKX",
+   "title": "Senior Java Backend Engineer — Asset & Earn",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7749092003",
    "posted": "2026-07-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2407,19 +2407,6 @@
    "source": "greenhouse"
   },
   {
-   "id": "greenhouse:okx:7777032003",
-   "company": "OKX",
-   "title": "Senior Staff Software Engineer, Mobile Infrastructure",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7777032003",
-   "posted": "2026-06-29",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:okx:7777031003",
    "company": "OKX",
    "title": "Senior Staff Software Engineer, Mobile Infrastructure",
@@ -2428,6 +2415,19 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7777031003",
+   "posted": "2026-06-29",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:okx:7777032003",
+   "company": "OKX",
+   "title": "Senior Staff Software Engineer, Mobile Infrastructure",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7777032003",
    "posted": "2026-06-29",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2537,19 +2537,6 @@
    "source": "ashby"
   },
   {
-   "id": "greenhouse:okx:7777044003",
-   "company": "OKX",
-   "title": "Software Engineer, Mobile, Web3",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7777044003",
-   "posted": "2026-06-22",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:okx:7777043003",
    "company": "OKX",
    "title": "Software Engineer, Mobile, Web3",
@@ -2558,6 +2545,19 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7777043003",
+   "posted": "2026-06-22",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:okx:7777044003",
+   "company": "OKX",
+   "title": "Software Engineer, Mobile, Web3",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7777044003",
    "posted": "2026-06-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
