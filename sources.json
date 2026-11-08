@@ -1,29 +1,135 @@
 {
   "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters. board는 각 채용 시스템의 회사 ID입니다. 실패한 출처는 대시보드 하단 '수집 상태'에 표시됩니다.",
   "sources": [
-    {"company": "Mercari", "ats": "greenhouse", "board": "mercari"},
-    {"company": "Mercari", "ats": "workable", "board": "mercari"},
-    {"company": "SmartNews", "ats": "greenhouse", "board": "smartnews"},
-    {"company": "Woven by Toyota", "ats": "lever", "board": "woven-by-toyota"},
-    {"company": "PayPay", "ats": "lever", "board": "paypay"},
-    {"company": "Jamm", "ats": "ashby", "board": "jamm"},
-    {"company": "Moloco", "ats": "greenhouse", "board": "moloco"},
-    {"company": "Sendbird", "ats": "greenhouse", "board": "sendbird"},
-    {"company": "Stripe", "ats": "greenhouse", "board": "stripe"},
-    {"company": "Cloudflare", "ats": "greenhouse", "board": "cloudflare"},
-    {"company": "Datadog", "ats": "greenhouse", "board": "datadog"},
-    {"company": "Databricks", "ats": "greenhouse", "board": "databricks"},
-    {"company": "MongoDB", "ats": "greenhouse", "board": "mongodb"},
-    {"company": "Twilio", "ats": "greenhouse", "board": "twilio"},
-    {"company": "GitLab", "ats": "greenhouse", "board": "gitlab"},
-    {"company": "Coinbase", "ats": "greenhouse", "board": "coinbase"},
-    {"company": "Okta", "ats": "greenhouse", "board": "okta"},
-    {"company": "Airwallex", "ats": "lever", "board": "airwallex"},
-    {"company": "Wise", "ats": "greenhouse", "board": "wise"},
-    {"company": "Canva", "ats": "smartrecruiters", "board": "Canva"},
-    {"company": "Visa", "ats": "smartrecruiters", "board": "Visa"},
-    {"company": "토스", "ats": "greenhouse", "board": "toss"},
-    {"company": "쿠팡", "ats": "greenhouse", "board": "coupang"},
-    {"company": "두나무", "ats": "greenhouse", "board": "dunamu"}
+    {
+      "company": "Mercari",
+      "ats": "greenhouse",
+      "board": "mercari"
+    },
+    {
+      "company": "Mercari",
+      "ats": "workable",
+      "board": "mercari"
+    },
+    {
+      "company": "SmartNews",
+      "ats": "workable",
+      "board": "smartnews"
+    },
+    {
+      "company": "Woven by Toyota",
+      "ats": "lever",
+      "board": "woven-by-toyota"
+    },
+    {
+      "company": "PayPay",
+      "ats": "greenhouse",
+      "board": "paypay"
+    },
+    {
+      "company": "Moloco",
+      "ats": "greenhouse",
+      "board": "moloco"
+    },
+    {
+      "company": "Sendbird",
+      "ats": "greenhouse",
+      "board": "sendbird"
+    },
+    {
+      "company": "Stripe",
+      "ats": "greenhouse",
+      "board": "stripe"
+    },
+    {
+      "company": "Cloudflare",
+      "ats": "greenhouse",
+      "board": "cloudflare"
+    },
+    {
+      "company": "Datadog",
+      "ats": "greenhouse",
+      "board": "datadog"
+    },
+    {
+      "company": "Databricks",
+      "ats": "greenhouse",
+      "board": "databricks"
+    },
+    {
+      "company": "MongoDB",
+      "ats": "greenhouse",
+      "board": "mongodb"
+    },
+    {
+      "company": "Twilio",
+      "ats": "greenhouse",
+      "board": "twilio"
+    },
+    {
+      "company": "GitLab",
+      "ats": "greenhouse",
+      "board": "gitlab"
+    },
+    {
+      "company": "Coinbase",
+      "ats": "greenhouse",
+      "board": "coinbase"
+    },
+    {
+      "company": "Okta",
+      "ats": "greenhouse",
+      "board": "okta"
+    },
+    {
+      "company": "Airwallex",
+      "ats": "ashby",
+      "board": "airwallex"
+    },
+    {
+      "company": "Wise",
+      "ats": "greenhouse",
+      "board": "wise"
+    },
+    {
+      "company": "Canva",
+      "ats": "smartrecruiters",
+      "board": "Canva"
+    },
+    {
+      "company": "Visa",
+      "ats": "smartrecruiters",
+      "board": "Visa"
+    },
+    {
+      "company": "쿠팡",
+      "ats": "greenhouse",
+      "board": "coupang"
+    },
+    {
+      "company": "Agoda",
+      "ats": "greenhouse",
+      "board": "agoda"
+    },
+    {
+      "company": "크래프톤",
+      "ats": "greenhouse",
+      "board": "krafton"
+    },
+    {
+      "company": "당근",
+      "ats": "greenhouse",
+      "board": "daangn"
+    },
+    {
+      "company": "무신사",
+      "ats": "ashby",
+      "board": "musinsa"
+    },
+    {
+      "company": "루닛",
+      "ats": "workable",
+      "board": "lunit"
+    }
   ]
 }
