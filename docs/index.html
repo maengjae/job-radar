@@ -75,6 +75,7 @@
   .status td { padding: 6px 8px; }
   .ok { color: var(--new); } .err { color: var(--bad); }
   footer { font-size: .78rem; color: var(--muted); }
+  footer a { color: inherit; }
   @media (max-width: 640px) { .hide-narrow { display: none; } .wrap { padding-top: 20px; } }
 </style>
 </head>
@@ -138,7 +139,7 @@
     </details>
   </section>
 
-  <footer>GitHub Actions가 매일 아침 7시 30분(KST)에 공개 채용 API를 확인해 갱신합니다. 회사 목록은 <code>sources.json</code>, 직접 추가하는 공고는 <code>docs/data/curated.json</code>에서 바꿀 수 있습니다.</footer>
+  <footer>GitHub Actions가 매일 아침 7시 30분(KST)에 공개 채용 API와 원격 공고 사이트(<a href="https://remoteok.com">Remote OK</a>, <a href="https://remotive.com">Remotive</a>, <a href="https://himalayas.app">Himalayas</a>)를 확인해 갱신합니다. 회사 목록은 <code>sources.json</code>, 직접 추가하는 공고는 <code>docs/data/curated.json</code>에서 바꿀 수 있습니다.</footer>
 </main>
 
 <script>
@@ -200,7 +201,8 @@
         if (j.firstSeen === runDay) t.append(el('span', {className: 'badge new', textContent: 'NEW'}));
         if (j.senior) t.append(el('span', {className: 'badge senior', textContent: '시니어'}));
         if (j.deadline && /^\d{4}-/.test(j.deadline) && j.deadline <= shift(runDay, 3)) t.append(el('span', {className: 'badge soon', textContent: '마감 ' + j.deadline.slice(5)}));
-        const sub = [j.location, j.note].filter(Boolean).join(' · ');
+        const via = ['Remote OK', 'Remotive', 'Himalayas'].includes(j.source) ? 'via ' + j.source : '';
+        const sub = [j.location, j.note, via].filter(Boolean).join(' · ');
         if (sub) t.append(el('span', {className: 'sub', textContent: sub}));
         return el('tr', {}, el('td', {textContent: j.company}), t, el('td', {className: 'hide-narrow muted nowrap', textContent: j.category}), el('td', {className: 'nowrap', textContent: j.region}), el('td', {className: 'nowrap muted hide-narrow', textContent: j.firstSeen}));
       }));

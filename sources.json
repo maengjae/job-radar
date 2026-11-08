@@ -1,5 +1,5 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters. board는 각 채용 시스템의 회사 ID입니다. 실패한 출처는 대시보드 하단 '수집 상태'에 표시됩니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters | remoteok | remotive | himalayas. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 실패한 출처는 대시보드 하단 '수집 상태'에 표시됩니다.",
   "sources": [
     {
       "company": "Mercari",
@@ -130,6 +130,121 @@
       "company": "루닛",
       "ats": "workable",
       "board": "lunit"
+    },
+    {
+      "company": "2C2P",
+      "ats": "workable",
+      "board": "2c2p"
+    },
+    {
+      "company": "Binance",
+      "ats": "greenhouse",
+      "board": "binance"
+    },
+    {
+      "company": "Bybit",
+      "ats": "greenhouse",
+      "board": "bybit"
+    },
+    {
+      "company": "OKX",
+      "ats": "greenhouse",
+      "board": "okx"
+    },
+    {
+      "company": "Crypto.com",
+      "ats": "lever",
+      "board": "crypto"
+    },
+    {
+      "company": "Circle",
+      "ats": "ashby",
+      "board": "circle"
+    },
+    {
+      "company": "Canonical",
+      "ats": "greenhouse",
+      "board": "canonical"
+    },
+    {
+      "company": "ClickHouse",
+      "ats": "ashby",
+      "board": "clickhouse"
+    },
+    {
+      "company": "OpenAI",
+      "ats": "ashby",
+      "board": "openai"
+    },
+    {
+      "company": "Anthropic",
+      "ats": "greenhouse",
+      "board": "anthropic"
+    },
+    {
+      "company": "Snowflake",
+      "ats": "ashby",
+      "board": "snowflake"
+    },
+    {
+      "company": "Supabase",
+      "ats": "ashby",
+      "board": "supabase"
+    },
+    {
+      "company": "Temporal",
+      "ats": "ashby",
+      "board": "temporal"
+    },
+    {
+      "company": "Elastic",
+      "ats": "greenhouse",
+      "board": "elastic"
+    },
+    {
+      "company": "Grafana Labs",
+      "ats": "greenhouse",
+      "board": "grafanalabs"
+    },
+    {
+      "company": "Thunes",
+      "ats": "greenhouse",
+      "board": "thunes"
+    },
+    {
+      "company": "Xendit",
+      "ats": "greenhouse",
+      "board": "xendit"
+    },
+    {
+      "company": "Funding Societies",
+      "ats": "workable",
+      "board": "fundingsocieties"
+    },
+    {
+      "company": "Ninja Van",
+      "ats": "lever",
+      "board": "ninjavan"
+    },
+    {
+      "company": "FuriosaAI",
+      "ats": "greenhouse",
+      "board": "furiosaai"
+    },
+    {
+      "company": "Remote OK (원격 공고 모음)",
+      "ats": "remoteok",
+      "board": "all"
+    },
+    {
+      "company": "Remotive (원격 공고 모음)",
+      "ats": "remotive",
+      "board": "software-dev"
+    },
+    {
+      "company": "Himalayas (원격 공고 모음)",
+      "ats": "himalayas",
+      "board": "all"
     }
   ]
 }

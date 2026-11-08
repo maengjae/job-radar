@@ -131,13 +131,76 @@ def from_smartrecruiters(board):
             break
 
 
+# ── 공고 모음 사이트 (공개 API, 출처 표기 조건 준수: 각 공고 링크가 원 사이트로 연결됨) ──
+
+def remote_loc(restr):
+    """원격 공고의 지원 가능 지역을 위치 문자열로."""
+    restr = [r for r in (restr or []) if r]
+    return "Remote - " + (", ".join(restr) if restr else "Worldwide")
+
+
+def from_remoteok(board):
+    d = fetch_json("https://remoteok.com/api")
+    for j in d:
+        if not isinstance(j, dict) or "position" not in j:
+            continue  # 첫 항목은 이용 약관 안내
+        loc = (j.get("location") or "").strip()
+        yield {
+            "jid": str(j["id"]),
+            "title": j.get("position", ""),
+            "company": j.get("company", ""),
+            "location": remote_loc([loc] if loc and loc.lower() not in ("remote", "anywhere") else []),
+            "url": j.get("url", ""),
+            "posted": iso(j.get("date")),
+        }
+
+
+def from_remotive(board):
+    d = fetch_json(f"https://remotive.com/api/remote-jobs?category={board}")
+    for j in d.get("jobs", []):
+        loc = (j.get("candidate_required_location") or "").strip()
+        yield {
+            "jid": str(j["id"]),
+            "title": j.get("title", ""),
+            "company": j.get("company_name", ""),
+            "location": remote_loc([] if loc.lower() in ("", "worldwide", "anywhere") else [loc]),
+            "url": j.get("url", ""),
+            "posted": iso(j.get("publication_date")),
+            "etype": j.get("job_type", ""),
+        }
+
+
+def from_himalayas(board):
+    cursor, pages = None, 0
+    while pages < 10:
+        d = fetch_json("https://himalayas.app/jobs/api?limit=100" + (f"&cursor={cursor}" if cursor else ""))
+        for j in d.get("jobs", []):
+            pub = j.get("pubDate")
+            yield {
+                "jid": str(j.get("guid") or j.get("applicationLink")),
+                "title": j.get("title", ""),
+                "company": j.get("companyName", ""),
+                "location": remote_loc(j.get("locationRestrictions")),
+                "url": j.get("applicationLink") or j.get("guid", ""),
+                "posted": iso(pub * 1000 if isinstance(pub, (int, float)) and pub < 1e12 else pub),
+                "etype": j.get("employmentType", ""),
+            }
+        cursor, pages = d.get("nextCursor"), pages + 1
+        if not cursor or not d.get("jobs"):
+            break
+
+
 FETCHERS = {
     "greenhouse": from_greenhouse,
     "lever": from_lever,
     "ashby": from_ashby,
     "workable": from_workable,
     "smartrecruiters": from_smartrecruiters,
+    "remoteok": from_remoteok,
+    "remotive": from_remotive,
+    "himalayas": from_himalayas,
 }
+AGGREGATORS = {"remoteok": "Remote OK", "remotive": "Remotive", "himalayas": "Himalayas"}
 
 
 FOREIGN = re.compile(r"[぀-ヿ㐀-䶿一-鿿ｦ-ﾟ]")  # 일본어 가나·한자(중국어 포함)
@@ -217,7 +280,7 @@ def main():
                 jid = f'{src["ats"]}:{src["board"]}:{r["jid"]}'
                 jobs[jid] = {
                     "id": jid,
-                    "company": src["company"],
+                    "company": (r.get("company") or src["company"]).strip(),
                     "title": clean_title(r["title"]),
                     "category": cat,
                     "senior": bool(re.search(SENIOR, r["title"].lower())),
@@ -226,7 +289,7 @@ def main():
                     "url": r["url"],
                     "posted": r["posted"],
                     "firstSeen": prev.get(jid, {}).get("firstSeen", today),
-                    "source": src["ats"],
+                    "source": AGGREGATORS.get(src["ats"], src["ats"]),
                 }
                 entry["kept"] += 1
             entry["ok"] = True
