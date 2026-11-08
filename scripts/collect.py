@@ -52,12 +52,19 @@ def iso(v):
     return str(v)[:10]
 
 
+# 자체 채용 사이트를 쓰는 회사는 absolute_url이 채용 홈페이지(?gh_jid=)로 가므로, 브라우저에서 확인한 공고 전용 주소를 쓴다.
+GH_JOB_URL = {
+    "daangn": "https://careers.daangn.com/jobs/role/{id}/",
+    "coupang": "https://job-boards.greenhouse.io/coupang/jobs/{id}",  # coupang.jobs의 해당 공고 페이지로 이동
+    "stripe": "https://stripe.com/jobs/listing/x/{id}",
+    "thunes": "https://job-boards.greenhouse.io/embed/job_app?for=thunes&token={id}",
+}
+
+
 def gh_url(board, j):
-    """자체 채용 사이트를 쓰는 회사는 absolute_url이 채용 홈페이지(?gh_jid=)로 가므로, 공고 전용 페이지로 바꾼다."""
-    u = j.get("absolute_url", "")
-    if "greenhouse.io" in u:
-        return u
-    return f"https://job-boards.greenhouse.io/embed/job_app?for={board}&token={j['id']}"
+    if board in GH_JOB_URL:
+        return GH_JOB_URL[board].format(id=j["id"])
+    return j.get("absolute_url", "")
 
 
 def from_greenhouse(board):

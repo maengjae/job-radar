@@ -1,5 +1,5 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters | remoteok | remotive | himalayas. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 실패한 출처는 대시보드 하단 '수집 상태'에 표시됩니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters | remoteok | remotive | himalayas. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
   "sources": [
     {
       "company": "Mercari",
@@ -30,11 +30,6 @@
       "company": "Moloco",
       "ats": "greenhouse",
       "board": "moloco"
-    },
-    {
-      "company": "Sendbird",
-      "ats": "greenhouse",
-      "board": "sendbird"
     },
     {
       "company": "Stripe",
@@ -125,11 +120,6 @@
       "company": "무신사",
       "ats": "ashby",
       "board": "musinsa"
-    },
-    {
-      "company": "루닛",
-      "ats": "workable",
-      "board": "lunit"
     },
     {
       "company": "2C2P",
@@ -225,11 +215,6 @@
       "company": "Ninja Van",
       "ats": "lever",
       "board": "ninjavan"
-    },
-    {
-      "company": "FuriosaAI",
-      "ats": "greenhouse",
-      "board": "furiosaai"
     },
     {
       "company": "Remote OK (원격 공고 모음)",
