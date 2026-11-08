@@ -1,38 +1,175 @@
 {
  "_comment": "바로가기 탭에 보이는 링크. 자동 수집이 안 되는 회사의 채용 페이지와 공고 모음 사이트입니다. 자유롭게 추가·삭제하세요.",
  "groups": [
-  {"name": "국내 IT·플랫폼", "sites": [
-   {"name": "토스", "url": "https://toss.im/career/jobs", "note": "토스·토스뱅크·토스증권 등 계열사 전체"},
-   {"name": "네이버", "url": "https://recruit.navercorp.com", "note": "네이버·네이버클라우드·웹툰 등"},
-   {"name": "카카오", "url": "https://careers.kakao.com", "note": "카카오 본사·공동체"},
-   {"name": "카카오뱅크", "url": "https://recruit.kakaobank.com", "note": ""},
-   {"name": "라인플러스", "url": "https://careers.linecorp.com/ko", "note": "LINE 한국 법인"},
-   {"name": "우아한형제들 (배민)", "url": "https://career.woowahan.com", "note": ""}
-  ]},
-  {"name": "국내 대기업·금융", "sites": [
-   {"name": "삼성 커리어스", "url": "https://www.samsungcareers.com", "note": "삼성전자·삼성SDS 등"},
-   {"name": "LG 커리어스", "url": "https://careers.lg.com", "note": "LG CNS·LG전자 등"},
-   {"name": "SK 커리어스", "url": "https://www.skcareers.com", "note": "SK C&C·SK텔레콤 등"},
-   {"name": "현대자동차그룹", "url": "https://talent.hyundai.com", "note": "현대오토에버 포함"},
-   {"name": "한화", "url": "https://www.hanwhain.com", "note": "한화시스템 ICT 등"},
-   {"name": "롯데", "url": "https://recruit.lotte.com", "note": "롯데이노베이트 등"},
-   {"name": "CJ", "url": "https://recruit.cj.net", "note": "CJ올리브네트웍스 등"},
-   {"name": "KB금융", "url": "https://careers.kbfg.com", "note": "KB국민은행 등"}
-  ]},
-  {"name": "해외 기업", "sites": [
-   {"name": "LY Corporation", "url": "https://www.lycorp.co.jp/en/recruit/", "note": "LINE·Yahoo! JAPAN"},
-   {"name": "Rakuten", "url": "https://rakuten.careers", "note": "도쿄"},
-   {"name": "Amazon / AWS", "url": "https://www.amazon.jobs", "note": "서울·도쿄·싱가포르"},
-   {"name": "Google", "url": "https://www.google.com/about/careers/applications/", "note": ""},
-   {"name": "Microsoft", "url": "https://jobs.careers.microsoft.com", "note": ""},
-   {"name": "Grab", "url": "https://www.grab.careers", "note": "싱가포르"},
-   {"name": "Shopee", "url": "https://careers.shopee.sg", "note": "싱가포르"}
-  ]},
-  {"name": "공고 모음 사이트", "sites": [
-   {"name": "Japan Dev", "url": "https://japan-dev.com/jobs", "note": "일본, 영어 가능·비자 지원 공고"},
-   {"name": "자소설닷컴", "url": "https://jasoseol.com", "note": "국내 대기업 공채"},
-   {"name": "원티드", "url": "https://www.wanted.co.kr", "note": "국내 IT 경력직"},
-   {"name": "리멤버 커리어", "url": "https://career.rememberapp.co.kr", "note": "국내 경력직"}
-  ]}
+  {
+   "name": "피플앤잡 (외국계 기업)",
+   "sites": [
+    {
+     "name": "피플앤잡 Tech 큐레이션",
+     "url": "https://www.peoplenjob.com/curations/tech",
+     "note": "개발·엔지니어 공고 모음"
+    },
+    {
+     "name": "피플앤잡 IT 채용관",
+     "url": "https://www.peoplenjob.com/jobfairs/it",
+     "note": "IT 기업 집중 채용"
+    },
+    {
+     "name": "피플앤잡 SW 채용관",
+     "url": "https://www.peoplenjob.com/jobfairs/sw",
+     "note": "소프트웨어 기업 집중 채용"
+    },
+    {
+     "name": "피플앤잡 전체 공고",
+     "url": "https://www.peoplenjob.com/jobs",
+     "note": "외국계 한국지사·해외 근무 공고"
+    }
+   ]
+  },
+  {
+   "name": "국내 IT·플랫폼",
+   "sites": [
+    {
+     "name": "토스",
+     "url": "https://toss.im/career/jobs",
+     "note": "토스·토스뱅크·토스증권 등 계열사 전체"
+    },
+    {
+     "name": "네이버",
+     "url": "https://recruit.navercorp.com",
+     "note": "네이버·네이버클라우드·웹툰 등"
+    },
+    {
+     "name": "카카오",
+     "url": "https://careers.kakao.com",
+     "note": "카카오 본사·공동체"
+    },
+    {
+     "name": "카카오뱅크",
+     "url": "https://recruit.kakaobank.com",
+     "note": ""
+    },
+    {
+     "name": "라인플러스",
+     "url": "https://careers.linecorp.com/ko",
+     "note": "LINE 한국 법인"
+    },
+    {
+     "name": "우아한형제들 (배민)",
+     "url": "https://career.woowahan.com",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "name": "국내 대기업·금융",
+   "sites": [
+    {
+     "name": "삼성 커리어스",
+     "url": "https://www.samsungcareers.com",
+     "note": "삼성전자·삼성SDS 등"
+    },
+    {
+     "name": "LG 커리어스",
+     "url": "https://careers.lg.com",
+     "note": "LG CNS·LG전자 등"
+    },
+    {
+     "name": "SK 커리어스",
+     "url": "https://www.skcareers.com",
+     "note": "SK C&C·SK텔레콤 등"
+    },
+    {
+     "name": "현대자동차그룹",
+     "url": "https://talent.hyundai.com",
+     "note": "현대오토에버 포함"
+    },
+    {
+     "name": "한화",
+     "url": "https://www.hanwhain.com",
+     "note": "한화시스템 ICT 등"
+    },
+    {
+     "name": "롯데",
+     "url": "https://recruit.lotte.com",
+     "note": "롯데이노베이트 등"
+    },
+    {
+     "name": "CJ",
+     "url": "https://recruit.cj.net",
+     "note": "CJ올리브네트웍스 등"
+    },
+    {
+     "name": "KB금융",
+     "url": "https://careers.kbfg.com",
+     "note": "KB국민은행 등"
+    }
+   ]
+  },
+  {
+   "name": "해외 기업",
+   "sites": [
+    {
+     "name": "LY Corporation",
+     "url": "https://www.lycorp.co.jp/en/recruit/",
+     "note": "LINE·Yahoo! JAPAN"
+    },
+    {
+     "name": "Rakuten",
+     "url": "https://rakuten.careers",
+     "note": "도쿄"
+    },
+    {
+     "name": "Amazon / AWS",
+     "url": "https://www.amazon.jobs",
+     "note": "서울·도쿄·싱가포르"
+    },
+    {
+     "name": "Google",
+     "url": "https://www.google.com/about/careers/applications/",
+     "note": ""
+    },
+    {
+     "name": "Microsoft",
+     "url": "https://jobs.careers.microsoft.com",
+     "note": ""
+    },
+    {
+     "name": "Grab",
+     "url": "https://www.grab.careers",
+     "note": "싱가포르"
+    },
+    {
+     "name": "Shopee",
+     "url": "https://careers.shopee.sg",
+     "note": "싱가포르"
+    }
+   ]
+  },
+  {
+   "name": "공고 모음 사이트",
+   "sites": [
+    {
+     "name": "Japan Dev",
+     "url": "https://japan-dev.com/jobs",
+     "note": "일본, 영어 가능·비자 지원 공고"
+    },
+    {
+     "name": "자소설닷컴",
+     "url": "https://jasoseol.com",
+     "note": "국내 대기업 공채"
+    },
+    {
+     "name": "원티드",
+     "url": "https://www.wanted.co.kr",
+     "note": "국내 IT 경력직"
+    },
+    {
+     "name": "리멤버 커리어",
+     "url": "https://career.rememberapp.co.kr",
+     "note": "국내 경력직"
+    }
+   ]
+  }
  ]
 }
