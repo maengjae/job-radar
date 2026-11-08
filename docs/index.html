@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Radar</title>
+<meta name="description" content="매일 자동으로 갱신되는 백엔드·클라우드 채용 공고 대시보드">
+<style>
+  :root {
+    --bg: #f7f6f3; --panel: #ffffff; --fg: #1f1e1c; --muted: #6b6862; --line: #e4e1da;
+    --accent: #2f6fdf; --new: #1f8a4c; --bad: #c2412d; --chip: #f0eee9;
+    --radius: 10px;
+    --sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Iowan Old Style", "Noto Serif KR", Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171716; --panel: #212120; --fg: #ecebe7; --muted: #a3a09a; --line: #34332f;
+      --accent: #7aa7ff; --new: #5ccf8a; --bad: #ff8a73; --chip: #2b2a28;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171716; --panel: #212120; --fg: #ecebe7; --muted: #a3a09a; --line: #34332f;
+    --accent: #7aa7ff; --new: #5ccf8a; --bad: #ff8a73; --chip: #2b2a28;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.5; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 16px 64px; display: grid; gap: 20px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0; letter-spacing: -.01em; }
+  .lede { margin: 4px 0 0; color: var(--muted); }
+  .lede b { color: var(--fg); font-weight: 600; }
+  .tiles { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; min-width: 0; }
+  .tile-label { margin: 0; font-size: .8rem; color: var(--muted); }
+  .tile-value { margin: 4px 0 0; font-family: var(--serif); font-size: 2rem; font-variant-numeric: tabular-nums; }
+  .tile-value.new { color: var(--new); }
+  .card h2 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+  .note { margin: 2px 0 14px; font-size: .8rem; color: var(--muted); }
+  .grid2 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font: inherit; font-size: .8rem; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--chip); color: var(--fg); cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .chip .n { opacity: .65; margin-left: 4px; font-variant-numeric: tabular-nums; }
+  select, input[type=search] { font: inherit; font-size: .85rem; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--fg); }
+  input[type=search] { flex: 1 1 180px; min-width: 0; }
+  label.toggle { font-size: .85rem; display: inline-flex; gap: 6px; align-items: center; color: var(--muted); cursor: pointer; }
+  .scroll { max-height: 70vh; overflow: auto; border-top: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  th { position: sticky; top: 0; background: var(--panel); text-align: left; font-weight: 500; color: var(--muted); padding: 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td a { color: var(--fg); text-decoration: none; font-weight: 500; }
+  td a:hover { color: var(--accent); text-decoration: underline; }
+  .sub { display: block; color: var(--muted); font-size: .78rem; margin-top: 2px; }
+  .badge { display: inline-block; font-size: .7rem; padding: 1px 7px; border-radius: 999px; margin-left: 6px; vertical-align: 1px; border: 1px solid currentColor; }
+  .badge.new { color: var(--new); }
+  .badge.senior { color: var(--muted); }
+  .badge.soon { color: var(--bad); }
+  .nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .muted { color: var(--muted); }
+  .empty { color: var(--muted); font-size: .85rem; padding: 16px 0 0; }
+  .bars { display: flex; align-items: flex-end; gap: 3px; height: 90px; }
+  .bars div { flex: 1; background: var(--accent); opacity: .75; border-radius: 3px 3px 0 0; min-height: 2px; position: relative; }
+  .bars div:hover { opacity: 1; }
+  .axis { display: flex; justify-content: space-between; font-size: .72rem; color: var(--muted); margin-top: 6px; }
+  .regions { display: grid; gap: 8px; }
+  .rrow { display: grid; grid-template-columns: 80px 1fr 36px; gap: 8px; align-items: center; font-size: .82rem; }
+  .rbar { height: 10px; background: var(--chip); border-radius: 999px; overflow: hidden; }
+  .rbar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  details summary { cursor: pointer; font-weight: 600; }
+  .status { font-size: .8rem; margin-top: 12px; }
+  .status td { padding: 6px 8px; }
+  .ok { color: var(--new); } .err { color: var(--bad); }
+  footer { font-size: .78rem; color: var(--muted); }
+  footer a { color: inherit; }
+  @media (max-width: 640px) { .hide-narrow { display: none; } .wrap { padding-top: 20px; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Job Radar</h1>
+    <p class="lede" id="lede">공고를 불러오는 중…</p>
+  </header>
+
+  <section class="tiles">
+    <div class="card"><p class="tile-label">진행 중 공고</p><p class="tile-value" id="t-total">—</p></div>
+    <div class="card"><p class="tile-label">오늘 새로 올라온 공고</p><p class="tile-value new" id="t-new">—</p></div>
+    <div class="card"><p class="tile-label">해외 공고</p><p class="tile-value" id="t-abroad">—</p></div>
+    <div class="card"><p class="tile-label">회사 수</p><p class="tile-value" id="t-co">—</p></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <h2>지역별 공고</h2>
+      <p class="note">시니어 직급 제외 기준</p>
+      <div class="regions" id="regions"></div>
+    </div>
+    <div class="card">
+      <h2>날짜별 신규 공고</h2>
+      <p class="note">매일 수집 때 처음 발견된 공고 수</p>
+      <div class="bars" id="bars"></div>
+      <div class="axis" id="axis"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>공고 목록</h2>
+    <p class="note">새로 발견된 공고가 위에 옵니다. <b>NEW</b>는 오늘 처음 발견된 공고입니다. 공고 원문에서 접수 여부를 꼭 확인하세요.</p>
+    <div class="filters">
+      <div class="chips" id="region-chips" role="group" aria-label="지역"></div>
+    </div>
+    <div class="filters">
+      <select id="cat" aria-label="직무"><option value="">직무 전체</option></select>
+      <input id="q" type="search" placeholder="회사·공고명·기술 검색" aria-label="검색">
+      <label class="toggle"><input type="checkbox" id="junior" checked> 시니어 직급 숨기기</label>
+      <label class="toggle"><input type="checkbox" id="onlynew"> 최근 7일 신규만</label>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>회사</th><th>공고</th><th class="hide-narrow">직무</th><th>지역</th><th class="hide-narrow">발견일</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="empty" id="empty" hidden>조건에 맞는 공고가 없습니다.</p>
+  </section>
+
+  <section class="card">
+    <details>
+      <summary>수집 상태</summary>
+      <p class="note" id="status-note"></p>
+      <div class="scroll" style="max-height:none">
+        <table class="status"><thead><tr><th>회사</th><th>채용 시스템</th><th>상태</th><th>수집/전체</th></tr></thead><tbody id="status"></tbody></table>
+      </div>
+    </details>
+  </section>
+
+  <footer>GitHub Actions가 매일 아침 7시 30분(KST)에 공개 채용 API를 확인해 갱신합니다. 회사 목록은 저장소의 <code>sources.json</code>, 직접 추가하는 공고는 <code>docs/data/curated.json</code>에서 바꿀 수 있습니다.</footer>
+</main>
+
+<script>
+(async function () {
+  const $ = (id) => document.getElementById(id);
+  const get = async (p, d) => { try { const r = await fetch(p + '?t=' + Date.now()); return r.ok ? await r.json() : d; } catch { return d; } };
+  const [data, status, hist] = await Promise.all([get('data/jobs.json', {jobs: []}), get('data/status.json', {sources: []}), get('data/history.json', [])]);
+  const jobs = data.jobs || [];
+  const kstToday = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  const runDay = (data.updatedAt || '').slice(0, 10) || kstToday;
+  const daysAgo = (d, n) => { const t = new Date(d + 'T00:00:00Z'); t.setUTCDate(t.getUTCDate() - n); return t.toISOString().slice(0, 10); };
+  const REGIONS = ['한국', '일본', '싱가포르', '아시아 기타', '원격'];
+  const state = {region: '', cat: '', q: '', junior: true, onlynew: false};
+  try { Object.assign(state, JSON.parse(localStorage.getItem('jr-state') || '{}')); } catch {}
+  const save = () => { try { localStorage.setItem('jr-state', JSON.stringify(state)); } catch {} };
+  const fmt = new Intl.NumberFormat('ko-KR');
+
+  // 요약
+  const visible = jobs.filter((j) => !j.senior);
+  const newToday = jobs.filter((j) => j.firstSeen === runDay);
+  $('t-total').textContent = fmt.format(jobs.length);
+  $('t-new').textContent = fmt.format(newToday.length);
+  $('t-abroad').textContent = fmt.format(jobs.filter((j) => j.region !== '한국').length);
+  $('t-co').textContent = fmt.format(new Set(jobs.map((j) => j.company)).size);
+  const upd = data.updatedAt ? data.updatedAt.replace('T', ' ').slice(0, 16) : '아직 없음';
+  $('lede').textContent = '';
+  $('lede').append('마지막 갱신 ', Object.assign(document.createElement('b'), {textContent: upd}), ` · 오늘 새로 발견된 공고 ${newToday.length}건 (시니어 제외 ${newToday.filter((j) => !j.senior).length}건)`);
+
+  // 지역 막대
+  const rc = {}; visible.forEach((j) => { rc[j.region] = (rc[j.region] || 0) + 1; });
+  const rmax = Math.max(1, ...Object.values(rc));
+  $('regions').replaceChildren(...REGIONS.map((r) => {
+    const row = document.createElement('div'); row.className = 'rrow';
+    const bar = document.createElement('div'); bar.className = 'rbar';
+    const fill = document.createElement('span'); fill.style.width = ((rc[r] || 0) / rmax * 100) + '%'; bar.append(fill);
+    row.append(Object.assign(document.createElement('span'), {textContent: r}), bar, Object.assign(document.createElement('span'), {textContent: rc[r] || 0, className: 'nowrap muted'}));
+    return row;
+  }));
+
+  // 날짜별 신규
+  const h = hist.slice(-30);
+  const hmax = Math.max(1, ...h.map((x) => x.new));
+  $('bars').replaceChildren(...h.map((x) => { const b = document.createElement('div'); b.style.height = (x.new / hmax * 100) + '%'; b.title = `${x.date}: 신규 ${x.new}건 / 전체 ${x.total}건`; return b; }));
+  $('axis').replaceChildren(...(h.length ? [h[0].date.slice(5), h[h.length - 1].date.slice(5)] : ['기록 없음']).map((t) => Object.assign(document.createElement('span'), {textContent: t})));
+
+  // 필터
+  const cats = [...new Set(jobs.map((j) => j.category))].sort();
+  cats.forEach((c) => $('cat').append(new Option(c, c)));
+  const chips = () => {
+    const base = jobs.filter((j) => !state.junior || !j.senior);
+    const opts = [['', '전체', base.length], ['abroad', '해외 전체', base.filter((j) => j.region !== '한국').length], ...REGIONS.map((r) => [r, r, base.filter((j) => j.region === r).length])];
+    $('region-chips').replaceChildren(...opts.map(([v, label, n]) => {
+      const b = document.createElement('button'); b.className = 'chip'; b.type = 'button';
+      b.setAttribute('aria-pressed', String(state.region === v));
+      b.append(label, Object.assign(document.createElement('span'), {className: 'n', textContent: n}));
+      b.onclick = () => { state.region = v; render(); };
+      return b;
+    }));
+  };
+  const render = () => {
+    save(); chips();
+    $('cat').value = state.cat; $('junior').checked = state.junior; $('onlynew').checked = state.onlynew;
+    if ($('q') !== document.activeElement) $('q').value = state.q;
+    const q = state.q.trim().toLowerCase();
+    const since = daysAgo(runDay, 6);
+    const rows = jobs.filter((j) =>
+      (!state.region || (state.region === 'abroad' ? j.region !== '한국' : j.region === state.region)) &&
+      (!state.cat || j.category === state.cat) &&
+      (!state.junior || !j.senior) &&
+      (!state.onlynew || j.firstSeen >= since) &&
+      (!q || [j.company, j.title, j.location, j.note].join(' ').toLowerCase().includes(q)));
+    $('rows').replaceChildren(...rows.map((j) => {
+      const tr = document.createElement('tr');
+      const td = (t, cls) => { const c = document.createElement('td'); if (t !== undefined) c.textContent = t; if (cls) c.className = cls; return c; };
+      const t = td(); const a = document.createElement('a');
+      a.href = j.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = j.title; t.append(a);
+      if (j.firstSeen === runDay) t.append(Object.assign(document.createElement('span'), {className: 'badge new', textContent: 'NEW'}));
+      if (j.senior) t.append(Object.assign(document.createElement('span'), {className: 'badge senior', textContent: '시니어'}));
+      if (j.deadline && /^\d{4}-/.test(j.deadline) && j.deadline <= daysAgo(runDay, -3)) t.append(Object.assign(document.createElement('span'), {className: 'badge soon', textContent: '마감 ' + j.deadline.slice(5)}));
+      const sub = [j.location, j.note].filter(Boolean).join(' · ');
+      if (sub) t.append(Object.assign(document.createElement('span'), {className: 'sub', textContent: sub}));
+      tr.append(td(j.company), t, td(j.category, "hide-narrow muted nowrap"), td(j.region, 'nowrap'), td(j.firstSeen, 'nowrap muted hide-narrow'));
+      return tr;
+    }));
+    $('empty').hidden = rows.length > 0;
+  };
+  $('cat').onchange = (e) => { state.cat = e.target.value; render(); };
+  $('q').oninput = (e) => { state.q = e.target.value; render(); };
+  $('junior').onchange = (e) => { state.junior = e.target.checked; render(); };
+  $('onlynew').onchange = (e) => { state.onlynew = e.target.checked; render(); };
+  render();
+
+  // 수집 상태
+  const src = status.sources || [];
+  $('status-note').textContent = `${src.filter((s) => s.ok).length}/${src.length}개 출처 정상 · 직접 추가 공고 ${jobs.filter((j) => j.source === '직접 추가').length}건 포함`;
+  $('status').replaceChildren(...src.map((s) => {
+    const tr = document.createElement('tr');
+    const st = document.createElement('td'); st.className = s.ok ? 'ok' : 'err'; st.textContent = s.ok ? '정상' : (s.error || '실패');
+    tr.append(Object.assign(document.createElement('td'), {textContent: s.company}), Object.assign(document.createElement('td'), {textContent: `${s.ats}:${s.board}`, className: 'muted'}), st, Object.assign(document.createElement('td'), {textContent: `${s.kept}/${s.total}`, className: 'nowrap'}));
+    return tr;
+  }));
+})();
+</script>
+</body>
+</html>
