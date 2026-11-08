@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T22:21+09:00",
+ "updatedAt": "2026-11-08T22:24+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -478,6 +478,70 @@
    "ats": "workday",
    "board": "workday|wd5|Workday|Seoul",
    "total": 1,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "NAVER",
+   "ats": "naver",
+   "board": "all",
+   "total": 36,
+   "kept": 4,
+   "ok": true
+  },
+  {
+   "company": "카카오",
+   "ats": "kakao",
+   "board": "tech",
+   "total": 36,
+   "kept": 8,
+   "ok": true
+  },
+  {
+   "company": "카카오뱅크",
+   "ats": "kakaobank",
+   "board": "all",
+   "total": 96,
+   "kept": 2,
+   "ok": true
+  },
+  {
+   "company": "LG",
+   "ats": "lg",
+   "board": "all",
+   "total": 80,
+   "kept": 7,
+   "ok": true
+  },
+  {
+   "company": "SK",
+   "ats": "sk",
+   "board": "all",
+   "total": 145,
+   "kept": 12,
+   "ok": true
+  },
+  {
+   "company": "현대자동차",
+   "ats": "hyundai",
+   "board": "all",
+   "total": 49,
+   "kept": 5,
+   "ok": true
+  },
+  {
+   "company": "CJ",
+   "ats": "cj",
+   "board": "all",
+   "total": 118,
+   "kept": 6,
+   "ok": true
+  },
+  {
+   "company": "KB금융",
+   "ats": "kb",
+   "board": "all",
+   "total": 5,
    "kept": 0,
    "ok": true
   }
