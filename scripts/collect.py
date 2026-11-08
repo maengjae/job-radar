@@ -24,7 +24,7 @@ ROLE_RULES = [
     ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
     ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자"),
 ]
-EXCLUDE = r"intern(ship)?\b|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
+EXCLUDE = r"intern(ship)?\b|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
 
 # 지역 판별: 아시아·원격만 남긴다
@@ -75,6 +75,7 @@ def from_lever(board):
             "location": " / ".join(x for x in locs if x),
             "url": j.get("hostedUrl", ""),
             "posted": iso(j.get("createdAt")),
+            "etype": cat.get("commitment", ""),
         }
 
 
@@ -90,6 +91,7 @@ def from_ashby(board):
             "location": " / ".join(x for x in locs if x) + (" (Remote)" if j.get("isRemote") else ""),
             "url": j.get("jobUrl", ""),
             "posted": iso(j.get("publishedAt")),
+            "etype": j.get("employmentType", ""),
         }
 
 
@@ -105,6 +107,7 @@ def from_workable(board):
             "location": loc,
             "url": j.get("url") or j.get("application_url", ""),
             "posted": iso(j.get("published_on") or j.get("created_at")),
+            "etype": j.get("employment_type") or j.get("type") or "",
         }
 
 
@@ -121,6 +124,7 @@ def from_smartrecruiters(board):
                 "location": ", ".join(x for x in [loc.get("city"), loc.get("country")] if x) + (" (Remote)" if loc.get("remote") else ""),
                 "url": f"https://jobs.smartrecruiters.com/{board}/{j['id']}",
                 "posted": iso(j.get("releasedDate")),
+                "etype": (j.get("typeOfEmployment") or {}).get("label", ""),
             }
         offset += 100
         if not d.get("content"):
@@ -154,6 +158,15 @@ def classify(title):
         if re.search(pat, t):
             return name
     return None
+
+
+def is_permanent(etype):
+    """채용 시스템이 알려준 고용 형태가 있으면 정규직만 통과. 정보가 없으면 제목 필터에 맡긴다."""
+    e = str(etype or "").lower().replace("-", "").replace("_", "").replace(" ", "")
+    if not e:
+        return True
+    return e in {"fulltime", "permanent", "regular", "정규직", "fulltimeemployee"} or (
+        "fulltime" in e and not any(w in e for w in ("contract", "temp", "fixed", "intern")))
 
 
 def clean_title(title):
@@ -195,6 +208,8 @@ def main():
             raw = list(FETCHERS[src["ats"]](src["board"]))
             entry["total"] = len(raw)
             for r in raw:
+                if not is_permanent(r.get("etype", "")):
+                    continue
                 cat = classify(r["title"])
                 reg = region_of(r["location"])
                 if not cat or not reg:
