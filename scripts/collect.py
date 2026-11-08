@@ -245,6 +245,159 @@ def from_line(board):
         }
 
 
+# ── 국내 대기업 자체 채용 사이트 (robots.txt 허용 확인) ──
+
+def post_form(url, form):
+    import urllib.parse
+    req = urllib.request.Request(url, data=urllib.parse.urlencode(form).encode(), headers={"User-Agent": UA, "Accept": "application/json", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def from_lg(board):
+    d = post_json("https://api.careers.lg.com/rmk/search/retrieveJobNoticesList", {"lnbSearch": "", "hashTagText": "", "recDate": "POST_START_DATE", "order": "DESC", "careerList": [], "companyCodeList": [], "desireLocList": [], "jobGroupList": []})
+    for j in d["data"]["jobNoticeList"]:
+        if j.get("noticeStatus") not in (None, "POSTING"):
+            continue
+        yield {
+            "jid": str(j["jobNoticeId"]),
+            "title": j.get("jobNoticeName", ""),
+            "company": j.get("companyName") or "LG",
+            "location": (j.get("workLocationName") or "") + " Korea",
+            "url": f"https://careers.lg.com/apply/detail?id={j['jobNoticeId']}",
+            "posted": None,
+            "deadline": (j.get("recEndDateTime") or "")[:10].replace(".", "-") or None,
+        }
+
+
+def from_sk(board):
+    d = post_form("https://www.skcareers.com/Recruit/GetRecruitList", {"sort": "2", "searchText": "", "corpCode": "", "jobRole": "0", "recruitType": "", "workingType": "", "workingRegion": ""})
+    for j in d.get("list", []):
+        yield {
+            "jid": j["noticeID"],
+            "title": j.get("title", ""),
+            "company": j.get("corpName") or "SK",
+            "location": (j.get("workingArea") or "") + " Korea",
+            "url": f"https://www.skcareers.com/Recruit/Detail/{j['noticeID']}",
+            "posted": None,
+            "etype": j.get("workingType", ""),
+        }
+
+
+def from_hyundai(board):
+    d = fetch_json("https://talent.hyundai.com/api/rec/AP-HM-FO-02700?hgrCd=1&lang=ko&page=1&pageblock=200&searchFieldList=&searchOccupList=&searchPlaceList=&searchSectorList=&searchText=&jdSec=&srcOrd=")
+    for j in d["data"]["list"]:
+        end = j.get("applyEndDt") or ""
+        yield {
+            "jid": f'{j["recuYy"]}-{j["recuType"]}-{j["recuCls"]}',
+            "title": j.get("recuNoticeNm", ""),
+            "company": "현대자동차",
+            "location": "Korea",
+            "url": f'https://talent.hyundai.com/apply/applyView.hc?recuYy={j["recuYy"]}&recuType={j["recuType"]}&recuCls={j["recuCls"]}',
+            "posted": None,
+            "deadline": f"{end[:4]}-{end[4:6]}-{end[6:8]}" if len(end) == 8 else None,
+        }
+
+
+def from_cj(board):
+    d = post_json("https://recruit.cj.net/recruit/ko/recruit/recruit/searchNewGonggoList.fo", {"pageVal": "1", "pageIndex": "300", "orderDesc": "1", "sch_title": "", "arrGubun": "", "arrRecBu": "", "arrRecJob": "", "arrRecArea": "", "schArea": "N"})
+    for j in d.get("ds_newRecruitList", []):
+        if j.get("zz_close_yn") == "Y":
+            continue
+        yield {
+            "jid": str(j.get("zz_jo_num")),
+            "title": j.get("zz_title", ""),
+            "company": j.get("compnm") or "CJ",
+            "location": (j.get("location_cd_nm") or "") + " Korea",
+            "url": f'https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num={j.get("zz_jo_num")}',
+            "posted": iso(j.get("zz_str_dt")),
+        }
+
+
+def from_kb(board):
+    page = 1
+    while page <= 10:
+        d = fetch_json(f"https://careers.kbfg.com/api/career/recruites?page={page}&pageSize=50&totalCount=0&totalPageCount=-1&ord=EDDT&affcomCd=&enggTypCd=&carrTypCd=&jbClsfiCd=")
+        items = d["result"].get("recruties") or []
+        for j in items:
+            yield {
+                "jid": str(j["enggId"]),
+                "title": j.get("enggTitl", ""),
+                "company": j.get("affcomNm") or "KB금융",
+                "location": "Korea",
+                "url": j.get("enggLink") or "https://careers.kbfg.com/",
+                "posted": iso(j.get("enggStdt")),
+                "deadline": j.get("enggEddt"),
+                "etype": j.get("enggTypNm", ""),
+            }
+        if len(items) < 50:
+            break
+        page += 1
+
+
+def from_kakao(board):
+    page = 1
+    while page <= 20:
+        d = fetch_json(f"https://careers.kakao.com/public/api/job-list?skillSet=&part=TECHNOLOGY&company=ALL&keyword=&employeeType=&page={page}")
+        items = d.get("jobList") or []
+        for j in items:
+            if j.get("closeFlag"):
+                continue
+            yield {
+                "jid": j["realId"],
+                "title": re.sub(r"^\[공동체\]\s*", "", j.get("jobOfferTitle", "")),
+                "company": j.get("companyName") or "카카오",
+                "location": (j.get("locationName") or "") + " Korea",
+                "url": f"https://careers.kakao.com/jobs/{j['realId']}",
+                "posted": iso(j.get("regDate")),
+                "etype": j.get("employeeTypeName", ""),
+            }
+        if not items or page >= (d.get("totalPage") or page):
+            break
+        page += 1
+
+
+def from_kakaobank(board):
+    page, pages = 1, 1
+    while page <= min(pages, 20):
+        d = post_json("https://recruit.kakaobank.com/api/recruits", {"pageNumber": page, "pageSize": 20})
+        pages = (d.get("paging") or {}).get("totalPages") or 1
+        for j in d.get("list", []):
+            yield {
+                "jid": str(j["recruitNoticeSn"]),
+                "title": j.get("recruitNoticeName", ""),
+                "company": "카카오뱅크",
+                "location": "Korea",
+                "url": f"https://recruit.kakaobank.com/jobs/{j['recruitNoticeSn']}",
+                "posted": iso(j.get("receiveStartDatetime")),
+                "deadline": (j.get("receiveEndDatetime") or "")[:10] or None,
+            }
+        page += 1
+
+
+def from_naver(board):
+    first, seen = 0, set()
+    while first < 1000:
+        d = fetch_json(f"https://recruit.navercorp.com/rcrt/loadJobList.do?annoId=&sw=&subJobCdArr=&sysCompanyCdArr=&empTypeCdArr=&entTypeCdArr=&workAreaCdArr=&firstIndex={first}")
+        items = [j for j in d.get("list") or [] if j["annoId"] not in seen]
+        if not items:
+            break
+        for j in items:
+            seen.add(j["annoId"])
+            end = j.get("endYmd") or ""
+            yield {
+                "jid": str(j["annoId"]),
+                "title": re.sub(r"^\[[^\]]+\]\s*", "", j.get("annoSubject", "")),
+                "company": j.get("sysCompanyCdNm") or "NAVER",
+                "location": "Korea",
+                "url": j.get("jobDetailLink") or f"https://recruit.navercorp.com/rcrt/view.do?annoId={j['annoId']}",
+                "posted": None,
+                "deadline": f"{end[:4]}-{end[4:6]}-{end[6:8]}" if len(end) == 8 else None,
+                "etype": j.get("empTypeCdNm", ""),
+            }
+        first += len(items)
+
+
 # ── 공고 모음 사이트 (공개 API, 출처 표기 조건 준수: 각 공고 링크가 원 사이트로 연결됨) ──
 
 def remote_loc(restr):
@@ -317,6 +470,14 @@ FETCHERS = {
     "amazon": from_amazon,
     "toss": from_toss,
     "line": from_line,
+    "lg": from_lg,
+    "sk": from_sk,
+    "hyundai": from_hyundai,
+    "cj": from_cj,
+    "kb": from_kb,
+    "kakao": from_kakao,
+    "kakaobank": from_kakaobank,
+    "naver": from_naver,
 }
 AGGREGATORS = {"remoteok": "Remote OK", "remotive": "Remotive", "himalayas": "Himalayas"}
 
@@ -391,6 +552,8 @@ def main():
             for r in raw:
                 if not is_permanent(r.get("etype", "")):
                     continue
+                if r.get("deadline") and re.match(r"\d{4}-\d{2}-\d{2}$", str(r["deadline"])) and r["deadline"] < today:
+                    continue  # 마감 지난 공고
                 cat = classify(r["title"])
                 reg = region_of(r["location"])
                 if not cat or not reg:
@@ -409,6 +572,7 @@ def main():
                     "firstSeen": prev.get(jid, {}).get("firstSeen", today),
                     "source": AGGREGATORS.get(src["ats"], src["ats"]),
                     "foreign": bool(src.get("foreign")),
+                    "deadline": r.get("deadline"),
                 }
                 entry["kept"] += 1
             entry["ok"] = True

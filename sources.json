@@ -1,5 +1,5 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | naver | kakao | kakaobank | lg | sk | hyundai | cj | kb | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
   "sources": [
     {
       "company": "Mercari",
@@ -351,6 +351,46 @@
       "ats": "workday",
       "board": "workday|wd5|Workday|Seoul",
       "foreign": true
+    },
+    {
+      "company": "NAVER",
+      "ats": "naver",
+      "board": "all"
+    },
+    {
+      "company": "카카오",
+      "ats": "kakao",
+      "board": "tech"
+    },
+    {
+      "company": "카카오뱅크",
+      "ats": "kakaobank",
+      "board": "all"
+    },
+    {
+      "company": "LG",
+      "ats": "lg",
+      "board": "all"
+    },
+    {
+      "company": "SK",
+      "ats": "sk",
+      "board": "all"
+    },
+    {
+      "company": "현대자동차",
+      "ats": "hyundai",
+      "board": "all"
+    },
+    {
+      "company": "CJ",
+      "ats": "cj",
+      "board": "all"
+    },
+    {
+      "company": "KB금융",
+      "ats": "kb",
+      "board": "all"
     }
   ]
 }
