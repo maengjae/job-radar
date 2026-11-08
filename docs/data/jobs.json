@@ -1,32 +1,6 @@
 {
- "updatedAt": "2026-11-08T12:25+09:00",
+ "updatedAt": "2026-11-08T12:26+09:00",
  "jobs": [
-  {
-   "id": "lever:woven-by-toyota:186fadd6-dec6-4faa-bb73-ff7b20fb8427",
-   "company": "Woven by Toyota",
-   "title": "Executive Assistant, Woven Capital",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/186fadd6-dec6-4faa-bb73-ff7b20fb8427",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
-  {
-   "id": "lever:woven-by-toyota:e3974bb1-7556-4285-96a8-8564f7875df3",
-   "company": "Woven by Toyota",
-   "title": "エグゼクティブアシスタント・Woven Capital",
-   "category": "백엔드",
-   "senior": false,
-   "location": "東京都中央区",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/e3974bb1-7556-4285-96a8-8564f7875df3",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
   {
    "id": "greenhouse:coupang:8344977",
    "company": "쿠팡",
@@ -49,6 +23,19 @@
    "location": "Tokyo / Nagoya, Aichi",
    "region": "일본",
    "url": "https://jobs.lever.co/woven-by-toyota/49ca6b64-6884-48cb-a5a4-4d86cf984d82",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
+   "id": "lever:woven-by-toyota:6e3dc171-c199-4c4c-b6a4-e9f250d56f62",
+   "company": "Woven by Toyota",
+   "title": "バックエンドエンジニア、統合モビリティインフラ・Facility Service System",
+   "category": "클라우드/인프라",
+   "senior": false,
+   "location": "東京都中央区 / 愛知県名古屋市",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/6e3dc171-c199-4c4c-b6a4-e9f250d56f62",
    "posted": "2026-10-30",
    "firstSeen": "2026-11-08",
    "source": "lever"
@@ -704,6 +691,19 @@
    "source": "greenhouse"
   },
   {
+   "id": "lever:woven-by-toyota:00b85096-c298-40a6-9835-587cd304a9d8",
+   "company": "Woven by Toyota",
+   "title": "クラウドエンジニア",
+   "category": "클라우드/인프라",
+   "senior": false,
+   "location": "東京都中央区",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/00b85096-c298-40a6-9835-587cd304a9d8",
+   "posted": "2026-09-04",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
    "id": "workable:mercari:704F38DA2A",
    "company": "Mercari",
    "title": "Product Engineer/プロダクトエンジニア, Backend (New Business) - Mercari Marketplace",
@@ -777,6 +777,19 @@
    "location": "Tokyo",
    "region": "일본",
    "url": "https://jobs.lever.co/woven-by-toyota/48d0a1ef-8167-4083-b178-f26ec1c0e6b8",
+   "posted": "2026-08-21",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
+   "id": "lever:woven-by-toyota:3dd3fe38-098a-4068-98c9-6aad9fd62a8d",
+   "company": "Woven by Toyota",
+   "title": "組み込みソフトウェアエンジニア・ADAS HMI",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "東京都中央区",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/3dd3fe38-098a-4068-98c9-6aad9fd62a8d",
    "posted": "2026-08-21",
    "firstSeen": "2026-11-08",
    "source": "lever"
@@ -1003,6 +1016,19 @@
    "source": "workable"
   },
   {
+   "id": "lever:woven-by-toyota:3cbc0d36-26cf-4477-842c-7160f73e84a4",
+   "company": "Woven by Toyota",
+   "title": "シニア機械学習ソフトウェアエンジニア・Behavior ML Planning & Prediction",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "東京都中央区",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/3cbc0d36-26cf-4477-842c-7160f73e84a4",
+   "posted": "2026-07-14",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
    "id": "ashby:airwallex:aa6d6432-8871-4aea-9c8c-50f60e2bffa2",
    "company": "Airwallex",
    "title": "Senior Software Engineer, Org & Identity",
@@ -1198,14 +1224,14 @@
    "source": "lever"
   },
   {
-   "id": "lever:woven-by-toyota:3b01d9e1-327d-4449-8349-40b7b77db732",
+   "id": "lever:woven-by-toyota:7c1b638d-e5dd-4395-9e57-b627dfd37d60",
    "company": "Woven by Toyota",
-   "title": "テクニカル プロジェクト マネージャー・City Infrastructure",
-   "category": "클라우드/인프라",
+   "title": "バックエンドエンジニア・Robot Platform Software",
+   "category": "백엔드",
    "senior": false,
    "location": "東京都中央区",
    "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/3b01d9e1-327d-4449-8349-40b7b77db732",
+   "url": "https://jobs.lever.co/woven-by-toyota/7c1b638d-e5dd-4395-9e57-b627dfd37d60",
    "posted": "2026-06-15",
    "firstSeen": "2026-11-08",
    "source": "lever"
@@ -1744,6 +1770,19 @@
    "source": "greenhouse"
   },
   {
+   "id": "lever:woven-by-toyota:b0b5bdc1-bb68-4572-87d7-d30426826f84",
+   "company": "Woven by Toyota",
+   "title": "ソフトウェアエンジニア・Teammate Driving",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "東京都中央区",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/b0b5bdc1-bb68-4572-87d7-d30426826f84",
+   "posted": "2025-04-15",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
    "id": "greenhouse:agoda:6750678",
    "company": "Agoda",
    "title": "Lead Software Engineer - Full Stack (Bangkok based, relocation provided)",
@@ -1778,6 +1817,19 @@
    "location": "Tokyo",
    "region": "일본",
    "url": "https://jobs.lever.co/woven-by-toyota/1f287e06-b9b6-425f-9613-05ffbc76003d",
+   "posted": "2025-03-26",
+   "firstSeen": "2026-11-08",
+   "source": "lever"
+  },
+  {
+   "id": "lever:woven-by-toyota:4169f151-5996-4e23-9580-c26980cd8c20",
+   "company": "Woven by Toyota",
+   "title": "ジュニアソフトウェアエンジニア・Driving Planning",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "東京都中央区",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/4169f151-5996-4e23-9580-c26980cd8c20",
    "posted": "2025-03-26",
    "firstSeen": "2026-11-08",
    "source": "lever"
