@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T12:24+09:00",
+ "updatedAt": "2026-11-08T12:25+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -19,12 +19,11 @@
   },
   {
    "company": "SmartNews",
-   "ats": "greenhouse",
+   "ats": "workable",
    "board": "smartnews",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
+   "total": 25,
+   "kept": 2,
+   "ok": true
   },
   {
    "company": "Woven by Toyota",
@@ -36,21 +35,11 @@
   },
   {
    "company": "PayPay",
-   "ats": "lever",
+   "ats": "greenhouse",
    "board": "paypay",
-   "total": 0,
+   "total": 83,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
-  },
-  {
-   "company": "Jamm",
-   "ats": "ashby",
-   "board": "jamm",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
+   "ok": true
   },
   {
    "company": "Moloco",
@@ -142,12 +131,11 @@
   },
   {
    "company": "Airwallex",
-   "ats": "lever",
+   "ats": "ashby",
    "board": "airwallex",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
+   "total": 493,
+   "kept": 28,
+   "ok": true
   },
   {
    "company": "Wise",
@@ -174,15 +162,6 @@
    "ok": true
   },
   {
-   "company": "토스",
-   "ats": "greenhouse",
-   "board": "toss",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
-  },
-  {
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
@@ -191,13 +170,44 @@
    "ok": true
   },
   {
-   "company": "두나무",
+   "company": "Agoda",
    "ats": "greenhouse",
-   "board": "dunamu",
-   "total": 0,
+   "board": "agoda",
+   "total": 340,
+   "kept": 20,
+   "ok": true
+  },
+  {
+   "company": "크래프톤",
+   "ats": "greenhouse",
+   "board": "krafton",
+   "total": 62,
+   "kept": 3,
+   "ok": true
+  },
+  {
+   "company": "당근",
+   "ats": "greenhouse",
+   "board": "daangn",
+   "total": 48,
+   "kept": 19,
+   "ok": true
+  },
+  {
+   "company": "무신사",
+   "ats": "ashby",
+   "board": "musinsa",
+   "total": 2,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 404"
+   "ok": true
+  },
+  {
+   "company": "루닛",
+   "ats": "workable",
+   "board": "lunit",
+   "total": 17,
+   "kept": 3,
+   "ok": true
   }
  ]
 }
