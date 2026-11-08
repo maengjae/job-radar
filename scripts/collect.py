@@ -147,10 +147,23 @@ def classify(title):
         # 영어·한국어가 아닌 글자가 섞인 제목은 영어 부분만으로 직무를 판단한다.
         # 일본어로만 된 공고(예: バックエンドエンジニア)는 여기서 빠진다.
         t = FOREIGN.sub(" ", t)
+        # 영어 부분에 직무명이 있어야 남긴다 (예: "テクニカル プロジェクト マネージャー・City Infrastructure"는 제외)
+        if not re.search(r"engineer|developer|\bsre\b", t):
+            return None
     for name, pat in ROLE_RULES:
         if re.search(pat, t):
             return name
     return None
+
+
+def clean_title(title):
+    """영어·일본어 병기 제목에서 일본어 부분을 지워 영어만 남긴다."""
+    if not FOREIGN.search(title):
+        return title.strip()
+    t = re.sub(r"[　-〿぀-ヿ㐀-䶿一-鿿！-ﾟ・（）【】]+", " ", title)
+    t = re.sub(r"\s*/\s*(?=[,/)\-]|$)|(?<=^)\s*/\s*|\(\s*\)", "", t)
+    t = re.sub(r"\s*/\s*,", ",", t)
+    return re.sub(r"\s{2,}", " ", t).strip(" /,-")
 
 
 def region_of(location):
@@ -190,7 +203,7 @@ def main():
                 jobs[jid] = {
                     "id": jid,
                     "company": src["company"],
-                    "title": r["title"].strip(),
+                    "title": clean_title(r["title"]),
                     "category": cat,
                     "senior": bool(re.search(SENIOR, r["title"].lower())),
                     "location": r["location"],
