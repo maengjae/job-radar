@@ -225,8 +225,13 @@ def from_toss(board):
 
 def from_line(board):
     d = fetch_json("https://careers.linecorp.com/page-data/ko/jobs/page-data.json")
+    today = dt.date.today().isoformat()
     for e in d["result"]["data"]["allStrapiJobs"]["edges"]:
         n = e["node"]
+        if not n.get("publish") or not n.get("is_public"):
+            continue  # 마감·비공개 공고
+        if n.get("end_date") and str(n["end_date"])[:10] < today:
+            continue
         cities = " / ".join(f'{c.get("name", "")} {c.get("country", "")}' for c in n.get("cities") or [])
         jid = n.get("strapiId") or n.get("id")
         yield {
