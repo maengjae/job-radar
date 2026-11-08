@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:07+09:00",
+ "updatedAt": "2026-11-08T21:27+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -47,14 +47,6 @@
    "board": "moloco",
    "total": 47,
    "kept": 2,
-   "ok": true
-  },
-  {
-   "company": "Sendbird",
-   "ats": "greenhouse",
-   "board": "sendbird",
-   "total": 4,
-   "kept": 1,
    "ok": true
   },
   {
@@ -199,14 +191,6 @@
    "board": "musinsa",
    "total": 2,
    "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "루닛",
-   "ats": "workable",
-   "board": "lunit",
-   "total": 17,
-   "kept": 3,
    "ok": true
   },
   {
@@ -359,14 +343,6 @@
    "board": "ninjavan",
    "total": 141,
    "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "FuriosaAI",
-   "ats": "greenhouse",
-   "board": "furiosaai",
-   "total": 62,
-   "kept": 19,
    "ok": true
   },
   {

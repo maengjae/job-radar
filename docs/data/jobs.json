@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:07+09:00",
+ "updatedAt": "2026-11-08T21:27+09:00",
  "jobs": [
   {
    "id": "greenhouse:okx:8197696003",
@@ -35,7 +35,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8344977",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8344977",
    "posted": "2026-11-02",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -74,7 +74,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8175959",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8175959",
    "posted": "2026-10-30",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -152,7 +152,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8333323",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8333323",
    "posted": "2026-10-29",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -184,19 +184,6 @@
    "source": "greenhouse"
   },
   {
-   "id": "greenhouse:furiosaai:4008625201",
-   "company": "FuriosaAI",
-   "title": "Systems Software Engineer (신입)",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4008625201",
-   "posted": "2026-10-28",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "lever:woven-by-toyota:91b6634f-8266-4861-b6ca-573028b0f4a4",
    "company": "Woven by Toyota",
    "title": "ML Platform Engineer, AD/ADAS",
@@ -221,45 +208,6 @@
    "posted": "2026-10-27",
    "firstSeen": "2026-11-08",
    "source": "ashby"
-  },
-  {
-   "id": "workable:lunit:8B2F18870B",
-   "company": "루닛",
-   "title": "(Seoul) Senior Backend Engineer · Precision Oncology",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Seoul, Seoul, South Korea",
-   "region": "한국",
-   "url": "https://apply.workable.com/j/8B2F18870B",
-   "posted": "2026-10-27",
-   "firstSeen": "2026-11-08",
-   "source": "workable"
-  },
-  {
-   "id": "greenhouse:furiosaai:4008612201",
-   "company": "FuriosaAI",
-   "title": "Server Compatibility and Integration",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4008612201",
-   "posted": "2026-10-27",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4008597201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer - Test Framework and Test Case",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4008597201",
-   "posted": "2026-10-27",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
   },
   {
    "id": "remotive:software-dev:2091135",
@@ -334,7 +282,7 @@
    "senior": false,
    "location": "Taiwan",
    "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=stripe&token=8318509",
+   "url": "https://stripe.com/jobs/listing/x/8318509",
    "posted": "2026-10-25",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -347,7 +295,7 @@
    "senior": false,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8323382",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8323382",
    "posted": "2026-10-25",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -412,7 +360,7 @@
    "senior": false,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8280284",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8280284",
    "posted": "2026-10-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -542,7 +490,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8287908",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8287908",
    "posted": "2026-10-19",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -607,7 +555,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8288680",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8288680",
    "posted": "2026-10-16",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -698,7 +646,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8239019",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8239019",
    "posted": "2026-10-14",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -971,7 +919,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8200018",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8200018",
    "posted": "2026-09-30",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -997,7 +945,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8155846",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8155846",
    "posted": "2026-09-28",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1010,7 +958,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8236155",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8236155",
    "posted": "2026-09-28",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1075,7 +1023,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8222501",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8222501",
    "posted": "2026-09-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1088,7 +1036,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8212664",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8212664",
    "posted": "2026-09-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1127,7 +1075,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8212656",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8212656",
    "posted": "2026-09-18",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1140,20 +1088,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8194727",
-   "posted": "2026-09-18",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4007040201",
-   "company": "FuriosaAI",
-   "title": "Software - Software Engineer, Compiler (Kernel Optimization)",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4007040201",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8194727",
    "posted": "2026-09-18",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1166,46 +1101,7 @@
    "senior": true,
    "location": "Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8210828",
-   "posted": "2026-09-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4006985201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, AI Model Enablement & Inference",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4006985201",
-   "posted": "2026-09-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4006986201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Build Systems & Release Infrastructure",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Seoul",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4006986201",
-   "posted": "2026-09-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4006955201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, LLM Performance & Evaluation",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4006955201",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8210828",
    "posted": "2026-09-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1231,23 +1127,10 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7995038003",
+   "url": "https://careers.daangn.com/jobs/role/7995038003/",
    "posted": "2026-09-15",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
-  },
-  {
-   "id": "workable:lunit:EFD208C780",
-   "company": "루닛",
-   "title": "(Seoul) Senior Site Reliability Engineer· Cancer Screening",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Seoul, Seoul, South Korea",
-   "region": "한국",
-   "url": "https://apply.workable.com/j/EFD208C780",
-   "posted": "2026-09-14",
-   "firstSeen": "2026-11-08",
-   "source": "workable"
   },
   {
    "id": "ashby:supabase:6c9de03c-e289-4612-9045-492985d0274b",
@@ -1322,7 +1205,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8188042",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8188042",
    "posted": "2026-09-09",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1335,7 +1218,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7990084003",
+   "url": "https://careers.daangn.com/jobs/role/7990084003/",
    "posted": "2026-09-09",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1374,7 +1257,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8186132",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8186132",
    "posted": "2026-09-08",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1556,7 +1439,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8118861",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8118861",
    "posted": "2026-08-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1569,7 +1452,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8118859",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8118859",
    "posted": "2026-08-23",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1627,162 +1510,6 @@
    "source": "greenhouse"
   },
   {
-   "id": "greenhouse:furiosaai:4005788201",
-   "company": "FuriosaAI",
-   "title": "Senior Software Engineer, Inference Engine (Platform Software)",
-   "category": "소프트웨어",
-   "senior": true,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005788201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005370201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Agent System Developer",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005370201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005374201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, AI Application",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005374201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005376201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Compiler (AX Engineer)",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005376201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005530201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Compiler (Middle-end)",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005530201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005375201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Kernel Programming",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005375201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005790201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Kernel Programming Model",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005790201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005371201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Machine Learning Engineer (Agentic AI)",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005371201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005786201",
-   "company": "FuriosaAI",
-   "title": "Software Engineer, Site Reliability Engineer",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005786201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005792201",
-   "company": "FuriosaAI",
-   "title": "Systems Software Engineer, NPU Management Interface",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005792201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005793201",
-   "company": "FuriosaAI",
-   "title": "Systems Software Engineer, PCIe Device Driver",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005793201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:furiosaai:4005795201",
-   "company": "FuriosaAI",
-   "title": "Systems Software Engineer, SoC Firmware",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=furiosaai&token=4005795201",
-   "posted": "2026-08-19",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "workable:mercari:235DCE3779",
    "company": "Mercari",
    "title": "Product Engineer, Backend (Mercari Shops) - Mercari Marketplace",
@@ -1829,7 +1556,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8127146",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8127146",
    "posted": "2026-08-12",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -1959,7 +1686,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8102540",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8102540",
    "posted": "2026-08-03",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2024,7 +1751,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8078707",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8078707",
    "posted": "2026-07-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2076,7 +1803,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8078331",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8078331",
    "posted": "2026-07-21",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2089,7 +1816,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8076371",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8076371",
    "posted": "2026-07-21",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2102,7 +1829,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8073876",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8073876",
    "posted": "2026-07-21",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2115,7 +1842,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8078329",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8078329",
    "posted": "2026-07-21",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2284,7 +2011,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8040145",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8040145",
    "posted": "2026-07-06",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2297,7 +2024,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8047690",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8047690",
    "posted": "2026-07-06",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2310,7 +2037,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8047677",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8047677",
    "posted": "2026-07-06",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2362,7 +2089,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=8040140",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8040140",
    "posted": "2026-07-01",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2739,7 +2466,7 @@
    "senior": true,
    "location": "Singapore; Singapore, Singapore",
    "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=7981493",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/7981493",
    "posted": "2026-06-05",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2752,7 +2479,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7762062003",
+   "url": "https://careers.daangn.com/jobs/role/7762062003/",
    "posted": "2026-06-04",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2836,19 +2563,6 @@
    "source": "ashby"
   },
   {
-   "id": "workable:lunit:368DA1CD9E",
-   "company": "루닛",
-   "title": "(Seoul) DevOps Engineer",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Seoul, Seoul, South Korea",
-   "region": "한국",
-   "url": "https://apply.workable.com/j/368DA1CD9E",
-   "posted": "2026-05-19",
-   "firstSeen": "2026-11-08",
-   "source": "workable"
-  },
-  {
    "id": "greenhouse:coupang:7936538",
    "company": "쿠팡",
    "title": "Sr. Staff Back-end Engineer (Coupang Pay)",
@@ -2856,7 +2570,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=7936538",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/7936538",
    "posted": "2026-05-18",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -2934,7 +2648,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=7902369",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/7902369",
    "posted": "2026-05-06",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3012,7 +2726,7 @@
    "senior": true,
    "location": "Bengaluru; Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=7721023",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/7721023",
    "posted": "2026-04-07",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3064,7 +2778,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7659289003",
+   "url": "https://careers.daangn.com/jobs/role/7659289003/",
    "posted": "2026-03-09",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3181,21 +2895,8 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7644271003",
+   "url": "https://careers.daangn.com/jobs/role/7644271003/",
    "posted": "2026-02-24",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:sendbird:8395379002",
-   "company": "Sendbird",
-   "title": "Software Engineer, AI Agent",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=sendbird&token=8395379002",
-   "posted": "2026-02-02",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
   },
@@ -3311,7 +3012,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=7498021003",
+   "url": "https://careers.daangn.com/jobs/role/7498021003/",
    "posted": "2025-10-15",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3337,7 +3038,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=7230867",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/7230867",
    "posted": "2025-09-05",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3415,7 +3116,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=6640363003",
+   "url": "https://careers.daangn.com/jobs/role/6640363003/",
    "posted": "2025-07-07",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3480,7 +3181,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=6610455003",
+   "url": "https://careers.daangn.com/jobs/role/6610455003/",
    "posted": "2025-06-16",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3519,7 +3220,7 @@
    "senior": false,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=6810667",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/6810667",
    "posted": "2025-04-16",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3649,7 +3350,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=6043519003",
+   "url": "https://careers.daangn.com/jobs/role/6043519003/",
    "posted": "2024-09-03",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3714,7 +3415,7 @@
    "senior": true,
    "location": "Seoul, South Korea",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=coupang&token=5848138",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/5848138",
    "posted": "2024-03-25",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3753,7 +3454,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5811688003",
+   "url": "https://careers.daangn.com/jobs/role/5811688003/",
    "posted": "2023-11-20",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3779,7 +3480,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5781885003",
+   "url": "https://careers.daangn.com/jobs/role/5781885003/",
    "posted": "2023-10-20",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3896,7 +3597,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5296522003",
+   "url": "https://careers.daangn.com/jobs/role/5296522003/",
    "posted": "2022-09-05",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3922,7 +3623,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5248527003",
+   "url": "https://careers.daangn.com/jobs/role/5248527003/",
    "posted": "2022-08-01",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3935,7 +3636,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5046757003",
+   "url": "https://careers.daangn.com/jobs/role/5046757003/",
    "posted": "2022-03-27",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3948,7 +3649,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5046759003",
+   "url": "https://careers.daangn.com/jobs/role/5046759003/",
    "posted": "2022-03-27",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -3961,7 +3662,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=5004587003",
+   "url": "https://careers.daangn.com/jobs/role/5004587003/",
    "posted": "2022-03-03",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
@@ -4065,7 +3766,7 @@
    "senior": false,
    "location": "SEOUL",
    "region": "한국",
-   "url": "https://job-boards.greenhouse.io/embed/job_app?for=daangn&token=4300801003",
+   "url": "https://careers.daangn.com/jobs/role/4300801003/",
    "posted": "2020-12-19",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
