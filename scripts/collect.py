@@ -20,11 +20,11 @@ UA = "job-radar/1.0 (+https://github.com/)"
 # 직무 키워드: 제목에 하나라도 있으면 수집 대상
 ROLE_RULES = [
     ("IT운영/플랫폼", r"servicenow|itsm|service ?now"),
-    ("클라우드/인프라", r"cloud|infra|devops|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스"),
-    ("백엔드", r"back[- ]?end|server|api|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
-    ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자"),
+    ("클라우드/인프라", r"cloud|infra|devops|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스|インフラ|クラウド"),
+    ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버|バックエンド|サーバー"),
+    ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자|ソフトウェアエンジニア|プロダクトエンジニア"),
 ]
-EXCLUDE = r"intern(ship)?\b|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal"
+EXCLUDE = r"intern(ship)?\b|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager|マネージャー|アシスタント|営業"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
 
 # 지역 판별: 아시아·원격만 남긴다
