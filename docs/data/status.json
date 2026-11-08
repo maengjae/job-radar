@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:40+09:00",
+ "updatedAt": "2026-11-08T21:42+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -54,7 +54,7 @@
    "ats": "greenhouse",
    "board": "stripe",
    "total": 766,
-   "kept": 1,
+   "kept": 4,
    "ok": true
   },
   {
@@ -70,7 +70,7 @@
    "ats": "greenhouse",
    "board": "datadog",
    "total": 401,
-   "kept": 0,
+   "kept": 1,
    "ok": true
   },
   {
@@ -78,7 +78,7 @@
    "ats": "greenhouse",
    "board": "databricks",
    "total": 922,
-   "kept": 0,
+   "kept": 18,
    "ok": true
   },
   {
@@ -86,7 +86,7 @@
    "ats": "greenhouse",
    "board": "mongodb",
    "total": 374,
-   "kept": 0,
+   "kept": 7,
    "ok": true
   },
   {
@@ -102,7 +102,7 @@
    "ats": "greenhouse",
    "board": "gitlab",
    "total": 248,
-   "kept": 0,
+   "kept": 4,
    "ok": true
   },
   {
@@ -246,7 +246,7 @@
    "ats": "greenhouse",
    "board": "canonical",
    "total": 316,
-   "kept": 34,
+   "kept": 37,
    "ok": true
   },
   {
@@ -254,7 +254,7 @@
    "ats": "ashby",
    "board": "clickhouse",
    "total": 201,
-   "kept": 8,
+   "kept": 9,
    "ok": true
   },
   {
@@ -278,7 +278,7 @@
    "ats": "ashby",
    "board": "snowflake",
    "total": 372,
-   "kept": 1,
+   "kept": 2,
    "ok": true
   },
   {
@@ -286,7 +286,7 @@
    "ats": "ashby",
    "board": "supabase",
    "total": 70,
-   "kept": 16,
+   "kept": 17,
    "ok": true
   },
   {
@@ -294,7 +294,7 @@
    "ats": "ashby",
    "board": "temporal",
    "total": 81,
-   "kept": 0,
+   "kept": 1,
    "ok": true
   },
   {
@@ -302,7 +302,7 @@
    "ats": "greenhouse",
    "board": "elastic",
    "total": 425,
-   "kept": 0,
+   "kept": 1,
    "ok": true
   },
   {
@@ -350,7 +350,7 @@
    "ats": "remoteok",
    "board": "all",
    "total": 99,
-   "kept": 15,
+   "kept": 16,
    "ok": true
   },
   {
@@ -366,6 +366,118 @@
    "ats": "himalayas",
    "board": "all",
    "total": 200,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "토스",
+   "ats": "toss",
+   "board": "all",
+   "total": 496,
+   "kept": 56,
+   "ok": true
+  },
+  {
+   "company": "LINE Plus",
+   "ats": "line",
+   "board": "all",
+   "total": 387,
+   "kept": 6,
+   "ok": true
+  },
+  {
+   "company": "Amazon / AWS",
+   "ats": "amazon",
+   "board": "KOR",
+   "total": 66,
+   "kept": 5,
+   "ok": true
+  },
+  {
+   "company": "ServiceNow",
+   "ats": "smartrecruiters",
+   "board": "ServiceNow|kr",
+   "total": 10,
+   "kept": 2,
+   "ok": true
+  },
+  {
+   "company": "Bosch",
+   "ats": "smartrecruiters",
+   "board": "BoschGroup|kr",
+   "total": 6,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Salesforce",
+   "ats": "workday",
+   "board": "salesforce|wd12|External_Career_Site|Seoul",
+   "total": 18,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "NVIDIA",
+   "ats": "workday",
+   "board": "nvidia|wd5|NVIDIAExternalCareerSite|Seoul",
+   "total": 18,
+   "kept": 7,
+   "ok": true
+  },
+  {
+   "company": "Intel",
+   "ats": "workday",
+   "board": "intel|wd1|External|Seoul",
+   "total": 3,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Broadcom",
+   "ats": "workday",
+   "board": "broadcom|wd1|External_Career|Seoul",
+   "total": 6,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "HPE",
+   "ats": "workday",
+   "board": "hpe|wd5|Jobsathpe|Seoul",
+   "total": 20,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Thermo Fisher",
+   "ats": "workday",
+   "board": "thermofisher|wd5|ThermoFisherCareers|Seoul",
+   "total": 15,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Citi",
+   "ats": "workday",
+   "board": "citi|wd5|2|Seoul",
+   "total": 81,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Aptiv",
+   "ats": "workday",
+   "board": "aptiv|wd5|APTIV_CAREERS|Seoul",
+   "total": 1,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Workday",
+   "ats": "workday",
+   "board": "workday|wd5|Workday|Seoul",
+   "total": 1,
    "kept": 0,
    "ok": true
   }
