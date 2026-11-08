@@ -1,33 +1,18 @@
 const { chromium } = require('playwright');
-const CLICK = [['LG','https://careers.lg.com/apply','[class*=title], [class*=Title], li a, .list a'],['현대차','https://talent.hyundai.com/apply/applyList.hc','.list_wrap a, .tit a, a[href*="javascript"]'],['CJ','https://recruit.cj.net/recruit/ko/recruit/recruit/list.fo','a[onclick*="goNewDetail"]']];
-const SNIFF = [['네이버','https://recruit.navercorp.com/rcrt/list.do'],['삼성','https://www.samsungcareers.com/hr/'],['배민','https://career.woowahan.com/recruitment'],['한화','https://www.hanwhain.com/portal/apply/notice/list'],['롯데','https://www.lotteinfo.com/recruit'],['Google','https://www.google.com/about/careers/applications/jobs/results/?location=Seoul']];
 (async () => {
   const b = await chromium.launch(); const ctx = await b.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', locale: 'ko-KR' });
-  for (const [n, u, sel] of CLICK) {
-    const p = await ctx.newPage();
-    try {
-      await p.goto(u, { waitUntil: 'domcontentloaded', timeout: 40000 }); await p.waitForTimeout(8000);
-      const before = p.url();
-      const els = await p.$$(sel);
-      let done = false;
-      for (const e of els.slice(0, 40)) {
-        const t = ((await e.innerText().catch(() => '')) || '').trim();
-        if (t.length < 6) continue;
-        const [popup] = await Promise.all([ctx.waitForEvent('page', { timeout: 6000 }).catch(() => null), e.click({ timeout: 4000 }).catch(() => null)]);
-        await p.waitForTimeout(4000);
-        const now = popup ? popup.url() : p.url();
-        if (now !== before) { console.log(`CLK ${n} text=${t.slice(0, 40).replace(/\s+/g,' ')} -> ${now}`); done = true; break; }
-      }
-      if (!done) console.log(`CLK ${n} no navigation (els=${els.length})`);
-    } catch (e) { console.log(`CLK ${n} ERR ${String(e).slice(0, 80)}`); }
-    await p.close();
-  }
-  for (const [n, u] of SNIFF) {
-    const p = await ctx.newPage(); const seen = [];
-    p.on('response', async (r) => { const rq = r.request(); if (!['xhr', 'fetch', 'document'].includes(rq.resourceType())) return; const ct = r.headers()['content-type'] || ''; let t = ''; try { t = await r.text(); } catch (e) {} if (/(공고|채용|recruit|job|anno|position)/i.test(t.slice(0, 5000)) && rq.resourceType() !== 'document') seen.push(`${rq.method()} ${r.url().slice(0, 200)} [${ct.slice(0, 25)}] body=${(rq.postData() || '').slice(0, 150)} :: ${t.slice(0, 200).replace(/\s+/g, ' ')}`); });
-    try { await p.goto(u, { waitUntil: 'domcontentloaded', timeout: 40000 }); await p.waitForTimeout(10000); } catch (e) { seen.push('ERR ' + String(e).slice(0, 80)); }
-    console.log(`SNF ${n} final=${p.url().slice(0, 100)} n=${seen.length}`); seen.slice(0, 5).forEach((s) => console.log(`  SNF ${n} ${s}`));
-    await p.close();
-  }
+  let p = await ctx.newPage();
+  await p.goto('https://www.samsungcareers.com/hr/', { waitUntil: 'domcontentloaded', timeout: 40000 }); await p.waitForTimeout(8000);
+  const a = await p.$('a[data-value]');
+  if (a) { const [pop] = await Promise.all([ctx.waitForEvent('page', { timeout: 6000 }).catch(() => null), a.click().catch(() => null)]); await p.waitForTimeout(5000); console.log('SAM click ->', pop ? pop.url() : p.url()); }
+  const js = await p.evaluate(() => [...document.scripts].map(s => s.textContent).join('\n').match(/.{0,120}(detail|view)\.?[a-z]*\?.{0,120}/gi) || []);
+  console.log('SAM js', JSON.stringify(js.slice(0, 5)).slice(0, 900));
+  await p.close();
+  p = await ctx.newPage(); const seen = [];
+  p.on('request', (rq) => { if (/hwadm|api/.test(rq.url()) && ['xhr', 'fetch'].includes(rq.resourceType())) seen.push(`${rq.method()} ${rq.url().slice(0, 200)} body=${(rq.postData() || '').slice(0, 200)}`); });
+  await p.goto('https://www.hanwhain.com/portal/apply/notice/list', { waitUntil: 'networkidle', timeout: 60000 }).catch(() => {}); await p.waitForTimeout(12000);
+  console.log('HAN final', p.url()); seen.slice(0, 12).forEach((s) => console.log('HAN', s));
+  const links = await p.evaluate(() => [...document.querySelectorAll('a[href]')].map(a => a.href).filter(h => /notice|apply|detail|\d{4,}/.test(h)).slice(0, 8));
+  console.log('HAN links', JSON.stringify(links).slice(0, 800));
   await b.close();
 })();
