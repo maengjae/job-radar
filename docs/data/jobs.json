@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T12:55+09:00",
+ "updatedAt": "2026-11-08T12:57+09:00",
  "jobs": [
   {
    "id": "greenhouse:coupang:8344977",
@@ -13,19 +13,6 @@
    "posted": "2026-11-02",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
-  },
-  {
-   "id": "lever:woven-by-toyota:49ca6b64-6884-48cb-a5a4-4d86cf984d82",
-   "company": "Woven by Toyota",
-   "title": "Backend Engineer, Integrated Booking and Ticketing System, Facility Service System",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Tokyo / Nagoya, Aichi",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/49ca6b64-6884-48cb-a5a4-4d86cf984d82",
-   "posted": "2026-10-30",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "greenhouse:coupang:8175959",
@@ -78,19 +65,6 @@
    "posted": "2026-10-29",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
-  },
-  {
-   "id": "lever:woven-by-toyota:91b6634f-8266-4861-b6ca-573028b0f4a4",
-   "company": "Woven by Toyota",
-   "title": "ML Platform Engineer, AD/ADAS",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/91b6634f-8266-4861-b6ca-573028b0f4a4",
-   "posted": "2026-10-27",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "ashby:airwallex:f4d64c0e-2425-409c-a296-4c4c6b9fe824",
@@ -247,19 +221,6 @@
    "posted": "2026-10-20",
    "firstSeen": "2026-11-08",
    "source": "ashby"
-  },
-  {
-   "id": "lever:woven-by-toyota:f2f87d9d-d94d-42fe-90ae-4f39047508f7",
-   "company": "Woven by Toyota",
-   "title": "AI Platform Engineer (MLOps/LLMOps)",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/f2f87d9d-d94d-42fe-90ae-4f39047508f7",
-   "posted": "2026-10-19",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "ashby:airwallex:b3514b7b-67d3-4f48-b4ae-20e3ad49261c",
@@ -743,19 +704,6 @@
    "source": "greenhouse"
   },
   {
-   "id": "lever:woven-by-toyota:48d0a1ef-8167-4083-b178-f26ec1c0e6b8",
-   "company": "Woven by Toyota",
-   "title": "Embedded Software Engineer, ADAS HMI",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/48d0a1ef-8167-4083-b178-f26ec1c0e6b8",
-   "posted": "2026-08-21",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
-  {
    "id": "ashby:airwallex:4a995552-e961-48c0-92b0-08bfa7e4c5e9",
    "company": "Airwallex",
    "title": "Senior Software Engineer, AI Infrastructure",
@@ -782,19 +730,6 @@
    "source": "workable"
   },
   {
-   "id": "greenhouse:coupang:8127212",
-   "company": "쿠팡",
-   "title": "[쿠팡페이] Senior Back-end Engineer (계약직)",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Seoul, South Korea",
-   "region": "한국",
-   "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8127212",
-   "posted": "2026-08-13",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:coupang:8127146",
    "company": "쿠팡",
    "title": "Staff Backend Engineer (ECommerce Engineering; Core Member)",
@@ -819,19 +754,6 @@
    "posted": "2026-08-06",
    "firstSeen": "2026-11-08",
    "source": "workable"
-  },
-  {
-   "id": "lever:woven-by-toyota:fec39a7a-dd62-48f7-9f12-00ee8d9c5dff",
-   "company": "Woven by Toyota",
-   "title": "Software Engineer, Teammate Driving",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/fec39a7a-dd62-48f7-9f12-00ee8d9c5dff",
-   "posted": "2026-08-06",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "ashby:airwallex:7fda4857-060d-41c6-900e-c72f451f8ce3",
@@ -990,19 +912,6 @@
    "source": "ashby"
   },
   {
-   "id": "lever:woven-by-toyota:e89b2d87-c2df-4704-b27d-dad75add9acf",
-   "company": "Woven by Toyota",
-   "title": "Staff ML Platform Engineer, AD/ADAS",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/e89b2d87-c2df-4704-b27d-dad75add9acf",
-   "posted": "2026-07-08",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
-  {
    "id": "greenhouse:krafton:8581491002",
    "company": "크래프톤",
    "title": "[AI Transformation Dept.] Sr. AI DevOps Engineer (7년 이상)",
@@ -1157,19 +1066,6 @@
    "posted": "2026-06-19",
    "firstSeen": "2026-11-08",
    "source": "ashby"
-  },
-  {
-   "id": "lever:woven-by-toyota:d584f5a4-a639-4987-a609-04d9037ece60",
-   "company": "Woven by Toyota",
-   "title": "Backend Software Engineer, Robot Platform Software",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/d584f5a4-a639-4987-a609-04d9037ece60",
-   "posted": "2026-06-15",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "workable:mercari:E15A83320B",
@@ -1406,32 +1302,6 @@
    "source": "workable"
   },
   {
-   "id": "greenhouse:krafton:8503567002",
-   "company": "크래프톤",
-   "title": "[Infra Div.] IT Engineer (경력 무관 / 계약직)",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Seoul",
-   "region": "한국",
-   "url": "https://job-boards.greenhouse.io/krafton/jobs/8503567002",
-   "posted": "2026-04-13",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "lever:woven-by-toyota:b4e674b1-ba16-4aff-b6c8-3f441f6e9b66",
-   "company": "Woven by Toyota",
-   "title": "Embedded Software Engineer, Arene Professional Services",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/b4e674b1-ba16-4aff-b6c8-3f441f6e9b66",
-   "posted": "2026-04-10",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
-  },
-  {
    "id": "greenhouse:coupang:7721023",
    "company": "쿠팡",
    "title": "Principal, Back-End Engineer",
@@ -1653,32 +1523,6 @@
    "source": "greenhouse"
   },
   {
-   "id": "greenhouse:agoda:6883659",
-   "company": "Agoda",
-   "title": "Software Developer, Back End (Bangkok-based, 6-month Contract)",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Bangkok",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/agoda/jobs/6883659",
-   "posted": "2025-05-14",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:agoda:6883260",
-   "company": "Agoda",
-   "title": "Software Developer, DevOps (Bangkok-based, 10-month Contract)",
-   "category": "클라우드/인프라",
-   "senior": false,
-   "location": "Bangkok",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/agoda/jobs/6883260",
-   "posted": "2025-05-14",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse"
-  },
-  {
    "id": "greenhouse:agoda:6775382",
    "company": "Agoda",
    "title": "Staff Software Engineer - Backend (Bangkok based, Relocation provided)",
@@ -1729,19 +1573,6 @@
    "posted": "2025-03-27",
    "firstSeen": "2026-11-08",
    "source": "greenhouse"
-  },
-  {
-   "id": "lever:woven-by-toyota:1f287e06-b9b6-425f-9613-05ffbc76003d",
-   "company": "Woven by Toyota",
-   "title": "Junior Software Engineer, Driving Planning",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Tokyo",
-   "region": "일본",
-   "url": "https://jobs.lever.co/woven-by-toyota/1f287e06-b9b6-425f-9613-05ffbc76003d",
-   "posted": "2025-03-26",
-   "firstSeen": "2026-11-08",
-   "source": "lever"
   },
   {
    "id": "greenhouse:agoda:6603735",

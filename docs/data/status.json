@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T12:55+09:00",
+ "updatedAt": "2026-11-08T12:57+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -30,7 +30,7 @@
    "ats": "lever",
    "board": "woven-by-toyota",
    "total": 141,
-   "kept": 9,
+   "kept": 0,
    "ok": true
   },
   {
@@ -166,7 +166,7 @@
    "ats": "greenhouse",
    "board": "coupang",
    "total": 673,
-   "kept": 39,
+   "kept": 38,
    "ok": true
   },
   {
@@ -174,7 +174,7 @@
    "ats": "greenhouse",
    "board": "agoda",
    "total": 340,
-   "kept": 20,
+   "kept": 18,
    "ok": true
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "board": "krafton",
    "total": 62,
-   "kept": 3,
+   "kept": 2,
    "ok": true
   },
   {
