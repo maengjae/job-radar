@@ -27,6 +27,51 @@
    ]
   },
   {
+   "name": "외국계 (공식 채용 사이트)",
+   "sites": [
+    {
+     "name": "Amdocs",
+     "url": "https://www.amdocs.com/careers",
+     "note": "피플앤잡 IT 채용관 단골"
+    },
+    {
+     "name": "Keysight",
+     "url": "https://jobs.keysight.com",
+     "note": "R&D·FDE"
+    },
+    {
+     "name": "Dassault Systèmes",
+     "url": "https://www.3ds.com/careers",
+     "note": "소프트웨어 R&D"
+    },
+    {
+     "name": "Microsoft",
+     "url": "https://jobs.careers.microsoft.com",
+     "note": "서울 공고는 위치에 Korea 입력"
+    },
+    {
+     "name": "Google",
+     "url": "https://www.google.com/about/careers/applications/jobs/results/?location=Seoul",
+     "note": "서울 공고"
+    },
+    {
+     "name": "Oracle",
+     "url": "https://careers.oracle.com",
+     "note": ""
+    },
+    {
+     "name": "SAP",
+     "url": "https://jobs.sap.com",
+     "note": "SAP Labs Korea 포함"
+    },
+    {
+     "name": "IBM",
+     "url": "https://www.ibm.com/careers",
+     "note": ""
+    }
+   ]
+  },
+  {
    "name": "국내 IT·플랫폼",
    "sites": [
     {
@@ -118,21 +163,6 @@
      "name": "Rakuten",
      "url": "https://rakuten.careers",
      "note": "도쿄"
-    },
-    {
-     "name": "Amazon / AWS",
-     "url": "https://www.amazon.jobs",
-     "note": "서울·도쿄·싱가포르"
-    },
-    {
-     "name": "Google",
-     "url": "https://www.google.com/about/careers/applications/",
-     "note": ""
-    },
-    {
-     "name": "Microsoft",
-     "url": "https://jobs.careers.microsoft.com",
-     "note": ""
     },
     {
      "name": "Grab",

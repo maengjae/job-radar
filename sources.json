@@ -1,100 +1,119 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters | remoteok | remotive | himalayas. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
   "sources": [
     {
       "company": "Mercari",
       "ats": "greenhouse",
-      "board": "mercari"
+      "board": "mercari",
+      "foreign": true
     },
     {
       "company": "Mercari",
       "ats": "workable",
-      "board": "mercari"
+      "board": "mercari",
+      "foreign": true
     },
     {
       "company": "SmartNews",
       "ats": "workable",
-      "board": "smartnews"
+      "board": "smartnews",
+      "foreign": true
     },
     {
       "company": "Woven by Toyota",
       "ats": "lever",
-      "board": "woven-by-toyota"
+      "board": "woven-by-toyota",
+      "foreign": true
     },
     {
       "company": "PayPay",
       "ats": "greenhouse",
-      "board": "paypay"
+      "board": "paypay",
+      "foreign": true
     },
     {
       "company": "Moloco",
       "ats": "greenhouse",
-      "board": "moloco"
+      "board": "moloco",
+      "foreign": true
     },
     {
       "company": "Stripe",
       "ats": "greenhouse",
-      "board": "stripe"
+      "board": "stripe",
+      "foreign": true
     },
     {
       "company": "Cloudflare",
       "ats": "greenhouse",
-      "board": "cloudflare"
+      "board": "cloudflare",
+      "foreign": true
     },
     {
       "company": "Datadog",
       "ats": "greenhouse",
-      "board": "datadog"
+      "board": "datadog",
+      "foreign": true
     },
     {
       "company": "Databricks",
       "ats": "greenhouse",
-      "board": "databricks"
+      "board": "databricks",
+      "foreign": true
     },
     {
       "company": "MongoDB",
       "ats": "greenhouse",
-      "board": "mongodb"
+      "board": "mongodb",
+      "foreign": true
     },
     {
       "company": "Twilio",
       "ats": "greenhouse",
-      "board": "twilio"
+      "board": "twilio",
+      "foreign": true
     },
     {
       "company": "GitLab",
       "ats": "greenhouse",
-      "board": "gitlab"
+      "board": "gitlab",
+      "foreign": true
     },
     {
       "company": "Coinbase",
       "ats": "greenhouse",
-      "board": "coinbase"
+      "board": "coinbase",
+      "foreign": true
     },
     {
       "company": "Okta",
       "ats": "greenhouse",
-      "board": "okta"
+      "board": "okta",
+      "foreign": true
     },
     {
       "company": "Airwallex",
       "ats": "ashby",
-      "board": "airwallex"
+      "board": "airwallex",
+      "foreign": true
     },
     {
       "company": "Wise",
       "ats": "greenhouse",
-      "board": "wise"
+      "board": "wise",
+      "foreign": true
     },
     {
       "company": "Canva",
       "ats": "smartrecruiters",
-      "board": "Canva"
+      "board": "Canva",
+      "foreign": true
     },
     {
       "company": "Visa",
       "ats": "smartrecruiters",
-      "board": "Visa"
+      "board": "Visa",
+      "foreign": true
     },
     {
       "company": "쿠팡",
@@ -104,7 +123,8 @@
     {
       "company": "Agoda",
       "ats": "greenhouse",
-      "board": "agoda"
+      "board": "agoda",
+      "foreign": true
     },
     {
       "company": "크래프톤",
@@ -124,97 +144,116 @@
     {
       "company": "2C2P",
       "ats": "workable",
-      "board": "2c2p"
+      "board": "2c2p",
+      "foreign": true
     },
     {
       "company": "Binance",
       "ats": "greenhouse",
-      "board": "binance"
+      "board": "binance",
+      "foreign": true
     },
     {
       "company": "Bybit",
       "ats": "greenhouse",
-      "board": "bybit"
+      "board": "bybit",
+      "foreign": true
     },
     {
       "company": "OKX",
       "ats": "greenhouse",
-      "board": "okx"
+      "board": "okx",
+      "foreign": true
     },
     {
       "company": "Crypto.com",
       "ats": "lever",
-      "board": "crypto"
+      "board": "crypto",
+      "foreign": true
     },
     {
       "company": "Circle",
       "ats": "ashby",
-      "board": "circle"
+      "board": "circle",
+      "foreign": true
     },
     {
       "company": "Canonical",
       "ats": "greenhouse",
-      "board": "canonical"
+      "board": "canonical",
+      "foreign": true
     },
     {
       "company": "ClickHouse",
       "ats": "ashby",
-      "board": "clickhouse"
+      "board": "clickhouse",
+      "foreign": true
     },
     {
       "company": "OpenAI",
       "ats": "ashby",
-      "board": "openai"
+      "board": "openai",
+      "foreign": true
     },
     {
       "company": "Anthropic",
       "ats": "greenhouse",
-      "board": "anthropic"
+      "board": "anthropic",
+      "foreign": true
     },
     {
       "company": "Snowflake",
       "ats": "ashby",
-      "board": "snowflake"
+      "board": "snowflake",
+      "foreign": true
     },
     {
       "company": "Supabase",
       "ats": "ashby",
-      "board": "supabase"
+      "board": "supabase",
+      "foreign": true
     },
     {
       "company": "Temporal",
       "ats": "ashby",
-      "board": "temporal"
+      "board": "temporal",
+      "foreign": true
     },
     {
       "company": "Elastic",
       "ats": "greenhouse",
-      "board": "elastic"
+      "board": "elastic",
+      "foreign": true
     },
     {
       "company": "Grafana Labs",
       "ats": "greenhouse",
-      "board": "grafanalabs"
+      "board": "grafanalabs",
+      "foreign": true
     },
     {
       "company": "Thunes",
       "ats": "greenhouse",
-      "board": "thunes"
+      "board": "thunes",
+      "foreign": true
     },
     {
       "company": "Xendit",
       "ats": "greenhouse",
-      "board": "xendit"
+      "board": "xendit",
+      "foreign": true
     },
     {
       "company": "Funding Societies",
       "ats": "workable",
-      "board": "fundingsocieties"
+      "board": "fundingsocieties",
+      "foreign": true
     },
     {
       "company": "Ninja Van",
       "ats": "lever",
-      "board": "ninjavan"
+      "board": "ninjavan",
+      "foreign": true
     },
     {
       "company": "Remote OK (원격 공고 모음)",
@@ -230,6 +269,88 @@
       "company": "Himalayas (원격 공고 모음)",
       "ats": "himalayas",
       "board": "all"
+    },
+    {
+      "company": "토스",
+      "ats": "toss",
+      "board": "all"
+    },
+    {
+      "company": "LINE Plus",
+      "ats": "line",
+      "board": "all"
+    },
+    {
+      "company": "Amazon / AWS",
+      "ats": "amazon",
+      "board": "KOR",
+      "foreign": true
+    },
+    {
+      "company": "ServiceNow",
+      "ats": "smartrecruiters",
+      "board": "ServiceNow|kr",
+      "foreign": true
+    },
+    {
+      "company": "Bosch",
+      "ats": "smartrecruiters",
+      "board": "BoschGroup|kr",
+      "foreign": true
+    },
+    {
+      "company": "Salesforce",
+      "ats": "workday",
+      "board": "salesforce|wd12|External_Career_Site|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "NVIDIA",
+      "ats": "workday",
+      "board": "nvidia|wd5|NVIDIAExternalCareerSite|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Intel",
+      "ats": "workday",
+      "board": "intel|wd1|External|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Broadcom",
+      "ats": "workday",
+      "board": "broadcom|wd1|External_Career|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "HPE",
+      "ats": "workday",
+      "board": "hpe|wd5|Jobsathpe|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Thermo Fisher",
+      "ats": "workday",
+      "board": "thermofisher|wd5|ThermoFisherCareers|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Citi",
+      "ats": "workday",
+      "board": "citi|wd5|2|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Aptiv",
+      "ats": "workday",
+      "board": "aptiv|wd5|APTIV_CAREERS|Seoul",
+      "foreign": true
+    },
+    {
+      "company": "Workday",
+      "ats": "workday",
+      "board": "workday|wd5|Workday|Seoul",
+      "foreign": true
     }
   ]
 }

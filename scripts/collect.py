@@ -1,7 +1,7 @@
 """채용 공고 수집기.
 
 sources.json에 적힌 회사들의 공개 채용 API(Greenhouse, Lever, Ashby, Workable,
-SmartRecruiters)에서 공고를 받아 직무·지역으로 거른 뒤 docs/data/에 저장한다.
+SmartRecruiters, Workday, Amazon·토스·LINE 공식 API)에서 공고를 받아 직무·지역으로 거른 뒤 docs/data/에 저장한다.
 표준 라이브러리만 사용한다.
 """
 import datetime as dt
@@ -20,7 +20,7 @@ UA = "job-radar/1.0 (+https://github.com/)"
 # 직무 키워드: 제목에 하나라도 있으면 수집 대상
 ROLE_RULES = [
     ("IT운영/플랫폼", r"servicenow|itsm|service ?now"),
-    ("클라우드/인프라", r"cloud|infra|devops|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스"),
+    ("클라우드/인프라", r"cloud|infra|devops|solutions? architect|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스"),
     ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
     ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자"),
 ]
@@ -127,9 +127,11 @@ def from_workable(board):
 
 
 def from_smartrecruiters(board):
+    board, _, country = board.partition("|")
+    cq = f"&country={country}" if country else ""
     offset, total = 0, None
     while total is None or offset < min(total, 1000):
-        d = fetch_json(f"https://api.smartrecruiters.com/v1/companies/{board}/postings?limit=100&offset={offset}")
+        d = fetch_json(f"https://api.smartrecruiters.com/v1/companies/{board}/postings?limit=100&offset={offset}{cq}")
         total = d.get("totalFound", 0)
         for j in d.get("content", []):
             loc = j.get("location") or {}
@@ -144,6 +146,98 @@ def from_smartrecruiters(board):
         offset += 100
         if not d.get("content"):
             break
+
+
+# ── 대기업·외국계 자체 채용 시스템 ──
+
+def post_json(url, body):
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"User-Agent": UA, "Accept": "application/json", "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def from_workday(board):
+    """board = "tenant|wdN|site|검색어" (예: nvidia|wd5|NVIDIAExternalCareerSite|Seoul)"""
+    tenant, wd, site, query = (board.split("|") + ["Seoul"])[:4]
+    base = f"https://{tenant}.{wd}.myworkdayjobs.com"
+    offset, total = 0, None
+    while total is None or offset < min(total, 400):
+        d = post_json(f"{base}/wday/cxs/{tenant}/{site}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": query})
+        if total is None:
+            total = d.get("total", 0)
+        posts = d.get("jobPostings", [])
+        for j in posts:
+            path = j.get("externalPath", "")
+            loc = j.get("locationsText", "")
+            if not re.search(r"korea|seoul|서울", loc, re.I):
+                loc = path.split("/")[2].replace("-", " ") if path.count("/") >= 2 else loc  # "2 Locations"이면 경로의 첫 위치 사용
+            yield {
+                "jid": path.rsplit("_", 1)[-1] or path,
+                "title": j.get("title", ""),
+                "location": loc,
+                "url": f"{base}/en-US/{site}{path}",
+                "posted": None,
+            }
+        offset += 20
+        if not posts:
+            break
+
+
+def from_amazon(board):
+    """board = 국가 코드 (예: KOR)"""
+    offset, hits = 0, None
+    while hits is None or offset < min(hits, 500):
+        d = fetch_json(f"https://www.amazon.jobs/en/search.json?normalized_country_code%5B%5D={board}&result_limit=100&offset={offset}&sort=recent")
+        if hits is None:
+            hits = d.get("hits", 0)
+        for j in d.get("jobs", []):
+            if j.get("is_intern"):
+                continue
+            yield {
+                "jid": str(j.get("id_icims") or j.get("id")),
+                "title": j.get("title", ""),
+                "company": "Amazon / AWS",
+                "location": j.get("location", ""),
+                "url": "https://www.amazon.jobs" + j.get("job_path", ""),
+                "posted": None,
+                "etype": j.get("job_schedule_type", ""),
+            }
+        offset += 100
+        if not d.get("jobs"):
+            break
+
+
+def from_toss(board):
+    d = fetch_json("https://api-public.toss.im/api/v3/ipd-eggnog/career/jobs")
+    for j in d.get("success", []):
+        meta = {m.get("name"): m.get("value") for m in j.get("metadata") or []}
+        etype = str(meta.get("Employment_Type") or "")
+        yield {
+            "jid": str(j["id"]),
+            "title": j.get("title", ""),
+            "company": meta.get("포지션의 소속 자회사를 선택해 주세요.") or "토스",
+            "location": (j.get("location") or {}).get("name", "") or "Seoul",
+            "url": j.get("absolute_url", ""),
+            "posted": iso(j.get("first_published")),
+            "etype": "regular" if etype.startswith("정규직") else etype,
+        }
+
+
+def from_line(board):
+    d = fetch_json("https://careers.linecorp.com/page-data/ko/jobs/page-data.json")
+    for e in d["result"]["data"]["allStrapiJobs"]["edges"]:
+        n = e["node"]
+        cities = " / ".join(f'{c.get("name", "")} {c.get("country", "")}' for c in n.get("cities") or [])
+        jid = n.get("strapiId") or n.get("id")
+        yield {
+            "jid": str(jid),
+            "title": n.get("title", ""),
+            "company": ((n.get("companies") or [{}])[0].get("name") or "LINE Plus"),
+            "location": cities,
+            "url": f"https://careers.linecorp.com/ko/jobs/{jid}",
+            "posted": iso(n.get("start_date") or n.get("published_at")),
+            "etype": ((n.get("employment_type") or [{}])[0].get("name") or ""),
+        }
 
 
 # ── 공고 모음 사이트 (공개 API, 출처 표기 조건 준수: 각 공고 링크가 원 사이트로 연결됨) ──
@@ -214,6 +308,10 @@ FETCHERS = {
     "remoteok": from_remoteok,
     "remotive": from_remotive,
     "himalayas": from_himalayas,
+    "workday": from_workday,
+    "amazon": from_amazon,
+    "toss": from_toss,
+    "line": from_line,
 }
 AGGREGATORS = {"remoteok": "Remote OK", "remotive": "Remotive", "himalayas": "Himalayas"}
 
@@ -305,6 +403,7 @@ def main():
                     "posted": r["posted"],
                     "firstSeen": prev.get(jid, {}).get("firstSeen", today),
                     "source": AGGREGATORS.get(src["ats"], src["ats"]),
+                    "foreign": bool(src.get("foreign")),
                 }
                 entry["kept"] += 1
             entry["ok"] = True

@@ -102,7 +102,7 @@
     <section class="card">
       <h2 data-k="title">공고 목록</h2>
       <p class="note">새로 발견된 공고가 위에 옵니다. <b>NEW</b>는 오늘 처음 발견된 공고입니다. 지원 전에 공고 원문에서 접수 여부를 꼭 확인하세요.</p>
-      <div class="filters"><div class="chips" data-k="chips" role="group" aria-label="지역"></div></div>
+      <div class="filters"><div class="chips" data-k="chips" role="group" aria-label="구분"></div></div>
       <div class="filters">
         <select data-k="cat" aria-label="직무"><option value="">직무 전체</option></select>
         <input data-k="q" type="search" placeholder="회사·공고명·기술 검색" aria-label="검색">
@@ -176,6 +176,8 @@
     q('co').textContent = fmt.format(new Set(list.map((j) => j.company)).size);
     [...new Set(list.map((j) => j.category))].sort().forEach((c) => q('cat').append(new Option(c, c)));
     if (!regions) q('chips').parentElement.hidden = true;
+    // 칩 값: 지역 이름, 또는 '국내 기업'/'외국계'
+    const match = (j, v) => !v || (v === '외국계' ? !!j.foreign : v === '국내 기업' ? !j.foreign : j.region === v);
 
     const render = () => {
       store.set('jr-' + key, state);
@@ -184,7 +186,7 @@
       const base = list.filter((j) => !state.junior || !j.senior);
       if (regions) {
         q('chips').replaceChildren(...[['', '전체'], ...regions.map((r) => [r, r])].map(([v, label]) => {
-          const b = el('button', {className: 'chip', type: 'button', onclick: () => { state.region = v; render(); }}, label, el('span', {className: 'n', textContent: base.filter((j) => !v || j.region === v).length}));
+          const b = el('button', {className: 'chip', type: 'button', onclick: () => { state.region = v; render(); }}, label, el('span', {className: 'n', textContent: base.filter((j) => match(j, v)).length}));
           b.setAttribute('aria-pressed', String(state.region === v));
           return b;
         }));
@@ -192,7 +194,7 @@
       const term = state.q.trim().toLowerCase();
       const since = shift(runDay, -6);
       const rows = base.filter((j) =>
-        (!state.region || j.region === state.region) &&
+        match(j, state.region) &&
         (!state.cat || j.category === state.cat) &&
         (!state.onlynew || j.firstSeen >= since) &&
         (!term || [j.company, j.title, j.location, j.note].join(' ').toLowerCase().includes(term)));
@@ -215,7 +217,7 @@
     render();
   }
   buildList($('panel-abroad'), 'abroad', abroad, ['일본', '싱가포르', '아시아 기타', '원격'], '해외 공고');
-  buildList($('panel-domestic'), 'domestic', domestic, null, '국내 공고');
+  buildList($('panel-domestic'), 'domestic', domestic, ['국내 기업', '외국계'], '국내 공고');
 
   // 바로가기 탭
   $('link-groups').replaceChildren(...(sites.groups || []).map((g) => el('div', {style: 'margin-top:18px'},
