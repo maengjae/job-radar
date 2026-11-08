@@ -24,7 +24,7 @@ ROLE_RULES = [
     ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
     ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자"),
 ]
-EXCLUDE = r"intern(ship)?\b|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
+EXCLUDE = r"intern(ship)?\b|산업기능요원|전문연구요원|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
 
 # 지역 판별: 아시아·원격만 남긴다
@@ -52,6 +52,14 @@ def iso(v):
     return str(v)[:10]
 
 
+def gh_url(board, j):
+    """자체 채용 사이트를 쓰는 회사는 absolute_url이 채용 홈페이지(?gh_jid=)로 가므로, 공고 전용 페이지로 바꾼다."""
+    u = j.get("absolute_url", "")
+    if "greenhouse.io" in u:
+        return u
+    return f"https://job-boards.greenhouse.io/embed/job_app?for={board}&token={j['id']}"
+
+
 def from_greenhouse(board):
     d = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{board}/jobs")
     for j in d.get("jobs", []):
@@ -59,7 +67,7 @@ def from_greenhouse(board):
             "jid": str(j["id"]),
             "title": j.get("title", ""),
             "location": (j.get("location") or {}).get("name", ""),
-            "url": j.get("absolute_url", ""),
+            "url": gh_url(board, j),
             "posted": iso(j.get("first_published") or j.get("updated_at")),
         }
 
