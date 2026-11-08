@@ -20,11 +20,11 @@ UA = "job-radar/1.0 (+https://github.com/)"
 # 직무 키워드: 제목에 하나라도 있으면 수집 대상
 ROLE_RULES = [
     ("IT운영/플랫폼", r"servicenow|itsm|service ?now"),
-    ("클라우드/인프라", r"cloud|infra|devops|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스|インフラ|クラウド"),
-    ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버|バックエンド|サーバー"),
-    ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자|ソフトウェアエンジニア|プロダクトエンジニア"),
+    ("클라우드/인프라", r"cloud|infra|devops|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스"),
+    ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
+    ("소프트웨어", r"software engineer|software developer|product engineer|소프트웨어|개발자"),
 ]
-EXCLUDE = r"intern(ship)?\b|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager|マネージャー|アシスタント|営業"
+EXCLUDE = r"intern(ship)?\b|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
 
 # 지역 판별: 아시아·원격만 남긴다
@@ -136,10 +136,17 @@ FETCHERS = {
 }
 
 
+FOREIGN = re.compile(r"[぀-ヿ㐀-䶿一-鿿ｦ-ﾟ]")  # 일본어 가나·한자(중국어 포함)
+
+
 def classify(title):
     t = title.lower()
     if re.search(EXCLUDE, t):
         return None
+    if FOREIGN.search(t):
+        # 영어·한국어가 아닌 글자가 섞인 제목은 영어 부분만으로 직무를 판단한다.
+        # 일본어로만 된 공고(예: バックエンドエンジニア)는 여기서 빠진다.
+        t = FOREIGN.sub(" ", t)
     for name, pat in ROLE_RULES:
         if re.search(pat, t):
             return name
