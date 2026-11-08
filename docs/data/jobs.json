@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:42+09:00",
+ "updatedAt": "2026-11-08T21:44+09:00",
  "jobs": [
   {
    "id": "greenhouse:okx:8197696003",
@@ -756,6 +756,20 @@
    "firstSeen": "2026-11-08",
    "source": "Remote OK",
    "foreign": false
+  },
+  {
+   "id": "lever:woven-by-toyota:0a5961da-fa1a-48c8-b0fc-a353dc6bdf33",
+   "company": "Woven by Toyota",
+   "title": "Senior Software Quality Assessor / Engineer",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Tokyo",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/0a5961da-fa1a-48c8-b0fc-a353dc6bdf33",
+   "posted": "2026-10-16",
+   "firstSeen": "2026-11-08",
+   "source": "lever",
+   "foreign": true
   },
   {
    "id": "greenhouse:coupang:8288680",
@@ -1892,6 +1906,20 @@
    "foreign": true
   },
   {
+   "id": "lever:woven-by-toyota:a6b6d2a6-ba5c-439f-af19-2f44d6b521a3",
+   "company": "Woven by Toyota",
+   "title": "Software Integration Engineer, AD/ADAS Application",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Tokyo",
+   "region": "일본",
+   "url": "https://jobs.lever.co/woven-by-toyota/a6b6d2a6-ba5c-439f-af19-2f44d6b521a3",
+   "posted": "2026-09-03",
+   "firstSeen": "2026-11-08",
+   "source": "lever",
+   "foreign": true
+  },
+  {
    "id": "greenhouse:databricks:8783421002",
    "company": "Databricks",
    "title": "Solutions Architect",
@@ -2142,6 +2170,20 @@
    "firstSeen": "2026-11-08",
    "source": "toss",
    "foreign": false
+  },
+  {
+   "id": "greenhouse:stripe:8153331",
+   "company": "Stripe",
+   "title": "Software Quality Assurance Engineer",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Taipei,Taiwan",
+   "region": "아시아 기타",
+   "url": "https://stripe.com/jobs/listing/x/8153331",
+   "posted": "2026-08-25",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
   },
   {
    "id": "greenhouse:mongodb:8152623",
@@ -2970,6 +3012,20 @@
    "foreign": true
   },
   {
+   "id": "workable:2c2p:101B611A4B",
+   "company": "2C2P",
+   "title": "Senior Engineer, Software Development",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/101B611A4B",
+   "posted": "2026-07-03",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
    "id": "workable:mercari:7AE97F8A2C",
    "company": "Mercari",
    "title": "Software Engineer (Site Reliability) - Mercari Crossborder",
@@ -3138,6 +3194,20 @@
    "foreign": false
   },
   {
+   "id": "workable:2c2p:85398AC94F",
+   "company": "2C2P",
+   "title": "Engineer, Software Development",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/85398AC94F",
+   "posted": "2026-06-25",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
    "id": "workable:2c2p:A64B9C9F72",
    "company": "2C2P",
    "title": "Backend Developer",
@@ -3146,6 +3216,20 @@
    "location": "Bangkok, Bangkok, Thailand",
    "region": "아시아 기타",
    "url": "https://apply.workable.com/j/A64B9C9F72",
+   "posted": "2026-06-23",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
+   "id": "workable:2c2p:1928BA507A",
+   "company": "2C2P",
+   "title": "Senior Engineer, Software Development",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Bangkok, Bangkok, Thailand",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/1928BA507A",
    "posted": "2026-06-23",
    "firstSeen": "2026-11-08",
    "source": "workable",
@@ -3362,6 +3446,20 @@
    "foreign": true
   },
   {
+   "id": "workable:2c2p:C88BB7D2B0",
+   "company": "2C2P",
+   "title": "Team Lead, Software Development",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Bangkok, Bangkok, Thailand",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/C88BB7D2B0",
+   "posted": "2026-06-11",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
    "id": "greenhouse:okx:7767872003",
    "company": "OKX",
    "title": "DevOps / Site Reliability Engineer",
@@ -3486,6 +3584,20 @@
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
    "foreign": false
+  },
+  {
+   "id": "greenhouse:canonical:7975990",
+   "company": "Canonical",
+   "title": "Software Quality Assurance Engineer - Linux, PC, IoT",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Office Based - Taipei, Taiwan",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/7975990",
+   "posted": "2026-06-02",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
   },
   {
    "id": "ashby:supabase:47bcfdb8-b954-423e-8a9e-85256434575c",
@@ -3880,6 +3992,20 @@
    "foreign": true
   },
   {
+   "id": "workable:2c2p:63589F4223",
+   "company": "2C2P",
+   "title": "Team Lead, Software Development",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/63589F4223",
+   "posted": "2026-03-24",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
    "id": "greenhouse:okx:7671576003",
    "company": "OKX",
    "title": "Principal Engineer, Agent Infrastructure & Memory Architecture",
@@ -3891,6 +4017,34 @@
    "posted": "2026-03-19",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "workable:2c2p:F2054845E4",
+   "company": "2C2P",
+   "title": "Team Lead, Software Development",
+   "category": "소프트웨어",
+   "senior": true,
+   "location": "Bangkok, Bangkok, Thailand",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/F2054845E4",
+   "posted": "2026-03-16",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
+   "foreign": true
+  },
+  {
+   "id": "workable:2c2p:46C59DE1FB",
+   "company": "2C2P",
+   "title": "Engineer, Software Development",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
+   "region": "아시아 기타",
+   "url": "https://apply.workable.com/j/46C59DE1FB",
+   "posted": "2026-03-12",
+   "firstSeen": "2026-11-08",
+   "source": "workable",
    "foreign": true
   },
   {
@@ -4378,6 +4532,34 @@
    "location": "Home based - Worldwide",
    "region": "원격",
    "url": "https://job-boards.greenhouse.io/canonical/jobs/6635671",
+   "posted": "2025-07-14",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "greenhouse:canonical:6635681",
+   "company": "Canonical",
+   "title": "Software Maintenance Engineer",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Home based - Worldwide",
+   "region": "원격",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/6635681",
+   "posted": "2025-07-14",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true
+  },
+  {
+   "id": "greenhouse:canonical:6635593",
+   "company": "Canonical",
+   "title": "Software Support Engineer",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Home based - Worldwide",
+   "region": "원격",
+   "url": "https://job-boards.greenhouse.io/canonical/jobs/6635593",
    "posted": "2025-07-14",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -5736,6 +5918,34 @@
    "location": "Korea Seoul",
    "region": "한국",
    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Korea-Seoul/Senior-Solutions-Architect--Infiniband-and-Networking-Ethernet---NVIS_JR2010544",
+   "posted": null,
+   "firstSeen": "2026-11-08",
+   "source": "workday",
+   "foreign": true
+  },
+  {
+   "id": "workday:intel|wd1|External|Seoul:JR0286865",
+   "company": "Intel",
+   "title": "Software Enabling and Optimization Engineer",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "South Korea, Seoul",
+   "region": "한국",
+   "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/South-Korea-Seoul/Software-Enabling-and-Optimization-Engineer_JR0286865",
+   "posted": null,
+   "firstSeen": "2026-11-08",
+   "source": "workday",
+   "foreign": true
+  },
+  {
+   "id": "workday:intel|wd1|External|Seoul:JR0288353",
+   "company": "Intel",
+   "title": "Software Enabling and Optimization Engineer",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "South Korea, Seoul",
+   "region": "한국",
+   "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/South-Korea-Seoul/Software-Enabling-and-Optimization-Engineer_JR0288353",
    "posted": null,
    "firstSeen": "2026-11-08",
    "source": "workday",

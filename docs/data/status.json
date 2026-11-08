@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:42+09:00",
+ "updatedAt": "2026-11-08T21:44+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -30,7 +30,7 @@
    "ats": "lever",
    "board": "woven-by-toyota",
    "total": 141,
-   "kept": 9,
+   "kept": 11,
    "ok": true
   },
   {
@@ -54,7 +54,7 @@
    "ats": "greenhouse",
    "board": "stripe",
    "total": 766,
-   "kept": 4,
+   "kept": 5,
    "ok": true
   },
   {
@@ -198,7 +198,7 @@
    "ats": "workable",
    "board": "2c2p",
    "total": 32,
-   "kept": 3,
+   "kept": 10,
    "ok": true
   },
   {
@@ -246,7 +246,7 @@
    "ats": "greenhouse",
    "board": "canonical",
    "total": 316,
-   "kept": 37,
+   "kept": 40,
    "ok": true
   },
   {
@@ -430,7 +430,7 @@
    "ats": "workday",
    "board": "intel|wd1|External|Seoul",
    "total": 3,
-   "kept": 0,
+   "kept": 2,
    "ok": true
   },
   {
