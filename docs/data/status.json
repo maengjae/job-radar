@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T20:11+09:00",
+ "updatedAt": "2026-11-08T20:12+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -30,7 +30,7 @@
    "ats": "lever",
    "board": "woven-by-toyota",
    "total": 141,
-   "kept": 0,
+   "kept": 9,
    "ok": true
   },
   {
