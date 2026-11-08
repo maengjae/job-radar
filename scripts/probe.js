@@ -1,18 +1,11 @@
-const { chromium } = require('playwright');
-const samples = require('./probe_samples.json');
-(async () => {
-  const b = await chromium.launch();
-  const ctx = await b.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', locale: 'ko-KR' });
-  for (const s of samples) {
-    const p = await ctx.newPage();
-    try {
-      await p.goto(s.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
-      await p.waitForTimeout(8000);
-      const body = await p.evaluate(() => document.body ? document.body.innerText : '');
-      const key = s.title.replace(/\[.*?\]|\(.*?\)/g, '').trim().slice(0, 18);
-      console.log(`RES ${s.company} | ok=${body.includes(key)} | final=${p.url().slice(0, 100)} | key=${key}`);
-    } catch (e) { console.log(`RES ${s.company} | ERR ${String(e).slice(0, 60)} | ${s.url}`); }
-    await p.close();
+const https = require('https');
+https.get({host:'careers.linecorp.com', path:'/page-data/ko/jobs/page-data.json', headers:{'User-Agent':'job-radar/1.0'}}, r => { let b=''; r.on('data', c => b += c); r.on('end', () => {
+  const e = JSON.parse(b).result.data.allStrapiJobs.edges.map(x => x.node);
+  console.log('RES keys', Object.keys(e[0]).join(','));
+  for (const n of e.filter(n => [154, 1123, 2956, '154', '1123', '2956'].includes(n.strapiId) || ['154','1123','2956'].includes(String(n.id)))) {
+    const o = {}; for (const [k, v] of Object.entries(n)) if (typeof v !== 'object' || v === null) o[k] = String(v).slice(0, 40);
+    console.log('RES node', JSON.stringify(o));
   }
-  await b.close();
-})();
+  const cnt = {}; for (const n of e) for (const k of ['publish','is_open','status','end_date','active','is_active']) if (k in n) cnt[k+'='+String(n[k]).slice(0,10)] = (cnt[k+'='+String(n[k]).slice(0,10)]||0)+1;
+  console.log('RES counts', JSON.stringify(cnt).slice(0, 600));
+});});
