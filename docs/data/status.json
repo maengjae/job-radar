@@ -1,0 +1,203 @@
+{
+ "updatedAt": "2026-11-08T12:23+09:00",
+ "sources": [
+  {
+   "company": "Mercari",
+   "ats": "greenhouse",
+   "board": "mercari",
+   "total": 0,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Mercari",
+   "ats": "workable",
+   "board": "mercari",
+   "total": 141,
+   "kept": 20,
+   "ok": true
+  },
+  {
+   "company": "SmartNews",
+   "ats": "greenhouse",
+   "board": "smartnews",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  },
+  {
+   "company": "Woven by Toyota",
+   "ats": "lever",
+   "board": "woven-by-toyota",
+   "total": 141,
+   "kept": 12,
+   "ok": true
+  },
+  {
+   "company": "PayPay",
+   "ats": "lever",
+   "board": "paypay",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  },
+  {
+   "company": "Jamm",
+   "ats": "ashby",
+   "board": "jamm",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  },
+  {
+   "company": "Moloco",
+   "ats": "greenhouse",
+   "board": "moloco",
+   "total": 47,
+   "kept": 2,
+   "ok": true
+  },
+  {
+   "company": "Sendbird",
+   "ats": "greenhouse",
+   "board": "sendbird",
+   "total": 4,
+   "kept": 1,
+   "ok": true
+  },
+  {
+   "company": "Stripe",
+   "ats": "greenhouse",
+   "board": "stripe",
+   "total": 766,
+   "kept": 1,
+   "ok": true
+  },
+  {
+   "company": "Cloudflare",
+   "ats": "greenhouse",
+   "board": "cloudflare",
+   "total": 464,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Datadog",
+   "ats": "greenhouse",
+   "board": "datadog",
+   "total": 401,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Databricks",
+   "ats": "greenhouse",
+   "board": "databricks",
+   "total": 922,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "MongoDB",
+   "ats": "greenhouse",
+   "board": "mongodb",
+   "total": 374,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Twilio",
+   "ats": "greenhouse",
+   "board": "twilio",
+   "total": 128,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "GitLab",
+   "ats": "greenhouse",
+   "board": "gitlab",
+   "total": 248,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Coinbase",
+   "ats": "greenhouse",
+   "board": "coinbase",
+   "total": 284,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Okta",
+   "ats": "greenhouse",
+   "board": "okta",
+   "total": 375,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Airwallex",
+   "ats": "lever",
+   "board": "airwallex",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  },
+  {
+   "company": "Wise",
+   "ats": "greenhouse",
+   "board": "wise",
+   "total": 18,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Canva",
+   "ats": "smartrecruiters",
+   "board": "Canva",
+   "total": 37,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "Visa",
+   "ats": "smartrecruiters",
+   "board": "Visa",
+   "total": 0,
+   "kept": 0,
+   "ok": true
+  },
+  {
+   "company": "토스",
+   "ats": "greenhouse",
+   "board": "toss",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  },
+  {
+   "company": "쿠팡",
+   "ats": "greenhouse",
+   "board": "coupang",
+   "total": 673,
+   "kept": 39,
+   "ok": true
+  },
+  {
+   "company": "두나무",
+   "ats": "greenhouse",
+   "board": "dunamu",
+   "total": 0,
+   "kept": 0,
+   "ok": false,
+   "error": "HTTP 404"
+  }
+ ]
+}
