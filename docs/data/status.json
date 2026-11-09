@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T10:52+09:00",
+ "updatedAt": "2026-11-09T22:46+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -13,7 +13,7 @@
    "company": "Mercari",
    "ats": "workable",
    "board": "mercari",
-   "total": 141,
+   "total": 140,
    "kept": 20,
    "ok": true
   },
@@ -53,15 +53,15 @@
    "company": "Stripe",
    "ats": "greenhouse",
    "board": "stripe",
-   "total": 767,
-   "kept": 5,
+   "total": 768,
+   "kept": 6,
    "ok": true
   },
   {
    "company": "Cloudflare",
    "ats": "greenhouse",
    "board": "cloudflare",
-   "total": 464,
+   "total": 465,
    "kept": 0,
    "ok": true
   },
@@ -69,7 +69,7 @@
    "company": "Datadog",
    "ats": "greenhouse",
    "board": "datadog",
-   "total": 402,
+   "total": 401,
    "kept": 1,
    "ok": true
   },
@@ -77,15 +77,15 @@
    "company": "Databricks",
    "ats": "greenhouse",
    "board": "databricks",
-   "total": 922,
-   "kept": 18,
+   "total": 921,
+   "kept": 17,
    "ok": true
   },
   {
    "company": "MongoDB",
    "ats": "greenhouse",
    "board": "mongodb",
-   "total": 374,
+   "total": 375,
    "kept": 7,
    "ok": true
   },
@@ -93,7 +93,7 @@
    "company": "Twilio",
    "ats": "greenhouse",
    "board": "twilio",
-   "total": 128,
+   "total": 129,
    "kept": 0,
    "ok": true
   },
@@ -101,7 +101,7 @@
    "company": "GitLab",
    "ats": "greenhouse",
    "board": "gitlab",
-   "total": 248,
+   "total": 250,
    "kept": 4,
    "ok": true
   },
@@ -141,7 +141,7 @@
    "company": "Canva",
    "ats": "smartrecruiters",
    "board": "Canva",
-   "total": 37,
+   "total": 36,
    "kept": 0,
    "ok": true
   },
@@ -157,15 +157,15 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 668,
-   "kept": 38,
+   "total": 666,
+   "kept": 32,
    "ok": true
   },
   {
    "company": "Agoda",
    "ats": "greenhouse",
    "board": "agoda",
-   "total": 340,
+   "total": 358,
    "kept": 18,
    "ok": true
   },
@@ -173,8 +173,8 @@
    "company": "크래프톤",
    "ats": "greenhouse",
    "board": "krafton",
-   "total": 65,
-   "kept": 5,
+   "total": 68,
+   "kept": 3,
    "ok": true
   },
   {
@@ -182,7 +182,7 @@
    "ats": "greenhouse",
    "board": "daangn",
    "total": 48,
-   "kept": 17,
+   "kept": 18,
    "ok": true
   },
   {
@@ -205,15 +205,15 @@
    "company": "Binance",
    "ats": "greenhouse",
    "board": "binance",
-   "total": 226,
-   "kept": 8,
+   "total": 221,
+   "kept": 7,
    "ok": true
   },
   {
    "company": "Bybit",
    "ats": "greenhouse",
    "board": "bybit",
-   "total": 151,
+   "total": 148,
    "kept": 19,
    "ok": true
   },
@@ -222,7 +222,7 @@
    "ats": "greenhouse",
    "board": "okx",
    "total": 377,
-   "kept": 42,
+   "kept": 40,
    "ok": true
   },
   {
@@ -246,7 +246,7 @@
    "ats": "greenhouse",
    "board": "canonical",
    "total": 316,
-   "kept": 40,
+   "kept": 39,
    "ok": true
   },
   {
@@ -261,7 +261,7 @@
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
-   "total": 817,
+   "total": 813,
    "kept": 1,
    "ok": true
   },
@@ -269,7 +269,7 @@
    "company": "Anthropic",
    "ats": "greenhouse",
    "board": "anthropic",
-   "total": 675,
+   "total": 677,
    "kept": 0,
    "ok": true
   },
@@ -277,7 +277,7 @@
    "company": "Snowflake",
    "ats": "ashby",
    "board": "snowflake",
-   "total": 372,
+   "total": 369,
    "kept": 2,
    "ok": true
   },
@@ -301,15 +301,15 @@
    "company": "Elastic",
    "ats": "greenhouse",
    "board": "elastic",
-   "total": 426,
-   "kept": 1,
+   "total": 425,
+   "kept": 0,
    "ok": true
   },
   {
    "company": "Grafana Labs",
    "ats": "greenhouse",
    "board": "grafanalabs",
-   "total": 134,
+   "total": 132,
    "kept": 0,
    "ok": true
   },
@@ -317,7 +317,7 @@
    "company": "Thunes",
    "ats": "greenhouse",
    "board": "thunes",
-   "total": 43,
+   "total": 41,
    "kept": 4,
    "ok": true
   },
@@ -357,7 +357,7 @@
    "company": "Remotive (원격 공고 모음)",
    "ats": "remotive",
    "board": "software-dev",
-   "total": 13,
+   "total": 12,
    "kept": 1,
    "ok": true
   },
@@ -366,15 +366,15 @@
    "ats": "himalayas",
    "board": "all",
    "total": 200,
-   "kept": 2,
+   "kept": 1,
    "ok": true
   },
   {
    "company": "토스",
    "ats": "toss",
    "board": "all",
-   "total": 498,
-   "kept": 56,
+   "total": 501,
+   "kept": 54,
    "ok": true
   },
   {
@@ -389,8 +389,8 @@
    "company": "Amazon / AWS",
    "ats": "amazon",
    "board": "KOR",
-   "total": 66,
-   "kept": 5,
+   "total": 73,
+   "kept": 7,
    "ok": true
   },
   {
@@ -421,7 +421,7 @@
    "company": "NVIDIA",
    "ats": "workday",
    "board": "nvidia|wd5|NVIDIAExternalCareerSite|Seoul",
-   "total": 18,
+   "total": 17,
    "kept": 7,
    "ok": true
   },
@@ -461,7 +461,7 @@
    "company": "Citi",
    "ats": "workday",
    "board": "citi|wd5|2|Seoul",
-   "total": 81,
+   "total": 80,
    "kept": 0,
    "ok": true
   },
@@ -485,7 +485,7 @@
    "company": "NAVER",
    "ats": "naver",
    "board": "all",
-   "total": 29,
+   "total": 32,
    "kept": 4,
    "ok": true
   },
@@ -501,7 +501,7 @@
    "company": "카카오뱅크",
    "ats": "kakaobank",
    "board": "all",
-   "total": 97,
+   "total": 98,
    "kept": 2,
    "ok": true
   },
@@ -509,15 +509,15 @@
    "company": "LG",
    "ats": "lg",
    "board": "all",
-   "total": 69,
-   "kept": 7,
+   "total": 73,
+   "kept": 6,
    "ok": true
   },
   {
    "company": "SK",
    "ats": "sk",
    "board": "all",
-   "total": 112,
+   "total": 117,
    "kept": 11,
    "ok": true
   },
@@ -533,7 +533,7 @@
    "company": "CJ",
    "ats": "cj",
    "board": "all",
-   "total": 105,
+   "total": 110,
    "kept": 6,
    "ok": true
   },
@@ -541,7 +541,7 @@
    "company": "KB금융",
    "ats": "kb",
    "board": "all",
-   "total": 2,
+   "total": 4,
    "kept": 0,
    "ok": true
   }
