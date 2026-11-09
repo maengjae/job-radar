@@ -165,23 +165,6 @@
    "foreign": true
   },
   {
-   "id": "jamm-backend",
-   "company": "Jamm",
-   "title": "Backend Developer",
-   "category": "백엔드",
-   "senior": false,
-   "location": "일본 도쿄 (주 3일 출근)",
-   "region": "일본",
-   "url": "https://japan-dev.com/jobs/jamm/jamm-backend-developer-n7o3sk",
-   "posted": null,
-   "deadline": "상시",
-   "level": "경력",
-   "minYears": 2,
-   "note": "Go·PostgreSQL·AWS·Terraform, 미드레벨(2~3년+), 영어 비즈니스, 비자·이주 지원, 연 700~1,000만 엔 · 2026-10 게시",
-   "foundAt": "2026-11-08",
-   "foreign": true
-  },
-  {
    "id": "mercari-be-foundation",
    "company": "Mercari",
    "title": "Software Engineer, Backend (foundation)",
@@ -229,23 +212,6 @@
    "level": "경력",
    "minYears": 5,
    "note": "백엔드 5년+, Java/Kotlin·Spring Boot·Aurora, 영어 비즈니스, 비자·이주 지원 · 2026-06 게시",
-   "foundAt": "2026-11-08",
-   "foreign": true
-  },
-  {
-   "id": "tokyo-servicenow-dev",
-   "company": "IT 컨설팅사 (비공개)",
-   "title": "ServiceNow Developer/Administrator",
-   "category": "IT운영/플랫폼",
-   "senior": false,
-   "location": "일본 도쿄",
-   "region": "일본",
-   "url": "https://www.careercross.com/en/job/detail-1578210",
-   "posted": null,
-   "deadline": "상시",
-   "level": "경력",
-   "minYears": 3,
-   "note": "3년+, 일본어·영어 비즈니스, 일본 취업 자격 필요(비자 지원 없음) · 2026-04 갱신",
    "foundAt": "2026-11-08",
    "foreign": true
   }

@@ -1,5 +1,5 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | naver | kakao | kakaobank | lg | sk | hyundai | cj | kb | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 국내 회사 기준: 대기업·계열사·외국계 대기업, 또는 연 매출 1,000억 원 이상(당근·토스 등)만 넣습니다. 중소기업과 작은 중견기업은 넣지 않습니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | naver | kakao | kakaobank | lg | sk | hyundai | cj | kb | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 회사 기준(국내·해외 공통): 대기업·계열사·상장사, 또는 매출 규모가 큰 비상장사(당근·토스·Stripe·OpenAI 등)만 넣습니다. 중소기업·스타트업과 회사 규모를 거를 수 없는 원격 공고 모음 사이트는 넣지 않습니다.",
   "sources": [
     {
       "company": "Mercari",
@@ -142,12 +142,6 @@
       "board": "musinsa"
     },
     {
-      "company": "2C2P",
-      "ats": "workable",
-      "board": "2c2p",
-      "foreign": true
-    },
-    {
       "company": "Binance",
       "ats": "greenhouse",
       "board": "binance",
@@ -184,12 +178,6 @@
       "foreign": true
     },
     {
-      "company": "ClickHouse",
-      "ats": "ashby",
-      "board": "clickhouse",
-      "foreign": true
-    },
-    {
       "company": "OpenAI",
       "ats": "ashby",
       "board": "openai",
@@ -208,67 +196,10 @@
       "foreign": true
     },
     {
-      "company": "Supabase",
-      "ats": "ashby",
-      "board": "supabase",
-      "foreign": true
-    },
-    {
-      "company": "Temporal",
-      "ats": "ashby",
-      "board": "temporal",
-      "foreign": true
-    },
-    {
       "company": "Elastic",
       "ats": "greenhouse",
       "board": "elastic",
       "foreign": true
-    },
-    {
-      "company": "Grafana Labs",
-      "ats": "greenhouse",
-      "board": "grafanalabs",
-      "foreign": true
-    },
-    {
-      "company": "Thunes",
-      "ats": "greenhouse",
-      "board": "thunes",
-      "foreign": true
-    },
-    {
-      "company": "Xendit",
-      "ats": "greenhouse",
-      "board": "xendit",
-      "foreign": true
-    },
-    {
-      "company": "Funding Societies",
-      "ats": "workable",
-      "board": "fundingsocieties",
-      "foreign": true
-    },
-    {
-      "company": "Ninja Van",
-      "ats": "lever",
-      "board": "ninjavan",
-      "foreign": true
-    },
-    {
-      "company": "Remote OK (원격 공고 모음)",
-      "ats": "remoteok",
-      "board": "all"
-    },
-    {
-      "company": "Remotive (원격 공고 모음)",
-      "ats": "remotive",
-      "board": "software-dev"
-    },
-    {
-      "company": "Himalayas (원격 공고 모음)",
-      "ats": "himalayas",
-      "board": "all"
     },
     {
       "company": "토스",
