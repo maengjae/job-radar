@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T22:46+09:00",
+ "updatedAt": "2026-11-09T23:30+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -53,7 +53,7 @@
    "company": "Stripe",
    "ats": "greenhouse",
    "board": "stripe",
-   "total": 768,
+   "total": 769,
    "kept": 6,
    "ok": true
   },
@@ -69,7 +69,7 @@
    "company": "Datadog",
    "ats": "greenhouse",
    "board": "datadog",
-   "total": 401,
+   "total": 403,
    "kept": 1,
    "ok": true
   },
@@ -101,7 +101,7 @@
    "company": "GitLab",
    "ats": "greenhouse",
    "board": "gitlab",
-   "total": 250,
+   "total": 247,
    "kept": 4,
    "ok": true
   },
@@ -117,7 +117,7 @@
    "company": "Okta",
    "ats": "greenhouse",
    "board": "okta",
-   "total": 375,
+   "total": 376,
    "kept": 0,
    "ok": true
   },
@@ -165,7 +165,7 @@
    "company": "Agoda",
    "ats": "greenhouse",
    "board": "agoda",
-   "total": 358,
+   "total": 357,
    "kept": 18,
    "ok": true
   },
@@ -194,18 +194,10 @@
    "ok": true
   },
   {
-   "company": "2C2P",
-   "ats": "workable",
-   "board": "2c2p",
-   "total": 32,
-   "kept": 10,
-   "ok": true
-  },
-  {
    "company": "Binance",
    "ats": "greenhouse",
    "board": "binance",
-   "total": 221,
+   "total": 222,
    "kept": 7,
    "ok": true
   },
@@ -213,7 +205,7 @@
    "company": "Bybit",
    "ats": "greenhouse",
    "board": "bybit",
-   "total": 148,
+   "total": 149,
    "kept": 19,
    "ok": true
   },
@@ -250,18 +242,10 @@
    "ok": true
   },
   {
-   "company": "ClickHouse",
-   "ats": "ashby",
-   "board": "clickhouse",
-   "total": 201,
-   "kept": 9,
-   "ok": true
-  },
-  {
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
-   "total": 813,
+   "total": 815,
    "kept": 1,
    "ok": true
   },
@@ -282,91 +266,11 @@
    "ok": true
   },
   {
-   "company": "Supabase",
-   "ats": "ashby",
-   "board": "supabase",
-   "total": 70,
-   "kept": 17,
-   "ok": true
-  },
-  {
-   "company": "Temporal",
-   "ats": "ashby",
-   "board": "temporal",
-   "total": 81,
-   "kept": 1,
-   "ok": true
-  },
-  {
    "company": "Elastic",
    "ats": "greenhouse",
    "board": "elastic",
-   "total": 425,
+   "total": 428,
    "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "Grafana Labs",
-   "ats": "greenhouse",
-   "board": "grafanalabs",
-   "total": 132,
-   "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "Thunes",
-   "ats": "greenhouse",
-   "board": "thunes",
-   "total": 41,
-   "kept": 4,
-   "ok": true
-  },
-  {
-   "company": "Xendit",
-   "ats": "greenhouse",
-   "board": "xendit",
-   "total": 17,
-   "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "Funding Societies",
-   "ats": "workable",
-   "board": "fundingsocieties",
-   "total": 84,
-   "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "Ninja Van",
-   "ats": "lever",
-   "board": "ninjavan",
-   "total": 141,
-   "kept": 0,
-   "ok": true
-  },
-  {
-   "company": "Remote OK (원격 공고 모음)",
-   "ats": "remoteok",
-   "board": "all",
-   "total": 99,
-   "kept": 16,
-   "ok": true
-  },
-  {
-   "company": "Remotive (원격 공고 모음)",
-   "ats": "remotive",
-   "board": "software-dev",
-   "total": 12,
-   "kept": 1,
-   "ok": true
-  },
-  {
-   "company": "Himalayas (원격 공고 모음)",
-   "ats": "himalayas",
-   "board": "all",
-   "total": 200,
-   "kept": 1,
    "ok": true
   },
   {
