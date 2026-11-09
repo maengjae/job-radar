@@ -24,7 +24,7 @@ ROLE_RULES = [
     ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
     ("소프트웨어", r"software\b.{0,40}\b(engineer|developer)|software development|product engineer|소프트웨어|개발자"),
 ]
-EXCLUDE = r"intern(ship)?\b|산업기능요원|전문연구요원|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
+EXCLUDE = r"security|secops|appsec|cyber|penetration|pentest|vulnerab|threat|\bsoc\b|ciso|identity and access|보안|정보보호|침해|취약점|관제|모의해킹|intern(ship)?\b|산업기능요원|전문연구요원|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
 
 # 지역 판별: 아시아·원격만 남긴다
