@@ -108,6 +108,26 @@
   .link small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.4; margin-top: 1px; }
   .intro { margin: 20px 0 0; color: var(--muted); font-size: 14px; max-width: 64ch; }
 
+  /* 이력서 받기 */
+  .mast-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .cv-btn { font: inherit; font-size: 14px; font-weight: 700; color: var(--surface); background: var(--ink); border: 0; border-radius: 999px; padding: 9px 16px; cursor: pointer; }
+  .cv-btn:hover { background: var(--accent); }
+  dialog.cv { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); color: var(--ink); padding: 24px; width: min(400px, calc(100vw - 32px)); box-shadow: 0 20px 60px rgba(15, 20, 28, .25); }
+  dialog.cv::backdrop { background: rgba(15, 20, 28, .45); }
+  dialog.cv h2 { margin: 0 0 4px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+  dialog.cv p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+  dialog.cv form { display: flex; gap: 8px; }
+  dialog.cv form[hidden], .cv-files[hidden] { display: none; }
+  dialog.cv input { flex: 1; min-width: 0; font: inherit; font-size: 15px; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--ink); }
+  dialog.cv button[type=submit] { font: inherit; font-weight: 700; padding: 10px 16px; border: 0; border-radius: var(--radius-sm); background: var(--accent); color: #fff; cursor: pointer; }
+  dialog.cv button[disabled] { opacity: .6; cursor: progress; }
+  .cv-msg { min-height: 20px; margin-top: 10px; font-size: 13px; color: var(--danger); }
+  .cv-files { display: grid; gap: 8px; margin-top: 4px; }
+  .cv-files a { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); text-decoration: none; font-weight: 700; }
+  .cv-files a:hover { border-color: var(--accent); color: var(--accent); }
+  .cv-files a span { font-size: 12px; font-weight: 500; color: var(--faint); }
+  .cv-close { position: absolute; top: 12px; right: 12px; font: inherit; font-size: 20px; line-height: 1; background: none; border: 0; color: var(--faint); cursor: pointer; padding: 4px 8px; }
+
   /* 하단 */
   footer.wrap { border-top: 1px solid var(--line); padding-top: 24px; padding-bottom: 48px; color: var(--muted); font-size: 13px; }
   footer details summary { cursor: pointer; font-weight: 700; color: var(--ink); }
@@ -123,6 +143,8 @@
     .job .mark { width: 36px; height: 36px; font-size: 14px; }
     .side { grid-column: 2; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; }
     .tab { font-size: 15px; padding: 11px 10px 12px; }
+    .mast-right { width: 100%; flex-direction: row-reverse; justify-content: space-between; align-items: center; }
+    .cv-btn { padding: 8px 14px; font-size: 13px; flex-shrink: 0; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -131,8 +153,22 @@
   <div class="wrap">
     <header class="masthead">
       <h1>Job<span>Radar</span></h1>
-      <p class="pulse" id="pulse">공고를 불러오는 중입니다</p>
+      <div class="mast-right">
+        <button class="cv-btn" type="button" id="cv-open">내 이력서 받기</button>
+        <p class="pulse" id="pulse">공고를 불러오는 중입니다</p>
+      </div>
     </header>
+    <dialog class="cv" id="cv" aria-labelledby="cv-title">
+      <button class="cv-close" type="button" id="cv-close" aria-label="닫기">×</button>
+      <h2 id="cv-title">이력서 받기</h2>
+      <p id="cv-desc">이력서는 암호화되어 있습니다. 비밀번호를 입력하면 이 기기에서 풀어서 내려받습니다.</p>
+      <form id="cv-form" autocomplete="off">
+        <input id="cv-pw" type="password" placeholder="비밀번호" aria-label="비밀번호" required>
+        <button type="submit" id="cv-go">열기</button>
+      </form>
+      <div class="cv-msg" id="cv-msg" role="status"></div>
+      <div class="cv-files" id="cv-files" hidden></div>
+    </dialog>
   </div>
 
   <div class="bar">
@@ -286,6 +322,35 @@
   if (['abroad', 'domestic', 'links'].includes(fromHash)) state.tab = fromHash;
   window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (['abroad', 'domestic', 'links'].includes(h) && h !== state.tab) { state.tab = h; render(); } });
   render();
+
+  // 이력서: 암호화된 resume.json을 비밀번호로 복호화해 내려받기 (서버 없이 브라우저에서만 처리)
+  (function resume() {
+    const dlg = $('cv'), b64 = (t) => Uint8Array.from(atob(t), (c) => c.charCodeAt(0));
+    $('cv-open').onclick = () => { dlg.showModal(); $('cv-pw').focus(); };
+    $('cv-close').onclick = () => dlg.close();
+    $('cv-form').onsubmit = async (e) => {
+      e.preventDefault();
+      const go = $('cv-go'); go.disabled = true; go.textContent = '여는 중'; $('cv-msg').textContent = '';
+      try {
+        const doc = await (await fetch('private/resume.json?t=' + Date.now())).json();
+        const base = await crypto.subtle.importKey('raw', new TextEncoder().encode($('cv-pw').value), 'PBKDF2', false, ['deriveKey']);
+        const key = await crypto.subtle.deriveKey({name: 'PBKDF2', salt: b64(doc.salt), iterations: doc.iterations, hash: 'SHA-256'}, base, {name: 'AES-GCM', length: 256}, false, ['decrypt']);
+        const open = (x) => crypto.subtle.decrypt({name: 'AES-GCM', iv: b64(x.iv)}, key, b64(x.data));
+        try { await open(doc.check); } catch { throw new Error('비밀번호가 맞지 않습니다. 다시 입력해 주세요.'); }
+        const links = await Promise.all(doc.files.map(async (f) => {
+          const url = URL.createObjectURL(new Blob([await open(f)], {type: 'application/pdf'}));
+          const a = el('a', {href: url}, f.name.replace(/\.pdf$/, '').replace(/^.*_/, ''), el('span', {textContent: 'PDF 내려받기'}));
+          // 한글 파일명은 일부 브라우저에서 'download'로 바뀌어 저장되므로 영문 파일명을 쓴다
+          a.setAttribute('download', f.name.includes('경력기술서') ? 'Maeng_Jaeyoung_Career.pdf' : f.name.includes('이력서') ? 'Maeng_Jaeyoung_Resume.pdf' : f.name);
+          return a;
+        }));
+        $('cv-form').hidden = true; $('cv-desc').textContent = '받을 파일을 고르세요.';
+        $('cv-files').replaceChildren(...links); $('cv-files').hidden = false;
+      } catch (err) {
+        $('cv-msg').textContent = err.message.includes('비밀번호') ? err.message : '이력서 파일을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.';
+      } finally { go.disabled = false; go.textContent = '열기'; }
+    };
+  })();
 
   const src = status.sources || [];
   $('status-note').textContent = `출처 ${src.length}곳 중 ${src.filter((s) => s.ok).length}곳 정상, 직접 추가한 공고 ${jobs.filter((j) => j.source === '직접 추가').length}건 포함`;
