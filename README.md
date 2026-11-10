@@ -23,3 +23,15 @@
 python scripts/collect.py
 python -m http.server -d docs 8000
 ```
+
+## 이력서 받기 (비밀번호)
+
+대시보드의 "내 이력서 받기"는 `docs/private/resume.json`(암호화된 이력서·경력기술서)을 비밀번호로 풀어서 내려받습니다. 복호화는 브라우저 안에서만 이뤄지고, 원본 PDF는 저장소에 올리지 않습니다(`.gitignore`에 `*.pdf`).
+
+이력서나 비밀번호를 바꾸려면:
+
+```bash
+pip install cryptography
+python scripts/encrypt_resume.py "새 비밀번호" 맹재영_이력서.pdf 맹재영_경력기술서.pdf
+git add docs/private/resume.json && git commit -m "이력서 갱신" && git push
+```
