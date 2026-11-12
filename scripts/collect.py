@@ -270,6 +270,26 @@ def from_lg(board):
         }
 
 
+def from_hanwha(board):
+    page = 0
+    while page < 10:
+        d = post_json("https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/search-rcrt", {"langCd": "ko", "searchText": "", "sdSeqList": None, "rtNrcrtYn": "", "rtCarrYn": "", "rtIntnYn": "", "rtPermanentWorkYn": "", "rtTempWorkYn": "", "djSeqList": None, "rjSeqList": None, "page": page, "size": 100})["data"]
+        for j in d.get("list", []):
+            yield {
+                "jid": str(j["rtSeq"]),
+                "title": j.get("rtNm", ""),
+                "company": j.get("sdNm") or "한화",
+                "location": "Korea",
+                "url": f"https://www.hanwhain.com/portal/apply/recruit/detail?rtSeq={j['rtSeq']}",
+                "posted": None,
+                "deadline": (j.get("rtAcptEndDttm") or "")[:10].replace(".", "-") or None,
+                "etype": " ".join(t.get("rttgNm", "") for t in j.get("tagList") or []),
+            }
+        if not d.get("hasNext"):
+            break
+        page += 1
+
+
 def from_sk(board):
     d = post_form("https://www.skcareers.com/Recruit/GetRecruitList", {"sort": "2", "searchText": "", "corpCode": "", "jobRole": "0", "recruitType": "", "workingType": "", "workingRegion": ""})
     for j in d.get("list", []):
@@ -472,6 +492,7 @@ FETCHERS = {
     "line": from_line,
     "lg": from_lg,
     "sk": from_sk,
+    "hanwha": from_hanwha,
     "hyundai": from_hyundai,
     "cj": from_cj,
     "kb": from_kb,

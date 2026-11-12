@@ -10,11 +10,6 @@
      "note": "공고별 링크가 없어 목록 페이지로만 연결 가능"
     },
     {
-     "name": "한화",
-     "url": "https://www.hanwhain.com/portal/apply/recruit",
-     "note": "공고 목록을 불러오는 경로를 찾지 못함"
-    },
-    {
      "name": "롯데",
      "url": "https://recruit.lotte.co.kr/apply/announcement/",
      "note": "사이트에 봇 차단이 있어 자동 조회 불가"

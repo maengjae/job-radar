@@ -4,30 +4,16 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
       - run: |
-          python3 - <<'P'
-          import json, urllib.request
-          body = {"langCd":"ko","searchText":"","sdSeqList":None,"rtNrcrtYn":"","rtCarrYn":"","rtIntnYn":"","rtPermanentWorkYn":"","rtTempWorkYn":"","djSeqList":None,"rjSeqList":[29],"page":0,"size":100}
-          req = urllib.request.Request("https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/search-rcrt", data=json.dumps(body).encode(), headers={"Content-Type":"application/json","User-Agent":"Mozilla/5.0 job-radar"})
-          d = json.load(urllib.request.urlopen(req, timeout=30))["data"]
-          print("IT count", d["filteredCount"])
-          for j in d["list"]: print("JOB", j["rtSeq"], j["sdNm"], "|", j["rtNm"], "|", j["rtAcptEndDttm"], [t["rttgNm"] for t in j["tagList"]])
-          P
-      - run: |
-          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
-          cat > p.js <<'J'
-          const { chromium } = require('playwright');
-          (async () => {
-            const b = await chromium.launch(); const pg = await b.newPage();
-            await pg.goto('https://www.hanwhain.com/portal/apply/recruit', {waitUntil:'networkidle', timeout:60000});
-            await pg.click('text=ESG 환경 담당', {timeout:15000}).catch(e=>console.log('clickerr', e.message));
-            await pg.waitForTimeout(4000);
-            console.log('DETAIL', pg.url(), (await pg.innerText('body')).slice(0,300).replace(/\s+/g,' '));
-            const p2 = await b.newPage();
-            for (const u of ['https://www.hanwhain.com/portal/apply/recruit/detail?rtSeq=20124','https://www.hanwhain.com/portal/apply/recruit/20124']) {
-              await p2.goto(u, {waitUntil:'networkidle'}); console.log('TRY', u, '->', p2.url(), (await p2.innerText('body')).slice(0,200).replace(/\s+/g,' '));
-            }
-            await b.close();
-          })();
-          J
-          node p.js
+          pip install -q requests 2>/dev/null || true
+          python scripts/collect.py > out.txt 2>&1; tail -5 out.txt
+          python3 -c "
+          import json
+          s=json.load(open('docs/data/status.json')); print('STATUS', [x for x in (s if isinstance(s,list) else s.get('sources',[])) if '한화' in json.dumps(x,ensure_ascii=False)])
+          j=json.load(open('docs/data/jobs.json')); jobs=j if isinstance(j,list) else j.get('jobs',[])
+          for x in jobs:
+            if 'hanwhain' in x.get('url',''): print('HJ', x.get('company'),'|',x.get('title'),'|',x.get('role'),'|',x.get('deadline'),'|',x.get('url'))
+          "
