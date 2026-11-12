@@ -1,0 +1,26 @@
+name: probe
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://www.hanwhain.com/ https://www.hanwhain.com/portal/apply/notice/list; do curl -sL -o /dev/null -w "%{http_code} %{url_effective} $u\n" -m 20 "$u"; done
+      - run: |
+          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
+          cat > p.js <<'J'
+          const { chromium } = require('playwright');
+          (async () => {
+            const b = await chromium.launch(); const pg = await b.newPage();
+            for (const u of ['https://www.hanwhain.com/', 'https://www.hanwhain.com/portal/apply/notice/list']) {
+              try { const r = await pg.goto(u, {waitUntil:'networkidle', timeout:40000});
+                console.log('URL', u, '->', pg.url(), r && r.status(), await pg.title());
+                const links = await pg.$$eval('a', as => as.map(a => (a.innerText||'').trim().slice(0,30)+' | '+a.href).filter(s => /apply|notice|recruit|공고|채용/i.test(s)));
+                console.log([...new Set(links)].slice(0,40).join('\n'));
+                console.log('TEXT', (await pg.innerText('body')).slice(0,600).replace(/\s+/g,' '));
+              } catch(e) { console.log('ERR', u, e.message); }
+            }
+            await b.close();
+          })();
+          J
+          node p.js
