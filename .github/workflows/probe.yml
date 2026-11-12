@@ -1,0 +1,31 @@
+name: probe
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -s https://www.hanwhain.com/robots.txt | head -30
+      - run: |
+          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
+          cat > p.js <<'J'
+          const { chromium } = require('playwright');
+          (async () => {
+            const b = await chromium.launch(); const pg = await b.newPage();
+            pg.on('response', async r => {
+              const ct = r.headers()['content-type']||'';
+              if (!/json/.test(ct)) return;
+              const q = r.request();
+              let body=''; try { body = (await r.text()).slice(0,1500); } catch(e){}
+              console.log('API', q.method(), r.url(), 'POST=', (q.postData()||'').slice(0,300));
+              console.log('BODY', body.replace(/\s+/g,' '));
+            });
+            await pg.goto('https://www.hanwhain.com/portal/apply/recruit', {waitUntil:'networkidle', timeout:60000});
+            const links = await pg.$$eval('a', as => as.map(a => (a.innerText||'').trim().replace(/\s+/g,' ').slice(0,40)+' | '+a.href+' | '+(a.getAttribute('onclick')||'')));
+            console.log('LINKS\n'+links.filter(s=>/채용|recruit/.test(s)).slice(0,15).join('\n'));
+            // click first posting to find detail URL
+            const first = await pg.$('text=/채용/');
+            await b.close();
+          })();
+          J
+          node p.js
