@@ -12,7 +12,7 @@ jobs:
           const { chromium } = require('playwright');
           (async () => {
             const b = await chromium.launch(); const pg = await b.newPage();
-            for (const u of ['https://www.hanwhain.com/', 'https://www.hanwhain.com/portal/apply/notice/list']) {
+            for (const u of ['https://www.hanwhain.com/portal/apply/recruit']) {
               try { const r = await pg.goto(u, {waitUntil:'networkidle', timeout:40000});
                 console.log('URL', u, '->', pg.url(), r && r.status(), await pg.title());
                 const links = await pg.$$eval('a', as => as.map(a => (a.innerText||'').trim().slice(0,30)+' | '+a.href).filter(s => /apply|notice|recruit|공고|채용/i.test(s)));
