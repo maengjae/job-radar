@@ -5,26 +5,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -s https://www.hanwhain.com/robots.txt | head -30
+          python3 - <<'P'
+          import json, urllib.request
+          body = {"langCd":"ko","searchText":"","sdSeqList":None,"rtNrcrtYn":"","rtCarrYn":"","rtIntnYn":"","rtPermanentWorkYn":"","rtTempWorkYn":"","djSeqList":None,"rjSeqList":[29],"page":0,"size":100}
+          req = urllib.request.Request("https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/search-rcrt", data=json.dumps(body).encode(), headers={"Content-Type":"application/json","User-Agent":"Mozilla/5.0 job-radar"})
+          d = json.load(urllib.request.urlopen(req, timeout=30))["data"]
+          print("IT count", d["filteredCount"])
+          for j in d["list"]: print("JOB", j["rtSeq"], j["sdNm"], "|", j["rtNm"], "|", j["rtAcptEndDttm"], [t["rttgNm"] for t in j["tagList"]])
+          P
       - run: |
           npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
           cat > p.js <<'J'
           const { chromium } = require('playwright');
           (async () => {
             const b = await chromium.launch(); const pg = await b.newPage();
-            pg.on('response', async r => {
-              const ct = r.headers()['content-type']||'';
-              if (!/json/.test(ct)) return;
-              const q = r.request();
-              let body=''; try { body = (await r.text()).slice(0,1500); } catch(e){}
-              console.log('API', q.method(), r.url(), 'POST=', (q.postData()||'').slice(0,300));
-              console.log('BODY', body.replace(/\s+/g,' '));
-            });
             await pg.goto('https://www.hanwhain.com/portal/apply/recruit', {waitUntil:'networkidle', timeout:60000});
-            const links = await pg.$$eval('a', as => as.map(a => (a.innerText||'').trim().replace(/\s+/g,' ').slice(0,40)+' | '+a.href+' | '+(a.getAttribute('onclick')||'')));
-            console.log('LINKS\n'+links.filter(s=>/채용|recruit/.test(s)).slice(0,15).join('\n'));
-            // click first posting to find detail URL
-            const first = await pg.$('text=/채용/');
+            await pg.click('text=ESG 환경 담당', {timeout:15000}).catch(e=>console.log('clickerr', e.message));
+            await pg.waitForTimeout(4000);
+            console.log('DETAIL', pg.url(), (await pg.innerText('body')).slice(0,300).replace(/\s+/g,' '));
+            const p2 = await b.newPage();
+            for (const u of ['https://www.hanwhain.com/portal/apply/recruit/detail?rtSeq=20124','https://www.hanwhain.com/portal/apply/recruit/20124']) {
+              await p2.goto(u, {waitUntil:'networkidle'}); console.log('TRY', u, '->', p2.url(), (await p2.innerText('body')).slice(0,200).replace(/\s+/g,' '));
+            }
             await b.close();
           })();
           J
