@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T10:22+09:00",
+ "updatedAt": "2026-11-13T10:24+09:00",
  "jobs": [
   {
    "id": "workable:mercari:81BDF5DEEB",
@@ -14,6 +14,21 @@
    "firstSeen": "2026-11-13",
    "source": "workable",
    "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:coupang:8384779",
+   "company": "쿠팡",
+   "title": "Senior Backend Engineer (Monetization) - Coupang Play",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Singapore",
+   "region": "싱가포르",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8384779",
+   "posted": "2026-11-12",
+   "firstSeen": "2026-11-13",
+   "source": "greenhouse",
+   "foreign": false,
    "deadline": null
   },
   {
@@ -326,21 +341,6 @@
    "region": "한국",
    "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=J20261008041048",
    "posted": "2026-10-07",
-   "firstSeen": "2026-11-13",
-   "source": "cj",
-   "foreign": false,
-   "deadline": null
-  },
-  {
-   "id": "cj:all:J20261007041044",
-   "company": "CJ제일제당",
-   "title": "[CJ제일제당] 카페 소재(음료) 메뉴개발 담당자 경력 채용",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "수원(광교) Korea",
-   "region": "한국",
-   "url": "https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=J20261007041044",
-   "posted": "2026-10-06",
    "firstSeen": "2026-11-13",
    "source": "cj",
    "foreign": false,

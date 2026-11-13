@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T10:22+09:00",
+ "updatedAt": "2026-11-13T10:24+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -157,8 +157,8 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 677,
-   "kept": 36,
+   "total": 678,
+   "kept": 37,
    "ok": true
   },
   {
@@ -446,7 +446,7 @@
    "ats": "cj",
    "board": "all",
    "total": 121,
-   "kept": 17,
+   "kept": 16,
    "ok": true
   },
   {
