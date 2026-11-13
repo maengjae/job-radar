@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T10:24+09:00",
+ "updatedAt": "2026-11-13T11:51+09:00",
  "jobs": [
   {
    "id": "workable:mercari:81BDF5DEEB",
@@ -13,6 +13,21 @@
    "posted": "2026-11-12",
    "firstSeen": "2026-11-13",
    "source": "workable",
+   "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:stripe:8354762",
+   "company": "Stripe",
+   "title": "Solutions Architect (Korea Market)",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Singapore",
+   "region": "싱가포르",
+   "url": "https://stripe.com/jobs/listing/x/8354762",
+   "posted": "2026-11-12",
+   "firstSeen": "2026-11-13",
+   "source": "greenhouse",
    "foreign": true,
    "deadline": null
   },
@@ -32,6 +47,21 @@
    "deadline": null
   },
   {
+   "id": "greenhouse:coupang:8384805",
+   "company": "쿠팡",
+   "title": "Senior Backend Engineer (Monetization) - Coupang Play",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Seoul, South Korea",
+   "region": "한국",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8384805",
+   "posted": "2026-11-12",
+   "firstSeen": "2026-11-13",
+   "source": "greenhouse",
+   "foreign": false,
+   "deadline": null
+  },
+  {
    "id": "greenhouse:coupang:8302736",
    "company": "쿠팡",
    "title": "Staff Backend Engineer (Fintech Data Platform)",
@@ -40,6 +70,21 @@
    "location": "Seoul, South Korea",
    "region": "한국",
    "url": "https://job-boards.greenhouse.io/coupang/jobs/8302736",
+   "posted": "2026-11-12",
+   "firstSeen": "2026-11-13",
+   "source": "greenhouse",
+   "foreign": false,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:coupang:8384816",
+   "company": "쿠팡",
+   "title": "Staff, Backend Engineer (Monetization) - Coupang Play",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Seoul, South Korea",
+   "region": "한국",
+   "url": "https://job-boards.greenhouse.io/coupang/jobs/8384816",
    "posted": "2026-11-12",
    "firstSeen": "2026-11-13",
    "source": "greenhouse",
@@ -74,6 +119,21 @@
    "firstSeen": "2026-11-13",
    "source": "greenhouse",
    "foreign": false,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:binance:5025783101",
+   "company": "Binance",
+   "title": "Full Stack Engineer - Recommendation Engine (APAC Remote)",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Hong Kong; Japan; Singapore; Taiwan",
+   "region": "일본",
+   "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5025783101",
+   "posted": "2026-11-12",
+   "firstSeen": "2026-11-13",
+   "source": "greenhouse",
+   "foreign": true,
    "deadline": null
   },
   {
@@ -1982,21 +2042,6 @@
    "deadline": null
   },
   {
-   "id": "greenhouse:agoda:8305589",
-   "company": "Agoda",
-   "title": "[Infra] Senior Software Engineer – Kubernetes Platform (Bangkok Based, relocation provided)",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Bangkok",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/agoda/jobs/8305589",
-   "posted": "2026-10-22",
-   "firstSeen": "2026-11-10",
-   "source": "greenhouse",
-   "foreign": true,
-   "deadline": null
-  },
-  {
    "id": "kakaobank:all:268717",
    "company": "카카오뱅크",
    "title": "쿠버네티스(Kubernetes) 엔지니어",
@@ -2387,21 +2432,6 @@
    "deadline": null
   },
   {
-   "id": "greenhouse:okx:8107996003",
-   "company": "OKX",
-   "title": "Infrastructure Architect",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/8107996003",
-   "posted": "2026-10-30",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true,
-   "deadline": null
-  },
-  {
    "id": "greenhouse:okx:8108181003",
    "company": "OKX",
    "title": "Infrastructure Architect",
@@ -2410,6 +2440,21 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/8108181003",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:okx:8107996003",
+   "company": "OKX",
+   "title": "Infrastructure Architect",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/8107996003",
    "posted": "2026-10-30",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -5012,21 +5057,6 @@
    "deadline": null
   },
   {
-   "id": "greenhouse:okx:7777043003",
-   "company": "OKX",
-   "title": "Software Engineer, Mobile, Web3",
-   "category": "소프트웨어",
-   "senior": false,
-   "location": "Singapore, Singapore",
-   "region": "싱가포르",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7777043003",
-   "posted": "2026-06-22",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true,
-   "deadline": null
-  },
-  {
    "id": "greenhouse:okx:7777044003",
    "company": "OKX",
    "title": "Software Engineer, Mobile, Web3",
@@ -5035,6 +5065,21 @@
    "location": "Hong Kong, Hong Kong SAR",
    "region": "아시아 기타",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7777044003",
+   "posted": "2026-06-22",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:okx:7777043003",
+   "company": "OKX",
+   "title": "Software Engineer, Mobile, Web3",
+   "category": "소프트웨어",
+   "senior": false,
+   "location": "Singapore, Singapore",
+   "region": "싱가포르",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7777043003",
    "posted": "2026-06-22",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T10:24+09:00",
+ "updatedAt": "2026-11-13T11:51+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -53,8 +53,8 @@
    "company": "Stripe",
    "ats": "greenhouse",
    "board": "stripe",
-   "total": 785,
-   "kept": 7,
+   "total": 787,
+   "kept": 8,
    "ok": true
   },
   {
@@ -77,7 +77,7 @@
    "company": "Databricks",
    "ats": "greenhouse",
    "board": "databricks",
-   "total": 906,
+   "total": 907,
    "kept": 20,
    "ok": true
   },
@@ -157,16 +157,16 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 678,
-   "kept": 37,
+   "total": 682,
+   "kept": 39,
    "ok": true
   },
   {
    "company": "Agoda",
    "ats": "greenhouse",
    "board": "agoda",
-   "total": 350,
-   "kept": 19,
+   "total": 349,
+   "kept": 18,
    "ok": true
   },
   {
@@ -197,8 +197,8 @@
    "company": "Binance",
    "ats": "greenhouse",
    "board": "binance",
-   "total": 220,
-   "kept": 12,
+   "total": 221,
+   "kept": 13,
    "ok": true
   },
   {
@@ -213,7 +213,7 @@
    "company": "OKX",
    "ats": "greenhouse",
    "board": "okx",
-   "total": 388,
+   "total": 389,
    "kept": 52,
    "ok": true
   },
@@ -245,7 +245,7 @@
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
-   "total": 826,
+   "total": 827,
    "kept": 14,
    "ok": true
   },
@@ -253,7 +253,7 @@
    "company": "Anthropic",
    "ats": "greenhouse",
    "board": "anthropic",
-   "total": 672,
+   "total": 673,
    "kept": 0,
    "ok": true
   },
@@ -261,7 +261,7 @@
    "company": "Snowflake",
    "ats": "ashby",
    "board": "snowflake",
-   "total": 377,
+   "total": 378,
    "kept": 2,
    "ok": true
   },
@@ -293,7 +293,7 @@
    "company": "Amazon / AWS",
    "ats": "amazon",
    "board": "KOR",
-   "total": 73,
+   "total": 71,
    "kept": 6,
    "ok": true
   },
@@ -429,7 +429,7 @@
    "company": "한화",
    "ats": "hanwha",
    "board": "all",
-   "total": 83,
+   "total": 85,
    "kept": 5,
    "ok": true
   },
