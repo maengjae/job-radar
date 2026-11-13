@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T12:17+09:00",
+ "updatedAt": "2026-11-13T10:22+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -14,14 +14,14 @@
    "ats": "workable",
    "board": "mercari",
    "total": 139,
-   "kept": 20,
+   "kept": 22,
    "ok": true
   },
   {
    "company": "SmartNews",
    "ats": "workable",
    "board": "smartnews",
-   "total": 26,
+   "total": 29,
    "kept": 2,
    "ok": true
   },
@@ -29,7 +29,7 @@
    "company": "Woven by Toyota",
    "ats": "lever",
    "board": "woven-by-toyota",
-   "total": 137,
+   "total": 134,
    "kept": 11,
    "ok": true
   },
@@ -37,7 +37,7 @@
    "company": "PayPay",
    "ats": "greenhouse",
    "board": "paypay",
-   "total": 83,
+   "total": 81,
    "kept": 0,
    "ok": true
   },
@@ -53,7 +53,7 @@
    "company": "Stripe",
    "ats": "greenhouse",
    "board": "stripe",
-   "total": 787,
+   "total": 785,
    "kept": 7,
    "ok": true
   },
@@ -61,7 +61,7 @@
    "company": "Cloudflare",
    "ats": "greenhouse",
    "board": "cloudflare",
-   "total": 482,
+   "total": 480,
    "kept": 0,
    "ok": true
   },
@@ -69,7 +69,7 @@
    "company": "Datadog",
    "ats": "greenhouse",
    "board": "datadog",
-   "total": 390,
+   "total": 382,
    "kept": 0,
    "ok": true
   },
@@ -77,15 +77,15 @@
    "company": "Databricks",
    "ats": "greenhouse",
    "board": "databricks",
-   "total": 913,
-   "kept": 18,
+   "total": 906,
+   "kept": 20,
    "ok": true
   },
   {
    "company": "MongoDB",
    "ats": "greenhouse",
    "board": "mongodb",
-   "total": 381,
+   "total": 386,
    "kept": 7,
    "ok": true
   },
@@ -93,7 +93,7 @@
    "company": "Twilio",
    "ats": "greenhouse",
    "board": "twilio",
-   "total": 125,
+   "total": 117,
    "kept": 0,
    "ok": true
   },
@@ -101,7 +101,7 @@
    "company": "GitLab",
    "ats": "greenhouse",
    "board": "gitlab",
-   "total": 259,
+   "total": 254,
    "kept": 4,
    "ok": true
   },
@@ -109,7 +109,7 @@
    "company": "Coinbase",
    "ats": "greenhouse",
    "board": "coinbase",
-   "total": 277,
+   "total": 271,
    "kept": 0,
    "ok": true
   },
@@ -117,7 +117,7 @@
    "company": "Okta",
    "ats": "greenhouse",
    "board": "okta",
-   "total": 374,
+   "total": 370,
    "kept": 0,
    "ok": true
   },
@@ -125,15 +125,15 @@
    "company": "Airwallex",
    "ats": "ashby",
    "board": "airwallex",
-   "total": 481,
-   "kept": 26,
+   "total": 484,
+   "kept": 34,
    "ok": true
   },
   {
    "company": "Wise",
    "ats": "greenhouse",
    "board": "wise",
-   "total": 19,
+   "total": 18,
    "kept": 0,
    "ok": true
   },
@@ -157,8 +157,8 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 671,
-   "kept": 33,
+   "total": 677,
+   "kept": 36,
    "ok": true
   },
   {
@@ -166,7 +166,7 @@
    "ats": "greenhouse",
    "board": "agoda",
    "total": 350,
-   "kept": 17,
+   "kept": 19,
    "ok": true
   },
   {
@@ -174,7 +174,7 @@
    "ats": "greenhouse",
    "board": "krafton",
    "total": 65,
-   "kept": 3,
+   "kept": 5,
    "ok": true
   },
   {
@@ -197,32 +197,32 @@
    "company": "Binance",
    "ats": "greenhouse",
    "board": "binance",
-   "total": 219,
-   "kept": 6,
+   "total": 220,
+   "kept": 12,
    "ok": true
   },
   {
    "company": "Bybit",
    "ats": "greenhouse",
    "board": "bybit",
-   "total": 149,
-   "kept": 21,
+   "total": 153,
+   "kept": 22,
    "ok": true
   },
   {
    "company": "OKX",
    "ats": "greenhouse",
    "board": "okx",
-   "total": 386,
-   "kept": 40,
+   "total": 388,
+   "kept": 52,
    "ok": true
   },
   {
    "company": "Crypto.com",
    "ats": "lever",
    "board": "crypto",
-   "total": 86,
-   "kept": 3,
+   "total": 85,
+   "kept": 5,
    "ok": true
   },
   {
@@ -238,22 +238,22 @@
    "ats": "greenhouse",
    "board": "canonical",
    "total": 316,
-   "kept": 40,
+   "kept": 42,
    "ok": true
   },
   {
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
-   "total": 821,
-   "kept": 1,
+   "total": 826,
+   "kept": 14,
    "ok": true
   },
   {
    "company": "Anthropic",
    "ats": "greenhouse",
    "board": "anthropic",
-   "total": 674,
+   "total": 672,
    "kept": 0,
    "ok": true
   },
@@ -261,7 +261,7 @@
    "company": "Snowflake",
    "ats": "ashby",
    "board": "snowflake",
-   "total": 380,
+   "total": 377,
    "kept": 2,
    "ok": true
   },
@@ -269,7 +269,7 @@
    "company": "Elastic",
    "ats": "greenhouse",
    "board": "elastic",
-   "total": 418,
+   "total": 398,
    "kept": 0,
    "ok": true
   },
@@ -278,7 +278,7 @@
    "ats": "toss",
    "board": "all",
    "total": 501,
-   "kept": 55,
+   "kept": 74,
    "ok": true
   },
   {
@@ -341,7 +341,7 @@
    "company": "Broadcom",
    "ats": "workday",
    "board": "broadcom|wd1|External_Career|Seoul",
-   "total": 6,
+   "total": 5,
    "kept": 0,
    "ok": true
   },
@@ -365,7 +365,7 @@
    "company": "Citi",
    "ats": "workday",
    "board": "citi|wd5|2|Seoul",
-   "total": 77,
+   "total": 79,
    "kept": 0,
    "ok": true
   },
@@ -389,7 +389,7 @@
    "company": "NAVER",
    "ats": "naver",
    "board": "all",
-   "total": 31,
+   "total": 33,
    "kept": 4,
    "ok": true
   },
@@ -398,14 +398,14 @@
    "ats": "kakao",
    "board": "tech",
    "total": 34,
-   "kept": 7,
+   "kept": 17,
    "ok": true
   },
   {
    "company": "카카오뱅크",
    "ats": "kakaobank",
    "board": "all",
-   "total": 73,
+   "total": 75,
    "kept": 2,
    "ok": true
   },
@@ -414,40 +414,49 @@
    "ats": "lg",
    "board": "all",
    "total": 82,
-   "kept": 9,
+   "kept": 15,
    "ok": true
   },
   {
    "company": "SK",
    "ats": "sk",
    "board": "all",
-   "total": 137,
-   "kept": 12,
+   "total": 147,
+   "kept": 22,
+   "ok": true
+  },
+  {
+   "company": "한화",
+   "ats": "hanwha",
+   "board": "all",
+   "total": 83,
+   "kept": 5,
    "ok": true
   },
   {
    "company": "현대자동차",
    "ats": "hyundai",
    "board": "all",
-   "total": 61,
-   "kept": 5,
+   "total": 56,
+   "kept": 8,
    "ok": true
   },
   {
    "company": "CJ",
    "ats": "cj",
    "board": "all",
-   "total": 116,
-   "kept": 8,
+   "total": 121,
+   "kept": 17,
    "ok": true
   },
   {
    "company": "KB금융",
    "ats": "kb",
    "board": "all",
-   "total": 4,
+   "total": 0,
    "kept": 0,
-   "ok": true
+   "ok": false,
+   "error": "HTTP 503"
   }
  ]
 }
