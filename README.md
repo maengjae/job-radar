@@ -6,7 +6,7 @@
 
 1. GitHub Actions가 매일 07:30(KST)에 `scripts/collect.py`를 실행합니다.
 2. `sources.json`에 적힌 회사들의 공개 채용 API(Greenhouse, Lever, Ashby, Workable, SmartRecruiters)에서 공고를 받습니다.
-3. 직무(백엔드·클라우드/인프라·IT운영/플랫폼)와 지역(한국·일본·싱가포르·아시아·원격)으로 거릅니다.
+3. 직무(백엔드·클라우드/인프라·IT운영/플랫폼·AI/데이터·소프트웨어 개발)와 지역(한국·일본·싱가포르·아시아·원격)으로 거릅니다.
 4. 결과를 `docs/data/`에 저장하고 커밋합니다. GitHub Pages가 `docs/`를 웹페이지로 보여줍니다.
 
 ## 바꾸는 법

@@ -1,5 +1,5 @@
 {
-  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | naver | kakao | kakaobank | lg | sk | hyundai | cj | kb | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 회사 기준(국내·해외 공통): 대기업·계열사·상장사, 또는 매출 규모가 큰 비상장사(당근·토스·Stripe·OpenAI 등)만 넣습니다. 중소기업·스타트업과 회사 규모를 거를 수 없는 원격 공고 모음 사이트는 넣지 않습니다.",
+  "_comment": "수집할 회사 목록. ats: greenhouse | lever | ashby | workable | smartrecruiters(회사|국가) | workday(tenant|wdN|site|검색어) | amazon(국가코드) | toss | line | naver | kakao | kakaobank | lg | sk | hanwha | hyundai | cj | kb | remoteok | remotive | himalayas. foreign: true는 외국계. board는 각 채용 시스템의 회사 ID입니다(공고 모음 사이트는 분류). 회사 기준(국내·해외 공통): 대기업·계열사·상장사, 또는 매출 규모가 큰 비상장사(당근·토스·Stripe·OpenAI 등)만 넣습니다. 중소기업·스타트업과 회사 규모를 거를 수 없는 원격 공고 모음 사이트는 넣지 않습니다.",
   "sources": [
     {
       "company": "Mercari",
@@ -306,6 +306,11 @@
     {
       "company": "SK",
       "ats": "sk",
+      "board": "all"
+    },
+    {
+      "company": "한화",
+      "ats": "hanwha",
       "board": "all"
     },
     {

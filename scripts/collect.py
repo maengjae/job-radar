@@ -19,10 +19,11 @@ UA = "job-radar/1.0 (+https://github.com/)"
 
 # 직무 키워드: 제목에 하나라도 있으면 수집 대상
 ROLE_RULES = [
-    ("IT운영/플랫폼", r"servicenow|itsm|service ?now"),
+    ("IT운영/플랫폼", r"servicenow|itsm|service ?now|it ?운영|시스템 ?운영|정보시스템|전산|플랫폼 ?(개발|운영|엔지니어)|platform (engineer|developer|operations)"),
     ("클라우드/인프라", r"cloud|infra|devops|solutions? architect|\bsre\b|site reliability|platform engineer|kubernetes|클라우드|인프라|데브옵스"),
     ("백엔드", r"back[- ]?end|server|\bapi\b|java|kotlin|spring|golang|\bgo\b|백엔드|서버"),
-    ("소프트웨어", r"software\b.{0,40}\b(engineer|developer)|software development|product engineer|소프트웨어|개발자"),
+    ("AI/데이터", r"(?<![a-z])ai(?![a-z]).{0,20}(engineer|developer|개발|엔지니어)|ai ?(엔지니어|개발자)|mlops|ml ops|\bllm\b|data engineer|데이터 ?엔지니어|데이터 ?플랫폼"),
+    ("소프트웨어", r"software\b.{0,40}\b(engineer|developer)|software development|product engineer|full[- ]?stack|소프트웨어|개발자|풀스택|(it|sw|s/w|시스템|서비스|프로덕트|웹|응용|애플리케이션|어플리케이션|솔루션|금융 ?it|디지털)\s*(설계/)?개발|(?<!사업)(?<!제품)(?<!공정)(?<!연구)(?<!상품)(?<!기술)개발\s*(직무|담당|운영)|운영/개발|개발/운영"),
 ]
 EXCLUDE = r"security|secops|appsec|cyber|penetration|pentest|vulnerab|threat|\bsoc\b|ciso|identity and access|보안|정보보호|침해|취약점|관제|모의해킹|intern(ship)?\b|산업기능요원|전문연구요원|인턴|contract|contractor|계약직|temporary|\btemp\b|fixed[- ]term|part[- ]time|freelance|\d+[- ]?month|파견|new grad|graduate|sales|account exec|recruit|marketing|designer|android|\bios\b|front[- ]?end|data scientist|machine learning research|manager,|counsel|legal|assistant|project manager|program manager|product manager"
 SENIOR = r"senior|\bsr\.?\b|staff|principal|lead|head of|director|manager|architect|distinguished|시니어|리드|수석"
@@ -270,6 +271,26 @@ def from_lg(board):
         }
 
 
+def from_hanwha(board):
+    page = 0
+    while page < 10:
+        d = post_json("https://hwadm.hanwhain.com/new-backend/portal/api/rcRecruit/search-rcrt", {"langCd": "ko", "searchText": "", "sdSeqList": None, "rtNrcrtYn": "", "rtCarrYn": "", "rtIntnYn": "", "rtPermanentWorkYn": "", "rtTempWorkYn": "", "djSeqList": None, "rjSeqList": None, "page": page, "size": 100})["data"]
+        for j in d.get("list", []):
+            yield {
+                "jid": str(j["rtSeq"]),
+                "title": j.get("rtNm", ""),
+                "company": j.get("sdNm") or "한화",
+                "location": "Korea",
+                "url": f"https://www.hanwhain.com/portal/apply/recruit/detail?rtSeq={j['rtSeq']}",
+                "posted": None,
+                "deadline": (j.get("rtAcptEndDttm") or "")[:10].replace(".", "-") or None,
+                "etype": " ".join(t.get("rttgNm", "") for t in j.get("tagList") or []),
+            }
+        if not d.get("hasNext"):
+            break
+        page += 1
+
+
 def from_sk(board):
     d = post_form("https://www.skcareers.com/Recruit/GetRecruitList", {"sort": "2", "searchText": "", "corpCode": "", "jobRole": "0", "recruitType": "", "workingType": "", "workingRegion": ""})
     for j in d.get("list", []):
@@ -472,6 +493,7 @@ FETCHERS = {
     "line": from_line,
     "lg": from_lg,
     "sk": from_sk,
+    "hanwha": from_hanwha,
     "hyundai": from_hyundai,
     "cj": from_cj,
     "kb": from_kb,
