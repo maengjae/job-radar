@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T11:38+09:00",
+ "updatedAt": "2026-11-15T11:04+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -85,7 +85,7 @@
    "company": "MongoDB",
    "ats": "greenhouse",
    "board": "mongodb",
-   "total": 391,
+   "total": 390,
    "kept": 7,
    "ok": true
   },
@@ -93,7 +93,7 @@
    "company": "Twilio",
    "ats": "greenhouse",
    "board": "twilio",
-   "total": 115,
+   "total": 114,
    "kept": 0,
    "ok": true
   },
@@ -117,7 +117,7 @@
    "company": "Okta",
    "ats": "greenhouse",
    "board": "okta",
-   "total": 363,
+   "total": 362,
    "kept": 0,
    "ok": true
   },
@@ -125,7 +125,7 @@
    "company": "Airwallex",
    "ats": "ashby",
    "board": "airwallex",
-   "total": 484,
+   "total": 485,
    "kept": 34,
    "ok": true
   },
@@ -157,7 +157,7 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 691,
+   "total": 689,
    "kept": 39,
    "ok": true
   },
@@ -165,7 +165,7 @@
    "company": "Agoda",
    "ats": "greenhouse",
    "board": "agoda",
-   "total": 356,
+   "total": 355,
    "kept": 17,
    "ok": true
   },
@@ -197,7 +197,7 @@
    "company": "Binance",
    "ats": "greenhouse",
    "board": "binance",
-   "total": 223,
+   "total": 222,
    "kept": 14,
    "ok": true
   },
@@ -213,7 +213,7 @@
    "company": "OKX",
    "ats": "greenhouse",
    "board": "okx",
-   "total": 392,
+   "total": 391,
    "kept": 52,
    "ok": true
   },
@@ -245,7 +245,7 @@
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
-   "total": 838,
+   "total": 839,
    "kept": 14,
    "ok": true
   },
@@ -253,7 +253,7 @@
    "company": "Anthropic",
    "ats": "greenhouse",
    "board": "anthropic",
-   "total": 668,
+   "total": 670,
    "kept": 0,
    "ok": true
   },
@@ -325,73 +325,65 @@
    "company": "NVIDIA",
    "ats": "workday",
    "board": "nvidia|wd5|NVIDIAExternalCareerSite|Seoul",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "total": 17,
+   "kept": 7,
+   "ok": true
   },
   {
    "company": "Intel",
    "ats": "workday",
    "board": "intel|wd1|External|Seoul",
-   "total": 0,
-   "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "total": 6,
+   "kept": 2,
+   "ok": true
   },
   {
    "company": "Broadcom",
    "ats": "workday",
    "board": "broadcom|wd1|External_Career|Seoul",
-   "total": 0,
+   "total": 5,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "HPE",
    "ats": "workday",
    "board": "hpe|wd5|Jobsathpe|Seoul",
-   "total": 0,
+   "total": 20,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "Thermo Fisher",
    "ats": "workday",
    "board": "thermofisher|wd5|ThermoFisherCareers|Seoul",
-   "total": 0,
+   "total": 12,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "Citi",
    "ats": "workday",
    "board": "citi|wd5|2|Seoul",
-   "total": 0,
+   "total": 73,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "Aptiv",
    "ats": "workday",
    "board": "aptiv|wd5|APTIV_CAREERS|Seoul",
-   "total": 0,
+   "total": 1,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "Workday",
    "ats": "workday",
    "board": "workday|wd5|Workday|Seoul",
-   "total": 0,
+   "total": 1,
    "kept": 0,
-   "ok": false,
-   "error": "HTTP 521"
+   "ok": true
   },
   {
    "company": "NAVER",
