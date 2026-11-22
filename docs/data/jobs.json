@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T12:24+09:00",
+ "updatedAt": "2026-11-22T11:33+09:00",
  "jobs": [
   {
    "id": "ashby:airwallex:36d4b8df-ad02-4e69-9547-1f0b0f7d03da",
@@ -3332,21 +3332,6 @@
    "deadline": null
   },
   {
-   "id": "greenhouse:okx:8107996003",
-   "company": "OKX",
-   "title": "Infrastructure Architect",
-   "category": "클라우드/인프라",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/8107996003",
-   "posted": "2026-10-30",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true,
-   "deadline": null
-  },
-  {
    "id": "greenhouse:okx:8108181003",
    "company": "OKX",
    "title": "Infrastructure Architect",
@@ -3355,6 +3340,21 @@
    "location": "Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/8108181003",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:okx:8107996003",
+   "company": "OKX",
+   "title": "Infrastructure Architect",
+   "category": "클라우드/인프라",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/8107996003",
    "posted": "2026-10-30",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -5417,21 +5417,6 @@
    "deadline": null
   },
   {
-   "id": "greenhouse:okx:7749092003",
-   "company": "OKX",
-   "title": "Senior Java Backend Engineer — Asset & Earn",
-   "category": "백엔드",
-   "senior": true,
-   "location": "Hong Kong, Hong Kong SAR",
-   "region": "아시아 기타",
-   "url": "https://job-boards.greenhouse.io/okx/jobs/7749092003",
-   "posted": "2026-07-17",
-   "firstSeen": "2026-11-08",
-   "source": "greenhouse",
-   "foreign": true,
-   "deadline": null
-  },
-  {
    "id": "greenhouse:okx:7749091003",
    "company": "OKX",
    "title": "Senior Java Backend Engineer — Asset & Earn",
@@ -5440,6 +5425,21 @@
    "location": "Hong Kong, Hong Kong SAR; Singapore, Singapore",
    "region": "싱가포르",
    "url": "https://job-boards.greenhouse.io/okx/jobs/7749091003",
+   "posted": "2026-07-17",
+   "firstSeen": "2026-11-08",
+   "source": "greenhouse",
+   "foreign": true,
+   "deadline": null
+  },
+  {
+   "id": "greenhouse:okx:7749092003",
+   "company": "OKX",
+   "title": "Senior Java Backend Engineer — Asset & Earn",
+   "category": "백엔드",
+   "senior": true,
+   "location": "Hong Kong, Hong Kong SAR",
+   "region": "아시아 기타",
+   "url": "https://job-boards.greenhouse.io/okx/jobs/7749092003",
    "posted": "2026-07-17",
    "firstSeen": "2026-11-08",
    "source": "greenhouse",
@@ -7922,21 +7922,6 @@
    "deadline": null
   },
   {
-   "id": "toss:all:4071141003",
-   "company": "토스",
-   "title": "서버 개발자 (Product) (Server Developer)",
-   "category": "백엔드",
-   "senior": false,
-   "location": "Seoul",
-   "region": "한국",
-   "url": "https://toss.im/career/job-detail?gh_jid=4071141003",
-   "posted": "2020-06-25",
-   "firstSeen": "2026-11-08",
-   "source": "toss",
-   "foreign": false,
-   "deadline": null
-  },
-  {
    "id": "toss:all:4076140003",
    "company": "토스증권",
    "title": "서버 개발자 (Product) (Server Developer)",
@@ -7960,6 +7945,21 @@
    "location": "Seoul",
    "region": "한국",
    "url": "https://toss.im/career/job-detail?gh_jid=4076109003",
+   "posted": "2020-06-25",
+   "firstSeen": "2026-11-08",
+   "source": "toss",
+   "foreign": false,
+   "deadline": null
+  },
+  {
+   "id": "toss:all:4071141003",
+   "company": "토스",
+   "title": "서버 개발자 (Product) (Server Developer)",
+   "category": "백엔드",
+   "senior": false,
+   "location": "Seoul",
+   "region": "한국",
+   "url": "https://toss.im/career/job-detail?gh_jid=4071141003",
    "posted": "2020-06-25",
    "firstSeen": "2026-11-08",
    "source": "toss",
