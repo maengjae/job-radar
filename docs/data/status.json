@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T11:33+09:00",
+ "updatedAt": "2026-11-23T12:00+09:00",
  "sources": [
   {
    "company": "Mercari",
@@ -37,7 +37,7 @@
    "company": "PayPay",
    "ats": "greenhouse",
    "board": "paypay",
-   "total": 87,
+   "total": 88,
    "kept": 0,
    "ok": true
   },
@@ -53,7 +53,7 @@
    "company": "Stripe",
    "ats": "greenhouse",
    "board": "stripe",
-   "total": 777,
+   "total": 778,
    "kept": 9,
    "ok": true
   },
@@ -69,7 +69,7 @@
    "company": "Datadog",
    "ats": "greenhouse",
    "board": "datadog",
-   "total": 382,
+   "total": 383,
    "kept": 0,
    "ok": true
   },
@@ -117,7 +117,7 @@
    "company": "Okta",
    "ats": "greenhouse",
    "board": "okta",
-   "total": 372,
+   "total": 375,
    "kept": 0,
    "ok": true
   },
@@ -157,7 +157,7 @@
    "company": "쿠팡",
    "ats": "greenhouse",
    "board": "coupang",
-   "total": 677,
+   "total": 675,
    "kept": 36,
    "ok": true
   },
@@ -165,7 +165,7 @@
    "company": "Agoda",
    "ats": "greenhouse",
    "board": "agoda",
-   "total": 344,
+   "total": 341,
    "kept": 23,
    "ok": true
   },
@@ -221,7 +221,7 @@
    "company": "Crypto.com",
    "ats": "lever",
    "board": "crypto",
-   "total": 90,
+   "total": 91,
    "kept": 3,
    "ok": true
   },
@@ -253,7 +253,7 @@
    "company": "Anthropic",
    "ats": "greenhouse",
    "board": "anthropic",
-   "total": 635,
+   "total": 636,
    "kept": 0,
    "ok": true
   },
@@ -277,7 +277,7 @@
    "company": "토스",
    "ats": "toss",
    "board": "all",
-   "total": 503,
+   "total": 500,
    "kept": 72,
    "ok": true
   },
@@ -285,7 +285,7 @@
    "company": "LINE Plus",
    "ats": "line",
    "board": "all",
-   "total": 81,
+   "total": 82,
    "kept": 3,
    "ok": true
   },
@@ -309,7 +309,7 @@
    "company": "Bosch",
    "ats": "smartrecruiters",
    "board": "BoschGroup|kr",
-   "total": 3,
+   "total": 2,
    "kept": 0,
    "ok": true
   },
@@ -365,7 +365,7 @@
    "company": "Citi",
    "ats": "workday",
    "board": "citi|wd5|2|Seoul",
-   "total": 82,
+   "total": 80,
    "kept": 0,
    "ok": true
   },
@@ -389,7 +389,7 @@
    "company": "NAVER",
    "ats": "naver",
    "board": "all",
-   "total": 37,
+   "total": 28,
    "kept": 4,
    "ok": true
   },
@@ -414,14 +414,14 @@
    "ats": "lg",
    "board": "all",
    "total": 84,
-   "kept": 16,
+   "kept": 18,
    "ok": true
   },
   {
    "company": "SK",
    "ats": "sk",
    "board": "all",
-   "total": 150,
+   "total": 131,
    "kept": 19,
    "ok": true
   },
@@ -429,7 +429,7 @@
    "company": "한화",
    "ats": "hanwha",
    "board": "all",
-   "total": 98,
+   "total": 86,
    "kept": 5,
    "ok": true
   },
@@ -437,7 +437,7 @@
    "company": "현대자동차",
    "ats": "hyundai",
    "board": "all",
-   "total": 99,
+   "total": 98,
    "kept": 19,
    "ok": true
   },
@@ -445,7 +445,7 @@
    "company": "CJ",
    "ats": "cj",
    "board": "all",
-   "total": 126,
+   "total": 119,
    "kept": 16,
    "ok": true
   },
